@@ -1,0 +1,1916 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Music - Top 100 Lists</title>
+
+<link rel="stylesheet" href="../css/bootstrap.min.css" />
+<link rel="stylesheet" href="../css/ghostfood-2018.css" />
+<link rel="stylesheet" href="../css/ghostfood-music-2018.css" />
+<link rel="stylesheet" href="../css/ghostfood-music-faves-8089.css" />
+<link rel="stylesheet" href="../css/mod-clearfix.css" />
+<link rel="stylesheet" href="../css/avenir.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:400,300,700">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow+Condensed:100,400,700,900">
+<script src="https://use.fortawesome.com/807856cd.js"></script>
+
+<style type="text/css">
+
+body {
+    overflow: hidden;
+}
+header {
+	position: fixed;
+	top:0;
+	width:100%;
+	text-align: left;
+	min-height:40px;
+padding:0;
+	z-index:99;
+}
+
+header img {
+	height:24px;
+	width:24px;
+	float:left;
+	margin-right:5px;
+}
+
+#backgroundfill {
+	background-size:cover;
+	z-index:0;
+}
+
+iframe {
+	z-index: 1;
+	background-color: rgba(0,0,0,.9);
+	min-height: 300px;
+	width:100%;
+	margin-top: -70px;
+}
+
+ul.nav li {
+display: inline-block;
+border-radius: 5px;
+width: inherit; 
+padding: 0;
+margin:0 0 2px 0;
+font-size: 30px;
+font-family: 'Barlow Condensed';
+}
+
+
+.nav li.active{
+background:cyan;
+}
+
+.nav{
+margin-top:5em;
+}
+
+
+.carousel-item{
+position:absolute;
+bottom:0;
+left:0;
+right:0;
+padding:0;
+opacity:0;
+height: inherit;
+    background-size: cover;
+    background-position: center;
+transition: all 0.5s ease-in-out;
+}
+
+.carousel-item-caption > p, .content-caption {
+min-height: 54px;
+text-align:left;
+width:fit-content;
+max-width:90%;
+margin:0 auto;
+padding: 10px 20px;
+position: absolute;
+bottom:100px;
+background-color: rgba(0,0,0,.66);
+border-radius: 0 .5em .5em 0;
+}
+.light{
+color:white;
+}
+
+h1.compact {
+display: inline;
+line-height: 1;
+font-size: 150%;
+font-weight: 400;
+vertical-align: top;
+}
+
+.content-caption {
+font-family: 'Oswald';
+font-size: 1.25em;
+z-index: 1;
+}
+.rank {
+margin: -40px 0 5px 0;
+font-size: 150%;
+width: 60px;
+height: 60px;
+line-height:60px;
+font-family:"Oswald","Barlow Condensed";
+
+}
+
+.launcher
+{
+  position: absolute;
+  margin: auto;
+  top: 100px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-radius: 3px;
+}
+
+
+a.arrow {
+    position: absolute;
+    bottom: 0;
+    height:60px;
+    margin:0;
+    width:50%;
+    background-color: rgba(0,0,0,.66);
+  }
+
+a.arrow-next {
+  right:0;
+  line-height: 46px;
+}
+a.arrow-prev {
+  left:0;
+  bottom:0;
+  line-height: 48px;
+}
+a.arrow:hover {
+  border-radius: 0;
+  transition: background-color 0.2s ease-in-out;
+    background-color: rgba(0,255,255,.25);
+}
+i.fa.fa-chevron-up.fa-rotate-270 {
+    font-size: x-large;
+}
+
+/* Affects IDs starting (^) with the given term - also appears to prevent anchor-effect of ID when selected*/
+[id^="item"] {
+display: none;
+}
+
+.carousel-item-caption {
+    background: transparent;
+}
+
+.carousel-item:first-of-type { /* Required to allow display of first ID selected */
+z-index: 1;
+opacity: 1;}
+*:target ~ .carousel-item:first-of-type { /* Required to hide first ID after another is selected */
+opacity: 0;}
+
+
+.list-nav a {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 5px;
+    margin: 0 1px 6px;
+    border-radius: 5px;
+    letter-spacing: -0.015em;
+    font-family: 'Oswald';
+}
+
+.carousel-item-caption > iframe#video {
+    zoom: 1.4;
+    margin: -160px auto 0 auto;
+    margin-left: -2.5%;
+
+}
+.carousel-item-caption:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+/* gradient-editor/#000000+0,000000+100&0.5+0,1+85 */
+background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 50%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 50%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+    width: 100%;
+    height: 150px;
+    z-index: 0;
+}
+
+/* Declare with '~' that the targeted ID (within span) be visible - essential for when it is returned to */
+.carousel-wrapper span:nth-of-type(1):target ~ .carousel-item:nth-of-type(1),
+.carousel-wrapper span:nth-of-type(2):target ~ .carousel-item:nth-of-type(2),
+.carousel-wrapper span:nth-of-type(3):target ~ .carousel-item:nth-of-type(3),
+.carousel-wrapper span:nth-of-type(4):target ~ .carousel-item:nth-of-type(4),
+.carousel-wrapper span:nth-of-type(5):target ~ .carousel-item:nth-of-type(5),
+.carousel-wrapper span:nth-of-type(6):target ~ .carousel-item:nth-of-type(6),
+.carousel-wrapper span:nth-of-type(7):target ~ .carousel-item:nth-of-type(7),
+.carousel-wrapper span:nth-of-type(8):target ~ .carousel-item:nth-of-type(8),
+.carousel-wrapper span:nth-of-type(9):target ~ .carousel-item:nth-of-type(9),
+.carousel-wrapper span:nth-of-type(10):target ~ .carousel-item:nth-of-type(10),
+.carousel-wrapper span:nth-of-type(11):target ~ .carousel-item:nth-of-type(11),
+.carousel-wrapper span:nth-of-type(12):target ~ .carousel-item:nth-of-type(12),
+.carousel-wrapper span:nth-of-type(13):target ~ .carousel-item:nth-of-type(13),
+.carousel-wrapper span:nth-of-type(14):target ~ .carousel-item:nth-of-type(14),
+.carousel-wrapper span:nth-of-type(15):target ~ .carousel-item:nth-of-type(15),
+.carousel-wrapper span:nth-of-type(16):target ~ .carousel-item:nth-of-type(16),
+.carousel-wrapper span:nth-of-type(17):target ~ .carousel-item:nth-of-type(17),
+.carousel-wrapper span:nth-of-type(18):target ~ .carousel-item:nth-of-type(18),
+.carousel-wrapper span:nth-of-type(19):target ~ .carousel-item:nth-of-type(19),
+.carousel-wrapper span:nth-of-type(20):target ~ .carousel-item:nth-of-type(20),
+.carousel-wrapper span:nth-of-type(21):target ~ .carousel-item:nth-of-type(21),
+.carousel-wrapper span:nth-of-type(22):target ~ .carousel-item:nth-of-type(22),
+.carousel-wrapper span:nth-of-type(23):target ~ .carousel-item:nth-of-type(23),
+.carousel-wrapper span:nth-of-type(24):target ~ .carousel-item:nth-of-type(24),
+.carousel-wrapper span:nth-of-type(25):target ~ .carousel-item:nth-of-type(25),
+.carousel-wrapper span:nth-of-type(26):target ~ .carousel-item:nth-of-type(26),
+.carousel-wrapper span:nth-of-type(27):target ~ .carousel-item:nth-of-type(27),
+.carousel-wrapper span:nth-of-type(28):target ~ .carousel-item:nth-of-type(28),
+.carousel-wrapper span:nth-of-type(29):target ~ .carousel-item:nth-of-type(29),
+.carousel-wrapper span:nth-of-type(30):target ~ .carousel-item:nth-of-type(30),
+.carousel-wrapper span:nth-of-type(31):target ~ .carousel-item:nth-of-type(31),
+.carousel-wrapper span:nth-of-type(32):target ~ .carousel-item:nth-of-type(32),
+.carousel-wrapper span:nth-of-type(33):target ~ .carousel-item:nth-of-type(33),
+.carousel-wrapper span:nth-of-type(34):target ~ .carousel-item:nth-of-type(34),
+.carousel-wrapper span:nth-of-type(35):target ~ .carousel-item:nth-of-type(35),
+.carousel-wrapper span:nth-of-type(36):target ~ .carousel-item:nth-of-type(36),
+.carousel-wrapper span:nth-of-type(37):target ~ .carousel-item:nth-of-type(37),
+.carousel-wrapper span:nth-of-type(38):target ~ .carousel-item:nth-of-type(38),
+.carousel-wrapper span:nth-of-type(39):target ~ .carousel-item:nth-of-type(39),
+.carousel-wrapper span:nth-of-type(40):target ~ .carousel-item:nth-of-type(40),
+.carousel-wrapper span:nth-of-type(41):target ~ .carousel-item:nth-of-type(41),
+.carousel-wrapper span:nth-of-type(42):target ~ .carousel-item:nth-of-type(42),
+.carousel-wrapper span:nth-of-type(43):target ~ .carousel-item:nth-of-type(43),
+.carousel-wrapper span:nth-of-type(44):target ~ .carousel-item:nth-of-type(44),
+.carousel-wrapper span:nth-of-type(45):target ~ .carousel-item:nth-of-type(45),
+.carousel-wrapper span:nth-of-type(46):target ~ .carousel-item:nth-of-type(46),
+.carousel-wrapper span:nth-of-type(47):target ~ .carousel-item:nth-of-type(47),
+.carousel-wrapper span:nth-of-type(48):target ~ .carousel-item:nth-of-type(48),
+.carousel-wrapper span:nth-of-type(49):target ~ .carousel-item:nth-of-type(49),
+.carousel-wrapper span:nth-of-type(50):target ~ .carousel-item:nth-of-type(50),
+.carousel-wrapper span:nth-of-type(51):target ~ .carousel-item:nth-of-type(51),
+.carousel-wrapper span:nth-of-type(52):target ~ .carousel-item:nth-of-type(52),
+.carousel-wrapper span:nth-of-type(53):target ~ .carousel-item:nth-of-type(53),
+.carousel-wrapper span:nth-of-type(54):target ~ .carousel-item:nth-of-type(54),
+.carousel-wrapper span:nth-of-type(55):target ~ .carousel-item:nth-of-type(55),
+.carousel-wrapper span:nth-of-type(56):target ~ .carousel-item:nth-of-type(56),
+.carousel-wrapper span:nth-of-type(57):target ~ .carousel-item:nth-of-type(57),
+.carousel-wrapper span:nth-of-type(58):target ~ .carousel-item:nth-of-type(58),
+.carousel-wrapper span:nth-of-type(59):target ~ .carousel-item:nth-of-type(59),
+.carousel-wrapper span:nth-of-type(60):target ~ .carousel-item:nth-of-type(60),
+.carousel-wrapper span:nth-of-type(61):target ~ .carousel-item:nth-of-type(61),
+.carousel-wrapper span:nth-of-type(62):target ~ .carousel-item:nth-of-type(62),
+.carousel-wrapper span:nth-of-type(63):target ~ .carousel-item:nth-of-type(63),
+.carousel-wrapper span:nth-of-type(64):target ~ .carousel-item:nth-of-type(64),
+.carousel-wrapper span:nth-of-type(65):target ~ .carousel-item:nth-of-type(65),
+.carousel-wrapper span:nth-of-type(66):target ~ .carousel-item:nth-of-type(66),
+.carousel-wrapper span:nth-of-type(67):target ~ .carousel-item:nth-of-type(67),
+.carousel-wrapper span:nth-of-type(68):target ~ .carousel-item:nth-of-type(68),
+.carousel-wrapper span:nth-of-type(69):target ~ .carousel-item:nth-of-type(69),
+.carousel-wrapper span:nth-of-type(70):target ~ .carousel-item:nth-of-type(70),
+.carousel-wrapper span:nth-of-type(71):target ~ .carousel-item:nth-of-type(71),
+.carousel-wrapper span:nth-of-type(72):target ~ .carousel-item:nth-of-type(72),
+.carousel-wrapper span:nth-of-type(73):target ~ .carousel-item:nth-of-type(73),
+.carousel-wrapper span:nth-of-type(74):target ~ .carousel-item:nth-of-type(74),
+.carousel-wrapper span:nth-of-type(75):target ~ .carousel-item:nth-of-type(75),
+.carousel-wrapper span:nth-of-type(76):target ~ .carousel-item:nth-of-type(76),
+.carousel-wrapper span:nth-of-type(77):target ~ .carousel-item:nth-of-type(77),
+.carousel-wrapper span:nth-of-type(78):target ~ .carousel-item:nth-of-type(78),
+.carousel-wrapper span:nth-of-type(79):target ~ .carousel-item:nth-of-type(79),
+.carousel-wrapper span:nth-of-type(80):target ~ .carousel-item:nth-of-type(80),
+.carousel-wrapper span:nth-of-type(81):target ~ .carousel-item:nth-of-type(81),
+.carousel-wrapper span:nth-of-type(82):target ~ .carousel-item:nth-of-type(82),
+.carousel-wrapper span:nth-of-type(83):target ~ .carousel-item:nth-of-type(83),
+.carousel-wrapper span:nth-of-type(84):target ~ .carousel-item:nth-of-type(84),
+.carousel-wrapper span:nth-of-type(85):target ~ .carousel-item:nth-of-type(85),
+.carousel-wrapper span:nth-of-type(86):target ~ .carousel-item:nth-of-type(86),
+.carousel-wrapper span:nth-of-type(87):target ~ .carousel-item:nth-of-type(87),
+.carousel-wrapper span:nth-of-type(88):target ~ .carousel-item:nth-of-type(88),
+.carousel-wrapper span:nth-of-type(89):target ~ .carousel-item:nth-of-type(89),
+.carousel-wrapper span:nth-of-type(90):target ~ .carousel-item:nth-of-type(90),
+.carousel-wrapper span:nth-of-type(91):target ~ .carousel-item:nth-of-type(91),
+.carousel-wrapper span:nth-of-type(92):target ~ .carousel-item:nth-of-type(92),
+.carousel-wrapper span:nth-of-type(93):target ~ .carousel-item:nth-of-type(93),
+.carousel-wrapper span:nth-of-type(94):target ~ .carousel-item:nth-of-type(94),
+.carousel-wrapper span:nth-of-type(95):target ~ .carousel-item:nth-of-type(95),
+.carousel-wrapper span:nth-of-type(96):target ~ .carousel-item:nth-of-type(96),
+.carousel-wrapper span:nth-of-type(97):target ~ .carousel-item:nth-of-type(97),
+.carousel-wrapper span:nth-of-type(98):target ~ .carousel-item:nth-of-type(98),
+.carousel-wrapper span:nth-of-type(99):target ~ .carousel-item:nth-of-type(99),
+.carousel-wrapper span:nth-of-type(100):target ~ .carousel-item:nth-of-type(100) {
+z-index: 1;
+opacity: 1;
+}
+/* Note that once a slide is selected, other carousels on the page will return to the first slide in their respective sequences */
+
+@media screen and (min-width: 768px) {
+
+
+.subject-title {
+  font-size: 200%;
+  line-height: 1;
+}
+
+.carousel-item-caption > iframe#player {
+    zoom: 1.25;
+    margin-top: -40px;
+    margin-left: -12.3%;
+}
+
+
+}
+
+</style>
+</head>
+<body id="backgroundfill">
+
+<header>
+<div class="align-left width-100 shade-66 pad-ver-xs">
+  <div class="align-left width-100-then-50">
+    <div class="align-center-then-left mar-all-sm">
+	<a href="/music"><img src="../img/icon-ghostfood.png" class="swing">
+<small>MUSIC</small></a>
+<h1 class="compact mar-hor-sm">100 FAVOURITE HITS 1980-1989</h1>
+</div>
+</div>
+<div class="align-left width-100-then-50">
+<div class="align-center-then-right mar-all-sm">
+<div class="list-nav align-center"><a href="#item-100">100</a> <a href="#item-090">90</a> <a href="#item-080">80</a> <a href="#item-070">70</a> <a href="#item-060">60</a> <a href="#item-050">50</a> <a href="#item-040">40</a> <a href="#item-030">30</a> <a href="#item-020">20</a> <a href="#item-010">10</a>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+<div class="clearfix band-dark">
+
+<div class="mar-all-none">
+
+<iframe id="player" src='//app.viloud.tv/player/embed/video/781e0e87a027b2d4193732c8309a6d5e?autoplay=1&volume=1&controls=1&title=0&share=0'frameborder='0' allow='autoplay' allowfullscreen>
+</iframe>
+
+<div class="carousel-wrapper">
+<span id="item-100"></span>
+<span id="item-099"></span>
+<span id="item-098"></span>
+<span id="item-097"></span>
+<span id="item-096"></span>
+<span id="item-095"></span>
+<span id="item-094"></span>
+<span id="item-093"></span>
+<span id="item-092"></span>
+<span id="item-091"></span>
+<span id="item-090"></span>
+<span id="item-089"></span>
+<span id="item-088"></span>
+<span id="item-087"></span>
+<span id="item-086"></span>
+<span id="item-085"></span>
+<span id="item-084"></span>
+<span id="item-083"></span>
+<span id="item-082"></span>
+<span id="item-081"></span>
+<span id="item-080"></span>
+<span id="item-079"></span>
+<span id="item-078"></span>
+<span id="item-077"></span>
+<span id="item-076"></span>
+<span id="item-075"></span>
+<span id="item-074"></span>
+<span id="item-073"></span>
+<span id="item-072"></span>
+<span id="item-071"></span>
+<span id="item-070"></span>
+<span id="item-069"></span>
+<span id="item-068"></span>
+<span id="item-067"></span>
+<span id="item-066"></span>
+<span id="item-065"></span>
+<span id="item-064"></span>
+<span id="item-063"></span>
+<span id="item-062"></span>
+<span id="item-061"></span>
+<span id="item-060"></span>
+<span id="item-059"></span>
+<span id="item-058"></span>
+<span id="item-057"></span>
+<span id="item-056"></span>
+<span id="item-055"></span>
+<span id="item-054"></span>
+<span id="item-053"></span>
+<span id="item-052"></span>
+<span id="item-051"></span>
+<span id="item-050"></span>
+<span id="item-049"></span>
+<span id="item-048"></span>
+<span id="item-047"></span>
+<span id="item-046"></span>
+<span id="item-045"></span>
+<span id="item-044"></span>
+<span id="item-043"></span>
+<span id="item-042"></span>
+<span id="item-041"></span>
+<span id="item-040"></span>
+<span id="item-039"></span>
+<span id="item-038"></span>
+<span id="item-037"></span>
+<span id="item-036"></span>
+<span id="item-035"></span>
+<span id="item-034"></span>
+<span id="item-033"></span>
+<span id="item-032"></span>
+<span id="item-031"></span>
+<span id="item-030"></span>
+<span id="item-029"></span>
+<span id="item-028"></span>
+<span id="item-027"></span>
+<span id="item-026"></span>
+<span id="item-025"></span>
+<span id="item-024"></span>
+<span id="item-023"></span>
+<span id="item-022"></span>
+<span id="item-021"></span>
+<span id="item-020"></span>
+<span id="item-019"></span>
+<span id="item-018"></span>
+<span id="item-017"></span>
+<span id="item-016"></span>
+<span id="item-015"></span>
+<span id="item-014"></span>
+<span id="item-013"></span>
+<span id="item-012"></span>
+<span id="item-011"></span>
+<span id="item-010"></span>
+<span id="item-009"></span>
+<span id="item-008"></span>
+<span id="item-007"></span>
+<span id="item-006"></span>
+<span id="item-005"></span>
+<span id="item-004"></span>
+<span id="item-003"></span>
+<span id="item-002"></span>
+<span id="item-001"></span>
+
+
+<div class="carousel-item item-100 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">100</div>
+  <div class="subject-title"> You Spin Me Round (Like a Record) <br/><small>  Dead Or Alive </small>
+</div>
+  <div class="year"><small>1984</small>
+</div>
+</div>
+<a id="v001" class="mute-video arrow arrow-prev" href="#item-001"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v099" onClick="play099()" class="mute-video arrow arrow-next" href="#item-099"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-099 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">99</div>
+  <div class="subject-title"> The Race  <br/><small>  Yello </small>
+</div>
+  <div class="year"><small> 1988</small>
+</div>
+</div>
+<a id="v100" onClick="play100()" class="mute-video arrow arrow-prev" href="#item-100"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v098" class="mute-video arrow arrow-next" href="#item-098"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-098 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">98</div>
+  <div class="subject-title"> Genius Of Love  <br/><small>  Tom Tom Club</small>
+</div>
+  <div class="year"><small> 1981</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-099"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-097"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-097 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">97</div>
+  <div class="subject-title"> Suburbia  <br/><small>  Pet Shop Boys </small>
+</div>
+  <div class="year"><small> 1986</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-098"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-096"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-096 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">96</div>
+  <div class="subject-title"> Papa Don't Preach <br/><small>  Madonna </small>
+</div>
+  <div class="year"><small> 1986</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-097"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-095"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-095 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">95</div>
+  <div class="subject-title"> Pump Up the Jam <br/><small>  Technotronic, Ya Kid K</small>
+</div>
+  <div class="year"><small> 1989</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-096"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-094"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-094 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">94</div>
+  <div class="subject-title"> Little Lies <br/><small>  Fleetwood Mac </small>
+</div>
+  <div class="year"><small> 1987</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-095"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-093"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-093 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">93</div>
+  <div class="subject-title"> Two Tribes  <br/><small>  Frankie Goes To Hollywood </small>
+</div>
+  <div class="year"><small> 1984</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-094"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-092"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-092 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">92</div>
+  <div class="subject-title"> 1999  <br/><small>  Prince</small>
+</div>
+  <div class="year"><small> 1983</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-093"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-091"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-091 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">91</div>
+  <div class="subject-title"> Starchild <br/><small>  Level 42</small>
+</div>
+  <div class="year"><small> 1981</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-092"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-090"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-090 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">90</div>
+  <div class="subject-title"> Peek-A-Boo  <br/><small>  Siouxsie and the Banshees </small>
+</div>
+  <div class="year"><small> 1988</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-091"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-089"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-089 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">89</div>
+  <div class="subject-title"> Heart <br/><small>  Pet Shop Boys </small>
+</div>
+  <div class="year"><small> 1988</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-090"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-088"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-088 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">88</div>
+  <div class="subject-title"> Numero Uno  <br/><small>  Starlight </small>
+</div>
+  <div class="year"><small> 1989</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-089"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-087"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-087 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">87</div>
+  <div class="subject-title"> Rock the Casbah <br/><small>  The Clash </small>
+</div>
+  <div class="year"><small> 1982</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-088"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-086"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-086 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">86</div>
+  <div class="subject-title"> Me, Myself And I  <br/><small>  De La Soul</small>
+</div>
+  <div class="year"><small> 1989</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-087"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-085"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-085 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">85</div>
+  <div class="subject-title"> The Winner Takes It All <br/><small>  ABBA</small>
+</div>
+  <div class="year"><small> 1980</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-086"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-084"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-084 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">84</div>
+  <div class="subject-title"> Rock With You <br/><small>  Michael Jackson </small>
+</div>
+  <div class="year"><small> 1980</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-085"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-083"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-083 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">83</div>
+  <div class="subject-title"> The Sun Always Shines On T.V. <br/><small>  a-ha</small>
+</div>
+  <div class="year"><small> 1985</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-084"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-082"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-082 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">82</div>
+  <div class="subject-title"> Dinner with Gershwin  <br/><small>  Donna Summer</small>
+</div>
+  <div class="year"><small> 1987</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-083"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-081"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-081 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">81</div>
+  <div class="subject-title"> Absolute  <br/><small>  Scritti Politti </small>
+</div>
+  <div class="year"><small> 1984</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-082"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-080"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-080 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">80</div>
+  <div class="subject-title"> Little Red Corvette <br/><small>  Prince</small>
+</div>
+  <div class="year"><small> 1983</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-081"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-079"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-079 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">79</div>
+  <div class="subject-title"> Girls And Boys  <br/><small>  Prince & The Revolution</small>
+</div>
+  <div class="year"><small> 1986</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-080"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-078"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-078 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">78</div>
+  <div class="subject-title"> Sledgehammer  <br/><small>  Peter Gabriel </small>
+</div>
+  <div class="year"><small> 1986</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-079"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-077"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-077 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">77</div>
+  <div class="subject-title"> Town Called Malice  <br/><small>  The Jam </small>
+</div>
+  <div class="year"><small> 1982</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-078"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-076"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-076 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">76</div>
+  <div class="subject-title"> Promised You a Miracle  <br/><small>  Simple Minds</small>
+</div>
+  <div class="year"><small> 1982</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-077"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-075"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-075 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">75</div>
+  <div class="subject-title"> Temptation  <br/><small>  New Order </small>
+</div>
+  <div class="year"><small> 1982</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-076"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-074"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-074 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">74</div>
+  <div class="subject-title"> Into the Groove <br/><small>  Madonna </small>
+</div>
+  <div class="year"><small> 1985</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-075"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-073"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-073 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">73</div>
+  <div class="subject-title"> Snobbery & Decay  <br/><small>  Act </small>
+</div>
+  <div class="year"><small> 1987</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-074"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-072"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-072 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">72</div>
+  <div class="subject-title"> I'm Not Scared  <br/><small>  Eighth Wonder </small>
+</div>
+  <div class="year"><small> 1988</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-073"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-071"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-071 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">71</div>
+  <div class="subject-title"> Rip It Up <br/><small>  Orange Juice</small>
+</div>
+  <div class="year"><small> 1983</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-072"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-070"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-070 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">70</div>
+  <div class="subject-title"> Change Of Heart <br/><small>  Change</small>
+</div>
+  <div class="year"><small> 1984</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-071"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-069"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-069 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">69</div>
+  <div class="subject-title"> Just Be Good To Me  <br/><small>  The S.O.S. Band</small>
+</div>
+  <div class="year"><small> 1984</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-070"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-068"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-068 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">68</div>
+  <div class="subject-title"> My Old Piano  <br/><small>  Diana Ross</small>
+</div>
+  <div class="year"><small> 1980</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-069"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-067"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-067 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">67</div>
+  <div class="subject-title"> Tainted Love  <br/><small>  Soft Cell </small>
+</div>
+  <div class="year"><small> 1981</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-068"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-066"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-066 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">66</div>
+  <div class="subject-title"> Vienna  <br/><small>  Ultravox</small>
+</div>
+  <div class="year"><small> 1981</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-067"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-065"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-065 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">65</div>
+  <div class="subject-title"> Ghost Town  <br/><small>  The Specials</small>
+</div>
+  <div class="year"><small> 1981</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-066"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-064"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-064 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">64</div>
+  <div class="subject-title"> Sign 'O' The Times  <br/><small>  Prince</small>
+</div>
+  <div class="year"><small> 1987</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-065"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-063"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-063 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">63</div>
+  <div class="subject-title"> Rent  <br/><small>  Pet Shop Boys </small>
+</div>
+  <div class="year"><small> 1987</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-064"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-062"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-062 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">62</div>
+  <div class="subject-title"> Ain't Nobody  <br/><small>  Rufus & Chaka Khan</small>
+</div>
+  <div class="year"><small> 1984</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-063"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-061"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-061 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">61</div>
+  <div class="subject-title"> Teardrops <br/><small>  Womack & Womack </small>
+</div>
+  <div class="year"><small> 1988</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-062"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-060"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-060 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">60</div>
+  <div class="subject-title"> The Crown <br/><small>  Gary Byrd & The G.B. Experience </small>
+</div>
+  <div class="year"><small> 1983</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-061"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-059"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-059 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">59</div>
+  <div class="subject-title"> Fade To Grey  <br/><small>  Visage</small>
+</div>
+  <div class="year"><small> 1980</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-060"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-058"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-058 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">58</div>
+  <div class="subject-title"> Slave To The Rhythm <br/><small>  Grace Jones </small>
+</div>
+  <div class="year"><small> 1985</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-059"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-057"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-057 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">57</div>
+  <div class="subject-title"> Thriller  <br/><small>  Michael Jackson </small>
+</div>
+  <div class="year"><small> 1983</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-058"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-056"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-056 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">56</div>
+  <div class="subject-title"> Geno  <br/><small>  Dexys Midnight Runners</small>
+</div>
+  <div class="year"><small> 1980</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-057"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-055"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-055 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">55</div>
+  <div class="subject-title"> There There My Dear <br/><small>  Dexys Midnight Runners</small>
+</div>
+  <div class="year"><small> 1980</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-056"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-054"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-054 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">54</div>
+  <div class="subject-title"> Say No Go <br/><small>  De La Soul</small>
+</div>
+  <div class="year"><small> 1989</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-055"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-053"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-053 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">53</div>
+  <div class="subject-title"> Sweet Dreams (Are Made of This) <br/><small>  Eurythmics</small>
+</div>
+  <div class="year"><small> 1983</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-054"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-052"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-052 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">52</div>
+  <div class="subject-title"> Buffalo Stance  <br/><small>  Neneh Cherry</small>
+</div>
+  <div class="year"><small> 1980</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-053"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-051"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-051 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">51</div>
+  <div class="subject-title"> I'm Coming Out  <br/><small>  Diana Ross</small>
+</div>
+  <div class="year"><small> 1982</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-052"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-050"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-050 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">50</div>
+  <div class="subject-title"> The Dreaming  <br/><small>  Kate Bush </small>
+</div>
+  <div class="year"><small> 1985</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-051"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-049"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-049 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">49</div>
+  <div class="subject-title"> Running Up That Hill (A Deal With God)  <br/><small>  Kate Bush </small>
+</div>
+  <div class="year"><small> 1988</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-050"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-048"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-048 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">48</div>
+  <div class="subject-title"> I Can't Go for That (No Can Do) <br/><small>  Daryl Hall & John Oates </small>
+</div>
+  <div class="year"><small> 1982</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-049"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-047"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-047 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">47</div>
+  <div class="subject-title"> Sweet Freedom <br/><small>  Michael McDonald</small>
+</div>
+  <div class="year"><small> 1986</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-048"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-046"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-046 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">46</div>
+  <div class="subject-title"> Atomic  <br/><small>  Blondie </small>
+</div>
+  <div class="year"><small> 1980</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-047"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-045"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-045 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">45</div>
+  <div class="subject-title"> Rapture <br/><small>  Blondie </small>
+</div>
+  <div class="year"><small> 1981</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-046"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-044"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-044 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">44</div>
+  <div class="subject-title"> Relax <br/><small>  Frankie Goes To Hollywood </small>
+</div>
+  <div class="year"><small> 1983</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-045"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-043"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-043 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">43</div>
+  <div class="subject-title"> Let's Go Crazy  <br/><small>  Prince & The Revolution</small>
+</div>
+  <div class="year"><small> 1985</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-044"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-042"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-042 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">42</div>
+  <div class="subject-title"> Fight The Power <br/><small>  Public Enemy</small>
+</div>
+  <div class="year"><small> 1989</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-043"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-041"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-041 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">41</div>
+  <div class="subject-title"> Southern Freeez <br/><small>  Freeez</small>
+</div>
+  <div class="year"><small> 1981</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-042"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-040"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-040 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">40</div>
+  <div class="subject-title"> A Night To Remember <br/><small>  Shalamar</small>
+</div>
+  <div class="year"><small> 1982</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-041"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-039"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-039 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">39</div>
+  <div class="subject-title"> Forget Me Nots  <br/><small>  Patrice Rushen</small>
+</div>
+  <div class="year"><small> 1982</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-040"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-038"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-038 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">38</div>
+  <div class="subject-title"> I Feel for You  <br/><small>  Chaka Khan</small>
+</div>
+  <div class="year"><small> 1984</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-039"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-037"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-037 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">37</div>
+  <div class="subject-title"> Spellbound  <br/><small>  Siouxsie and the Banshees </small>
+</div>
+  <div class="year"><small> 1981</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-038"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-036"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-036 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">36</div>
+  <div class="subject-title"> What Have I Done to Deserve This? <br/><small>  Pet Shop Boys, Dusty Springfield</small>
+</div>
+  <div class="year"><small> 1987</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-037"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-035"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-035 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">35</div>
+  <div class="subject-title"> Always on My Mind <br/><small>  Pet Shop Boys </small>
+</div>
+  <div class="year"><small> 1987</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-036"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-034"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-034 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">34</div>
+  <div class="subject-title"> Left to My Own Devices  <br/><small>  Pet Shop Boys </small>
+</div>
+  <div class="year"><small> 1988</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-035"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-033"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-033 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">33</div>
+  <div class="subject-title"> Raspberry Beret <br/><small>  Prince & The Revolution</small>
+</div>
+  <div class="year"><small> 1985</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-034"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-032"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-032 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">32</div>
+  <div class="subject-title"> Everything Counts <br/><small>  Depeche Mode</small>
+</div>
+  <div class="year"><small> 1983</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-033"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-031"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-031 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">31</div>
+  <div class="subject-title"> Like a Prayer <br/><small>  Madonna </small>
+</div>
+  <div class="year"><small> 1989</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-032"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-030"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-030 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">30</div>
+  <div class="subject-title"> Bizarre Love Triangle <br/><small>  New Order </small>
+</div>
+  <div class="year"><small> 1986</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-031"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-029"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-029 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">29</div>
+  <div class="subject-title"> Say Hello Wave Goodbye  <br/><small>  Soft Cell </small>
+</div>
+  <div class="year"><small> 1982</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-030"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-028"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-028 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">28</div>
+  <div class="subject-title"> Torch <br/><small>  Soft Cell </small>
+</div>
+  <div class="year"><small> 1982</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-029"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-027"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-027 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">27</div>
+  <div class="subject-title"> Close (to the Edit) <br/><small>  Art Of Noise</small>
+</div>
+  <div class="year"><small> 1984</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-028"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-026"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-026 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">26</div>
+  <div class="subject-title"> Back To Life (However Do You Want Me) <br/><small>  Soul II Soul, Caron Wheeler </small>
+</div>
+  <div class="year"><small> 1989</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-027"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-025"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-025 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">25</div>
+  <div class="subject-title"> Strings of Life <br/><small>  Derrick May </small>
+</div>
+  <div class="year"><small> 1989</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-026"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-024"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-024 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">24</div>
+  <div class="subject-title"> Everywhere  <br/><small>  Fleetwood Mac </small>
+</div>
+  <div class="year"><small> 1988</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-025"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-023"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-023 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">23</div>
+  <div class="subject-title"> Let's Dance <br/><small>  David Bowie </small>
+</div>
+  <div class="year"><small> 1983</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-024"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-022"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-022 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">22</div>
+  <div class="subject-title"> Dr. Mabuse  <br/><small>  Propaganda</small>
+</div>
+  <div class="year"><small> 1984</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-023"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-021"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-021 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">21</div>
+  <div class="subject-title"> Duel  <br/><small>  Propaganda</small>
+</div>
+  <div class="year"><small> 1985</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-022"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-020"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-020 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">20</div>
+  <div class="subject-title"> Push It <br/><small>  Salt-N-Pepa </small>
+</div>
+  <div class="year"><small> 1988</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-021"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-019"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-019 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">19</div>
+  <div class="subject-title"> Hangin' On A String (Contemplating) <br/><small>  Loose Ends</small>
+</div>
+  <div class="year"><small> 1985</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-020"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-018"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-018 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">18</div>
+  <div class="subject-title"> Why <br/><small>  Carly Simon </small>
+</div>
+  <div class="year"><small> 1982</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-019"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-017"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-017 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">17</div>
+  <div class="subject-title"> Ashes to Ashes  <br/><small>  David Bowie </small>
+</div>
+  <div class="year"><small> 1980</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-018"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-016"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-016 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">16</div>
+  <div class="subject-title"> Hounds Of Love  <br/><small>  Kate Bush </small>
+</div>
+  <div class="year"><small> 1986</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-017"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-015"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-015 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">15</div>
+  <div class="subject-title"> Kiss  <br/><small>  Prince & The Revolution</small>
+</div>
+  <div class="year"><small> 1986</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-016"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-014"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-014 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">14</div>
+  <div class="subject-title"> Blue Monday <br/><small>  New Order </small>
+</div>
+  <div class="year"><small> 1983</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-015"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-013"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-013 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">13</div>
+  <div class="subject-title"> True Faith  <br/><small>  New Order </small>
+</div>
+  <div class="year"><small> 1987</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-014"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-012"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-012 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">12</div>
+  <div class="subject-title"> Voodoo Ray  <br/><small>  A Guy Called Gerald </small>
+</div>
+  <div class="year"><small> 1989</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-013"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-011"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-011 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">11</div>
+  <div class="subject-title"> Never Let Me Down Again <br/><small>  Depeche Mode</small>
+</div>
+  <div class="year"><small> 1987</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-012"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-010"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-010 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">10</div>
+  <div class="subject-title"> Pump Up The Volume  <br/><small>  M/A/R/R/S </small>
+</div>
+  <div class="year"><small> 1987</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-011"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-009"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-009 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">9</div>
+  <div class="subject-title"> Upside Down <br/><small>  Diana Ross</small>
+</div>
+  <div class="year"><small> 1980</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-010"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-008"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-008 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">8</div>
+  <div class="subject-title"> Once In A Lifetime  <br/><small>  Talking Heads </small>
+</div>
+  <div class="year"><small> 1981</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-009"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-007"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-007 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">7</div>
+  <div class="subject-title"> Billie Jean <br/><small>  Michael Jackson </small>
+</div>
+  <div class="year"><small> 1983</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-008"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-006"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-006 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">6</div>
+  <div class="subject-title"> Pacific <br/><small>  808 State </small>
+</div>
+  <div class="year"><small> 1989</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-007"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-005"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-005 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">5</div>
+  <div class="subject-title"> Cloudbusting  <br/><small>  Kate Bush </small>
+</div>
+  <div class="year"><small> 1985</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-006"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-004"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-004 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">4</div>
+  <div class="subject-title"> When Doves Cry  <br/><small>  Prince</small>
+</div>
+  <div class="year"><small> 1984</small>
+</div>
+</div>
+<a id="v000" class="mute-video arrow arrow-prev" href="#item-005"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v000" class="mute-video arrow arrow-next" href="#item-003"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-003 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">3</div>
+  <div class="subject-title"> Purple Rain <br/><small>  Prince & The Revolution</small>
+</div>
+  <div class="year"><small> 1984</small>
+</div>
+</div>
+<a id="v003" class="mute-video arrow arrow-prev" href="#item-004"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v002" class="mute-video arrow arrow-next" href="#item-002"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-002 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">2</div>
+  <div class="subject-title"> West End Girls  <br/><small>  Pet Shop Boys </small>
+</div>
+  <div class="year"><small> 1985</small>
+</div>
+</div>
+<a id="v003" class="mute-video arrow arrow-prev" href="#item-003"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v001" class="mute-video arrow arrow-next" href="#item-001"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+<div class="carousel-item item-001 item-extra bg-8089-">
+  <div class="carousel-item-caption">
+  <div class="content-caption">
+  <div class="rank">1</div>
+  <div class="subject-title"> Party Fears Two <br/><small>  The Associates</small>
+</div>
+  <div class="year"><small> 1982</small>
+</div>
+</div>
+<a id="v002" class="mute-video arrow arrow-prev" href="#item-002"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+<a id="v100" class="mute-video arrow arrow-next" href="#item-100"><i class="fa fa-chevron-up fa-rotate-270"></i></a>
+</div>
+</div>
+
+
+
+
+</div>
+</div>
+</div>
+
+
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/functions-general.js"></script>
+<script type="text/javascript">
+
+$(function(){
+  $('#player').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
+
+  $(window).resize(function(){
+    $('#player').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
+  });
+});
+
+function newSrc() {
+document.getElementById('player').src=newSrc;
+}
+
+function play100(){
+  document.getElementById('player').src = '//app.viloud.tv/player/embed/video/3497fa654102c15473bed3bdbd0ec05f';
+}
+function play099(){
+  document.getElementById('player').src = '//app.viloud.tv/player/embed/video/7b2710f78606a2243496b46ca669c21b';
+}
+function play098(){
+  document.getElementById('player').src = '//app.viloud.tv/player/embed/video/183496fddf0bd53af1860cfea5b04bd9';
+}
+function play097(){
+  document.getElementById('player').src = '//app.viloud.tv/player/embed/video/760528dc59c366b93722332f3248708e';
+}
+function play096(){ 
+  document.getElementById('player').src = '//app.viloud.tv/player/embed/video/718ce5c9be1e6cf611a937a38a6c0861';
+}
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+<title>Music - Favourites 1970-2019</title>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="../css/ghostfood-2018.css" />
+<link rel="stylesheet" type="text/css" href="../css/ghostfood-music-2018.css" />
+<link rel="stylesheet" type="text/css" href="../css/ghostfood-music-faves-8089.css" />
+<link rel="stylesheet" type="text/css" href="../css/ghostfood-music-faves-7079.css" />
+<link rel="stylesheet" type="text/css" href="../css/mod-clearfix.css" />
+<link rel="stylesheet" type="text/css" href="../css/mod-data-table.css">
+<link rel="stylesheet" type="text/css" href="../css/avenir.css" />
+<link href="https://fonts.googleapis.com/css?family=Oswald:300,400|Barlow+Condensed:100,400,700,900|Roboto:300,400,700|Roboto+Condensed:300,400,700&display=swap" rel="stylesheet">
+
+<style type="text/css">
+
+.box h3 {
+    font-size: 220%;
+}
+.box h3:first-line {
+    font-size: 66.66%;
+    color: rgba(150,200,200,.75);
+}
+.shade-50 li > span {
+  font-family: 'Roboto';
+  font-weight:700;
+  font-size: 13px;
+}
+
+.table.dataTable>thead>tr>th,
+.table.dataTable>tbody>tr>td {
+    padding: 2px 4px !important;
+    border-radius: 5px;
+    border: none !important;
+    color: rgba(255,255,255,.75);
+    font-size: .75rem;
+}
+/*.table.dataTable>tbody>tr>td { 
+  min-height: 90px;
+}*/
+
+.table.dataTable>tbody>tr>td:nth-of-type(1) {
+    text-align:right;
+    font-family: 'Barlow Condensed';
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: -0.05em;
+    line-height: 29px;
+    width: 42px !important;
+    background-color: rgba(255,255,255,.1);
+    color: #0cc;
+    border-radius: .5rem 0 0 .5rem;
+    padding-right: 5px !important;
+  }
+.table.dataTable>tbody>tr>td:nth-of-type(2),
+.table.dataTable>tbody>tr>td:nth-of-type(3) {
+  line-height: .95 !important;
+  padding-top:  4px !important;
+  letter-spacing: -0.015em;
+  font-family: 'Barlow Condensed';
+}
+.table.dataTable>tbody>tr>td:nth-of-type(2) {
+  font-size: 32px;  
+  font-weight: 100;
+  text-transform: uppercase;
+  padding-top: 1px !important;
+      padding-bottom: 12px !important;
+  height: 70px;
+  position: relative;
+  letter-spacing: -0.035em;
+
+}
+/*.table.dataTable>tbody>tr>td:nth-of-type(2)::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  display: block;
+}*/
+.table.dataTable>tbody>tr>td:nth-of-type(3) {
+  font-size: 16px;
+}
+.table.dataTable>tbody>tr>td:nth-of-type(7),
+.table.dataTable>tbody>tr>td:nth-of-type(9) {
+  font-family: 'Barlow Condensed'; 
+  text-transform: uppercase;
+}
+
+.table.dataTable>tbody>tr>td:nth-of-type(10) {
+  font-size: .66rem;
+}
+.table.dataTable>tbody>tr>td:nth-of-type(4),
+.table.dataTable>tbody>tr>td:nth-of-type(5),
+.table.dataTable>tbody>tr>td:nth-of-type(6),
+.table.dataTable>tbody>tr>td:nth-of-type(11) {
+  text-align:  center;
+
+}
+td.details-control,
+tr.details td.details-control {
+  width: 0; 
+  height: 0; 
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid green;
+  cursor: pointer;
+}
+tr.details td.details-control {
+  border-top: none;
+  border-bottom: 15px solid red;
+}
+.row-media {
+    background-size: cover;
+    background-position: center center;
+    min-height: 360px;
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+    position: relative;
+    top: -2px;
+  }
+.row-media::before {
+  position: absolute;
+  top: -10px;
+  left: 38px;
+  width: 0; 
+  height: 0; 
+  content: " ";
+  display: block;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid rgba(0,0,0,.9);
+  
+}
+.row-media div {
+    font-family: 'Roboto Condensed';
+    font-size: .66rem;
+    display: inline-block;
+    line-height: 2;
+
+}
+.medialinks {
+    width: 400px;
+    position: absolute;
+    left: 0;
+    text-align: left;
+    font-size: 14px;
+    letter-spacing: 0;
+    color: white;
+    padding: 0 1em;
+    min-height: 100px;
+    margin: 10px 0;
+}
+.medialinks  h5 {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  
+}
+.medialinks iframe {
+  margin-top: 5px;
+  border: 3px double rgba(250,254,255,.25);
+}
+</style>
+</head>
+<body id="background9099" class="music">
+
+<header>
+	<div class="container clearfix">
+<div class="row">
+<div class="col-12">
+<a href="index.html" class="hyperblock">ghostfood.uk/music</a>
+<h1>FAVOURITES<br/>1970-2019</h1>
+<p class="mam pax">All decade-based Top 100 Favourite tracks lists and playlists spanning five decades in specified categories.</p>
+<hr/>
+</div>
+</div>
+</div>
+</header>
+<div class="container clearfix">
+<div class="row">
+<div class="col-12">
+<button id="btn-show-all-children" type="button">Expand All</button>
+<button id="btn-hide-all-children" type="button">Collapse All</button>
+<div class="table-responsive">
+<table class="table table-hover table-striped" id="faves7019">
+<thead> 
+<tr>
+<th style="width:42px;" class="align-center">Pos. </th>
+<th style="width:240px;">Title </th>
+<th style="width:160px;">Artist </th>
+<th style="width:30px;" class="align-center">Year </th>
+<th style="width:30px;" class="align-center">Year pos. </th>
+<th style="width:50px;" class="align-center">UK pos.</th>
+<th style="width:120px;">Appears in </th>
+<th style="width:80px;">Decade </th>
+<th style="width:160px;">Also eligible for </th>
+<th style="min-width:240px;">Notes</th>
+<th style="width:120px;" class="align-center">Latest </th>
+<th style="width:40px;" class="align-center">More </th>
+</tr> 
+</thead> 
+
+</table>
+</div><!-- end table-responsive -->
+
+
+</div>
+</div>
+</div>
+
+ 
+<footer>
+<a href="http://ghostfood.uk"><img src="../img/icon-ghostfood.png" class="swing"></a><br/>
+ <span class="small">
+© Ghost Food Productions
+ </span>
+<a onclick="topFunction()" id="top" href="#" class="pos-rel shade-50 disc-sm nav-arrow top" title="Go to top of page"></a>
+ </footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+
+<script type="text/javascript">
+  /* Formatting function for row details - modify as you need */
+function format ( d ) {
+    // `d` is the original data object for the row
+    return '<div class="d-flex width-100 pos-rel">'+
+        '<div class="row-media" style="background-image:url('+d.mediaimg+')"></div>'+
+        '<div class="medialinks"><h5>'+d.mediatype+'</h5>'+
+        '<iframe width="560" height="315" src="'+d.medialink+'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'+
+    '</div></div>';
+}
+
+$(document).ready(function() {
+    var table = $('#faves7019').DataTable( {
+        "dom": '<flip<t>ip>',
+        "ajax": "data/music-faves.txt",
+        "columns": [
+            { "data": "pos" },
+            { "data": "title" },
+            { "data": "artist" },
+            { "data": "year" },
+            { "data": "yearpos" },
+            { "data": "ukpos" },
+            { "data": "appears" },
+            { "data": "decade" },
+            { "data": "also" },
+            { "data": "notes" },
+            { "data": "latest" },
+            {
+                "className":      'details-control',
+                "orderable":      false,
+                "data":           null,
+                "defaultContent": ''
+
+            }
+        ],
+        "order": [[0, 'asc']],
+        "iDisplayLength": 25,
+        aLengthMenu: [
+            [25, 50, 100, -1],
+            [25, 50, 100, "All"]
+        ]
+    } );
+
+    // Add event listener for opening and closing details
+    $('#faves7019 tbody').on('click', 'td.details-control', function () {
+        var tr = $(this).closest('tr');
+        var row = table.row( tr );
+ 
+        if ( row.child.isShown() ) {
+            // This row is already open - close it
+            row.child.hide();
+            tr.removeClass('shown');
+        }
+        else {
+            // Open this row
+            row.child( format(row.data()) ).show();
+            tr.addClass('shown');
+
+        }
+    } );
+    // Handle click on "Expand All" button
+    $('#btn-show-all-children').on('click', function(){
+        // Enumerate all rows
+        table.rows().every(function(){
+            // If row has details collapsed
+            if(!this.child.isShown()){
+                // Open this row
+                this.child(format(this.data())).show();
+                $(this.node()).addClass('shown');
+            }
+        });
+    });
+
+    // Handle click on "Collapse All" button
+    $('#btn-hide-all-children').on('click', function(){
+        // Enumerate all rows
+        table.rows().every(function(){
+            // If row has details expanded
+            if(this.child.isShown()){
+                // Collapse row details
+                this.child.hide();
+                $(this.node()).removeClass('shown');
+            }
+        });
+    });
+    
+} );
+</script>
+</body>
+</html>

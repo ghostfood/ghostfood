@@ -1,0 +1,1814 @@
+html {
+  overflow-y: inherit;
+}
+* {
+  word-break: break-word;
+}
+.subject-title {
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 115%;
+    line-height: 1.15;
+    font-family: 'Roboto';
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: -0.025em;
+}
+
+.subject-title .small {
+  color:rgba(255,255,255,.7);
+  font-size: 75%;
+    display: inline-block;
+    line-height: 1.3; 
+    padding:5px 0;
+}
+
+.year .small {
+    font-family: 'Oswald';
+    font-weight: 100;
+  font-size: 75%;
+  color:rgba(255,255,255,.4);
+
+}
+
+.rank {
+  color: #000;
+  height: 30px;
+  width:30px;
+  line-height: 30px;
+  border-radius: 30px;
+  background: #0cc;
+  margin:3px 0 5px -2px;
+  text-align: center;
+  letter-spacing: -0.025em;
+}
+
+
+.bg-icon-youtube {
+  background-image: url(../img/music/icon-fff-youtube.png) !important;
+  background-size: 90%;
+  background-position: center center;
+}
+.bg-icon-mixcloud {
+  background-image: url(../img/music/icon-fff-mixcloud.png) !important;
+  background-size: 90%;
+  background-position: center center;
+}
+.bg-icon-soundcloud {
+  background-image: url(../img/music/icon-fff-soundcloud.png) !important;
+  background-size: 90%;
+  background-position: center center;
+}
+.bg-icon-lastfm {
+  background-image: url(../img/music/icon-fff-lastfm.png) !important;
+  background-size: 90%;
+  background-position: center center;
+}
+
+.bg-avatar-ultramix-90 {
+  background-image: url(../img/music/avatar-ultramix-90.png) !important;
+}
+.bg-avatar-ultramix-91 {
+  background-image: url(../img/music/avatar-ultramix-91.png) !important;
+}
+.bg-avatar-ultramix-92 {
+  background-image: url(../img/music/avatar-ultramix-92.png) !important;
+}
+.bg-avatar-ultramix-93 {
+  background-image: url(../img/music/avatar-ultramix-93.png) !important;
+}
+.bg-avatar-ultramix-94 {
+  background-image: url(../img/music/avatar-ultramix-94.png) !important;
+}
+.bg-avatar-ultramix-95 {
+  background-image: url(../img/music/avatar-ultramix-95.png) !important;
+}
+.bg-avatar-ultramix-96 {
+  background-image: url(../img/music/avatar-ultramix-96.png) !important;
+}
+.bg-avatar-ultramix-97 {
+  background-image: url(../img/music/avatar-ultramix-97.png) !important;
+}
+.bg-avatar-ultramix-98 {
+  background-image: url(../img/music/avatar-ultramix-98.png) !important;
+}
+.bg-avatar-ultramix-99 {
+  background-image: url(../img/music/avatar-ultramix-99.png) !important;
+}
+.bg-avatar-ultramix-00 {
+  background-image: url(../img/music/avatar-ultramix-00.png) !important;
+}
+.bg-avatar-ultramix-01 {
+  background-image: url(../img/music/avatar-ultramix-01.png) !important;
+}
+.bg-avatar-ultramix-02 {
+  background-image: url(../img/music/avatar-ultramix-02.png) !important;
+}
+.bg-avatar-ultramix-03 {
+  background-image: url(../img/music/avatar-ultramix-03.png) !important;
+}
+.bg-avatar-ultramix-04 {
+  background-image: url(../img/music/avatar-ultramix-04.png) !important;
+}
+.bg-avatar-ultramix-05 {
+  background-image: url(../img/music/avatar-ultramix-05.png) !important;
+}
+.bg-avatar-ultramix-06 {
+  background-image: url(../img/music/avatar-ultramix-06.png) !important;
+}
+.bg-avatar-ultramix-07 {
+  background-image: url(../img/music/avatar-ultramix-07.png) !important;
+}
+.bg-avatar-ultramix-08 {
+  background-image: url(../img/music/avatar-ultramix-08.png) !important;
+}
+.bg-avatar-ultramix-09 {
+  background-image: url(../img/music/avatar-ultramix-09.png) !important;
+}
+
+
+
+.icon-spotify {
+  background-position: right top;
+  background-size: 38px;
+  background-image: url(../img/music/icon-spotify-50-white.png);
+  background-repeat: no-repeat;
+  text-align: left;
+}
+a.btn.icon-spotify {
+  background-position: 95% top; 
+  padding-right: 36px;
+}
+.btn-sm.icon-spotify {
+  background-position: 95% top; 
+  background-size: 24px;
+}
+.grad-over {
+  background-image: -moz-linear-gradient(top, rgba(0,204,204,0) 0%, rgba(0,66,66,1) 90%, rgba(0,51,51,1) 100%); /* FF3.6-15 */
+background-image: -webkit-linear-gradient(top, rgba(0,204,204,0) 0%,rgba(0,66,66,1) 90%,rgba(0,51,51,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background-image: linear-gradient(to bottom, rgba(0,204,204,0) 0%,rgba(0,66,66,1) 90%,rgba(0,51,51,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0000cccc', endColorstr='#003333',GradientType=0 ); /* IE6-9 */
+}
+
+
+
+
+td > span.pad-hor-md {
+  border-radius: .25em;
+  background-color: rgba(255,255,255,.1);
+}
+
+td > span.pad-hor-md.pos1 {
+  background-color: #0aa;
+  color:#000;
+}
+
+td > span.pad-hor-md.pos10 {
+    background-color: #055;
+}
+
+
+/** * Form & Checkbox Styles */
+
+button {
+    display: inline-block;
+    border: 0;
+    letter-spacing: 0.015em;
+    border-radius: 6px;
+    min-width: 60px;
+    padding: 6px;
+    cursor: pointer;
+    background-color: #0cc;
+    color: inherit;
+}
+button:hover {
+  background-color: rgba(255,255,255,.9);
+    color: rgba(0,0,0,.9);
+}
+button:focus{
+ outline: 0 none;}
+
+button.control {
+text-align: left;
+padding: 5px 10px 5px 32px;
+font-size: .85em;
+}
+
+.control {
+position: relative;
+display: inline-block;
+background: rgba(0,0,0,.5);
+cursor: pointer;
+}
+
+.control:hover {
+background: rgba(255,255,255,.1);
+transition: background-color 0.33s ease;
+}
+
+.control[data-filter]:after,
+.control[data-toggle]:after {
+content: '';
+position: absolute;
+width: 20px;
+height: 20px;
+top: 5px;
+left: 5px;
+border-radius: 100%;
+background: rgba(255,255,255,.5);
+transition: background-color 150ms, border-color 150ms;
+ -ms-transform: rotate(-120deg); /* IE 9 */
+-webkit-transform: rotate(120deg); /* Chrome, Safari, Opera */
+transform: rotate(120deg);
+}
+
+.mixitup-control-active {
+background: rgba(255,255,255,.2);
+}
+
+.mixitup-control-active[data-toggle]:after {
+ content: 'Â¬';
+ font-family:'Avenir LT Std 95 Black';
+ font-size:175%;
+ line-height: 18px;
+ text-align: center;
+ color:rgba(0,0,0,.75);
+ background: #17E5BD;
+ -ms-transform: rotate(-120deg); /* IE 9 */
+-webkit-transform: rotate(120deg); /* Chrome, Safari, Opera */
+transform: rotate(120deg);
+}
+#list:after {
+content: '';
+display: inline-block;
+width: 100%;
+}
+.mix {
+display: inline-block;
+vertical-align: top;
+}
+
+/*
+.band-dark > .row > div.mix {
+padding-left: 5px;
+padding-right: 5px;
+}
+*/
+
+
+
+header img {
+  width: 24px;
+    height: 24px;
+    vertical-align: bottom;
+}
+section.container {
+  min-height: 960px;
+  padding-bottom:6em;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Barlow Condensed', 'Roboto Condensed', sans-serif;
+  
+}
+
+h1 {
+  font-size: 300%;
+  font-weight:300;
+  color:rgba(255,255,255,.75);
+  line-height: 1.1;
+    letter-spacing: -0.035em;
+    padding-top:1rem;
+    z-index:999;
+    text-transform: uppercase;
+}
+h2 {
+  font-size: 250%;
+  letter-spacing: -0.05em;
+  line-height: 1.1;
+  color:rgba(255,255,255,.5);
+  text-transform: uppercase;
+}
+h2.caps-off {
+  font-size: 200%;
+  margin:0
+  padding:0;
+}
+h2 + div {
+  animation-name: fadeInOut;
+  animation-duration: 5s;
+}
+
+h3, h4 {
+/*    font-size: 300%;*/
+    font-weight:700;
+    line-height: 1.05;
+    letter-spacing: -0.005em;
+    }
+
+h4 {
+      font-family: 'Roboto';
+      font-size: 200%;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.03em;
+      margin-top:0;
+      padding:10px 0;
+    }
+
+h5 {
+      font-family: 'Roboto';
+      font-size: 100%;
+      line-height: 1.2;
+          font-size: .7rem;
+    color: rgba(200,255,255,.5);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    }
+
+section h3,
+section h4.align-center {
+    padding:25px 0 0 0 !important;
+    margin: 0 0 10px 0;
+    font-weight: 300;
+    letter-spacing: -0.025em;
+    color: rgba(255,255,255,.75);
+}
+section h4.align-center {
+    margin:0 !important;
+    color: rgba(255,255,255,.5);
+    letter-spacing: 0.005em;
+}
+
+section h3 + p,
+section h4 + p {
+    color: rgba(255,255,255,.75);
+}
+header.header-lg h1 {
+    font-size: 700%;
+    font-weight:700;
+    line-height: 1.5;
+      color:rgba(255,255,255,.5);
+}
+header a > small {
+  vertical-align: top;
+}
+body.music:before, body.music:after {
+  content:"";
+  background-image: linear-gradient(to bottom, rgba(0,250,250,0) 0%, rgba(0,25,25,1) 66.6%);
+  height:100%;
+  width:100%;
+  position:fixed;
+  top: 0;
+  z-index: -1;
+}
+
+.music {
+  padding-top:12em;
+  background-size: 100%;
+  background-position: center top;
+  background-attachment: fixed;     
+}
+.music h1:first-line {
+  font-weight: 700;
+}
+
+
+
+
+a > .item-image-disc + h3 {
+  font-size: 200%;
+    letter-spacing: -0.015em;
+    margin: 20px 20px 20px 0;
+    padding: 0;
+    text-align: left;
+    }
+a > .item-image-disc.item-image-main + h3 {
+  font-size: 200%;
+    letter-spacing: -0.015em;
+    margin: 10px 0 30px 0;
+    padding: 0;
+    text-align: center;
+    display: inline-block;
+    }
+
+
+
+select#plistmenu, input#playlist-info {
+    background: rgba(0,0,0,.9);
+    font-weight: 400;
+    line-height: 2;
+        padding: 6px;
+    border-radius: 6px;
+    width: auto;
+    border: 2px solid #066;
+    color:#eee;
+}
+select option {
+  padding: 5px 3px;
+}
+
+.align-center {
+  text-align: center;
+  margin:auto;
+}
+
+.border-round-sm, .bor-sm {
+  border-radius: 5px;
+}
+.bor-lg {
+  border-radius:20px;
+}
+
+}
+.bor-xl {
+  border-radius:40px;
+}
+.box-dark.bor-xl {
+  padding: 20px 45px 30px;
+}
+.box-dark.bor-lg {
+  padding: 10px 20px 20px;
+}
+
+#nav-inner a img {
+  display:block;
+}
+
+.badge {
+  float:left;
+}
+.badge:before {
+  position: relative;
+  top:0;
+  width:10px;
+  height:10px;
+  background-color:#033;
+  content:"";
+  display: inline-block;
+  margin-right: 5px;
+  border-radius: 100%;
+}
+.badge.complete::before,
+.badge.popular::before {
+  background-color:#690;
+}
+.badge.incomplete::before {
+  background-color:#F98F3E;
+}
+.badge.indefinite::before {
+  background-color:#066;
+}
+.badge.often::before {
+  background-color:#0cc;
+}
+.badge.new::before {
+  background-color:#0cc;
+}
+.badge + small {
+  color:rgba(200,225,255,.66);
+}
+.badge-xs {
+    display: inline-block;
+    background: rgba(0,0,0,.9);
+    border-radius: 4px;
+    margin: 0px 2px 1px 1px;
+    padding: 3px 0 1px 1px;
+    font-size: 9px;
+    vertical-align: top;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+.badge-xs em {
+  color:#fff;
+  font-style:normal;
+  vertical-align: middle;
+}
+
+@keyframes fadeIn { 
+  from { opacity: 0; } 
+}
+
+.fader {
+    animation: fadeIn .75s infinite alternate;
+}
+
+div.col-xs-12.col-sm-6.col-md-4 > div {
+  margin:0 0 2em 0;
+}
+
+
+
+#nav-inner {
+  position: relative;
+  top:0;
+  width:100%;
+  text-align: center;
+  z-index:100;
+  padding:5px 0;
+  text-transform: uppercase;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+#nav-inner > a  {
+  display:none;
+  width:100%;line-height: 1.5;
+}
+#nav-inner > a:first-of-type {
+  display:inherit;
+  float:left;
+}
+#nav-inner a:first-of-type img {
+margin: 0 auto;
+}
+
+#nav-inner .nav-reveal a:hover {
+  background-color: rgba(255,255,255,.15);
+  border-radius:5px;
+  color:#fff;
+}
+
+#nav-inner .nav-reveal {
+  position: absolute;
+  top:500px;
+  width:100%;
+  background-color: rgba(0,0,0.5);
+  padding:10px 0;
+  
+
+}
+
+.clip-favourites-container {
+   clip-path: inset(0px 0px 0px 0px);
+   position: relative;
+   left: 2.5%;
+    width: 95%;
+    height: 60px;
+    padding: 5px 7.5%;
+   border-top: 5px #fff outset;
+   border-bottom: 20px #000 outset;
+   border-radius: 100px;
+   background-color: rgba(0,0,0,.5);
+   margin: -20px auto 20px;
+
+  }
+
+#clip-favourites {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#clip-favourites div {
+    width: 50px;
+    height: 70px;
+    position: relative; /* required */
+  font-family: 'Avenir LT Std 95 Black';
+  font-size: 300%;
+  line-height: 70px;  
+  font-weight: 500;   
+  color: #fff; 
+}
+
+
+/*Strip the ul of padding and list styling*/
+#nav-inner ul {
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  position: absolute;
+}
+
+/*Create a horizontal list with spacing*/
+#nav-inner li {
+  display:inline-block;
+  float: none;
+  margin: 0;
+  padding: 0;
+  font-size: 125%; 
+  border-radius: 5px;
+}
+
+/*Style for menu links*/
+#nav-inner li a {
+    display: block;
+    min-width: 170px;
+    text-align: center;
+    text-decoration: none;
+        padding: 10px;
+    border-radius: 50px;
+    background-color: rgba(0,250,250,.15);
+}
+
+/*Hover state for top level links*/
+#nav-inner li a:hover, #nav-inner li ul a:hover, .cta, .list-nav a  {
+    background-color: rgba(0,250,250,.25);
+    display: inline-block;
+    transition: all .5s ease;
+    border-radius: 50px; 
+}
+
+.cta {
+  margin: 10px 0 20px 0;
+  padding:5px 25px;
+  
+}
+
+/*Style for dropdown links*/
+#nav-inner li ul a:hover  {
+  color: #2f3036;
+  height: 40px;
+  line-height: 40px;
+}
+
+/*Hover state for dropdown links*/
+#nav-inner li:hover ul a:hover {
+  background: #19c589;
+  color: #fff;
+}
+
+/*Hide dropdown links until they are needed*/
+#nav-inner li ul {
+  display: none;
+}
+
+/*Make dropdown links vertical*/
+#nav-inner li ul li {
+  display: block;
+  float: none;
+}
+
+/*Prevent text wrapping*/
+#nav-inner li ul li a {
+  width: auto;
+  min-width: 100px;
+  padding: 0 20px;
+}
+
+/*Display the dropdown on hover*/
+#nav-inner ul li a:hover + .hidden, .hidden:hover {
+  display: block;
+}
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+  text-decoration: none;
+  text-align: center;
+    padding: 5px 10px;
+    display: block;
+    cursor: pointer;
+width: 60px;
+height: 36px;
+    margin: 10px auto 15px auto;
+    background-color: rgba(0,0,0,.5);
+    border-radius: 5px;
+    
+}
+
+.show-menu:after {
+  content: "MENU";
+}
+
+.show-menu:hover, .show-menu:active {
+    color: #0cc;
+    background-color: rgba(0,0,0,.5);
+    transition: all .1s ease-in;
+
+}
+.show-menu:active {
+    background-color: rgba(0,0,0,.8);
+}
+
+
+/*Hide checkbox*/
+#nav-inner input[type=checkbox]{
+    display: none;
+    -webkit-appearance: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+#nav-inner input[type=checkbox]:checked ~ #menu{
+    display: block;
+    background-color: rgba(0,0,0,.8);
+padding: 150px 0 1em 0;
+    margin: -50px 3px 0 3px;
+    width: auto;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+
+#player {
+  height:360px;
+}
+
+input#playlist-info, 
+section .col-xs-12.col-sm-6.col-md-4 h4 {
+  width:90%;
+  text-align: left;
+}
+
+section .col-xs-12.col-sm-6 p,
+section .col-xs-12.col-sm-6.col-md-4 p {
+  margin:initial;
+  padding: 0 1em 1em 0;
+  font-weight: 300;
+}
+
+section > div > div.align-center p  {
+  margin: 10px auto 40px;
+  font-size: 18px;
+    width:90%;
+}
+
+.item-image-main {
+  float:none;
+  margin:0 auto;
+}
+
+.item-image-disc + h4, .item-image-main + h4 {
+    font-weight:bolder;
+    letter-spacing: 0;
+}
+
+.item-image-main + h4 {
+  font-size: unset;
+}
+
+.box-dark h4 {
+  font-size: 175%;
+  text-transform: capitalize;
+  letter-spacing: -0.025em;
+}
+
+.arrowdown:after {
+left: 50%;
+content: " ";
+position: absolute;
+pointer-events: none;
+border-color: rgba(0, 0, 0, 0);
+border-bottom-color: rgba(0,0,0,.5);
+border-width: 20px;
+margin-left: -20px;
+bottom:-4px;
+width: 0; 
+height: 0;
+border-bottom: none; 
+border-left: 20px solid transparent;
+border-right: 20px solid transparent;
+border-top: 20px solid rgba(0,0,0,.5);
+}
+
+#clip-favourites div:nth-of-type(1) {
+animation-name: favourites-up;
+animation-duration: 1s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+
+}
+#clip-favourites div:nth-of-type(2) {
+margin-left:-1px;
+animation-name: favourites-down;
+animation-duration: .95s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+margin-top:-150px;
+
+}
+#clip-favourites div:nth-of-type(3) {
+margin-left:6px;
+width:70px;
+animation-name: favourites-up;
+animation-duration: 1.15s;
+animation-iteration-count: infinite;
+}
+
+#clip-favourites div:nth-of-type(4) {
+height: 70px;
+width: 70px;
+margin: -15px 10px 0 -20px;
+}
+
+
+#clip-favourites div:nth-of-type(4) span:nth-of-type(1) {
+border-radius: 100%;
+border:2px solid #fff;
+height: 70px;
+width: 70px;
+position: absolute;
+left:0;
+top:0;
+animation-name: favourites-out-a;
+animation-duration: 1s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+
+#clip-favourites div:nth-of-type(4) span:nth-of-type(2) {
+border-radius: 100%;
+border:2px solid #fff;
+height: 50px;
+width: 50px;
+position: absolute;
+left:10px;
+top:10px;
+animation-name: favourites-out-b;
+animation-duration: .75s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+
+#clip-favourites div:nth-of-type(4) span:nth-of-type(3) {
+border-radius: 100%;
+border:2px solid #fff;
+height: 30px;
+width: 30px;
+position: absolute;
+left:20px;
+top:20px;
+animation-name: favourites-out-c;
+animation-duration: 1s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+
+#clip-favourites div:nth-of-type(4) span:nth-of-type(4) {
+border-radius: 100%;
+border:2px solid #fff;
+height: 10px;
+width: 10px;
+position: absolute;
+left:30px;
+top:30px;
+animation-name: favourites-out-d;
+animation-duration: .75s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+
+
+#clip-favourites div:nth-of-type(5) {
+margin-left:2px;
+animation-name: favourites-up;
+animation-duration: .5s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+
+#clip-favourites div:nth-of-type(6) {
+margin-left:6px;
+width:66px;
+animation-name: favourites-down;
+animation-duration: 1.1s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+margin-top:-150px;
+}
+#clip-favourites div:nth-of-type(7) {
+margin-left:-10px;
+width:30px;
+animation-name: favourites-up;
+animation-duration: 1.12s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+#clip-favourites div:nth-of-type(8) {
+margin-left:-2px;
+animation-name: favourites-down;
+animation-duration: 1.23s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+margin-top:-150px;
+}
+#clip-favourites div:nth-of-type(9) {
+margin-left:-4px;
+animation-name: favourites-up;
+animation-duration: 1.1s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+#clip-favourites div:nth-of-type(10) {
+animation-name: favourites-down;
+animation-duration: 1.2s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+margin-top:-150px;
+}
+
+/* Standard syntax */
+@keyframes favourites-up {
+0% {top:0px;}
+90%{top:-75px;}
+100% {top:-70px;}
+}
+@keyframes favourites-down {
+0% {top:0px;}
+90%{top:75px;}
+100% {top:70px;}
+}
+
+@keyframes favourites-out-a {
+0% {
+width:70px;height:70px;
+}
+50% {
+width:50px;height:50px;position:absolute;top:10px;left:10px;
+}
+100% {
+width:70px;height:70px;
+}
+}
+
+@keyframes favourites-out-b {
+0% {
+width:50px;height:50px;position:absolute;left:10px;top:10px;
+}
+50% {
+width:30px;height:30px;position:absolute;left:20px;top:20px;
+}
+100% {
+width:50px;height:50px;position:absolute;left:10px;top:10px;
+}
+}
+
+@keyframes favourites-out-c {
+0% {
+width:30px;height:30px;position:absolute;left:20px;top:20px;
+}
+50% {
+width:20px;height:20px;position:absolute;left:25px;top:25px;
+}
+100% {
+width:30px;height:30px;position:absolute;left:20px;top:20px;
+}
+}
+
+
+@keyframes favourites-out-d {
+0% {
+width:10px;height:10px;position:absolute;left:30px;top:30px;
+}
+50% {
+width:20px;height:20px;position:absolute;left:25px;top:25px;
+}
+100% {
+width:10px;height:10px;position:absolute;left:30px;top:30px;
+}
+}
+
+
+
+video {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -125%;
+    margin: 0 auto;
+    min-height: 100%;
+    min-width: 100%;
+    z-index: -1;
+}
+
+header.header-lg h1,
+header.header-lg h1:before,
+header.header-lg h2 {
+  animation-name: fadeInOut;
+  animation-duration: 5s;
+}
+
+header.header-lg h1:before {
+    content: "Ghostfood.uk proudly presents some sorts of";
+    font-size: 16px;
+    float: left;
+    width: 100%;
+    letter-spacing: .25em;
+    font-weight: 300;
+}
+
+
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(1px, 0, 0);
+  }
+}
+
+span.small {
+    font-size: 12px;
+    line-height: 1.5;
+    color:rgba(255,255,255,.75);
+}
+.caps-off {
+  text-transform: initial;
+}
+.card {
+    border: none;
+}
+.card-bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 40%;
+}
+.card-bg, 
+.bg-music-0000 {
+  background-position: center;
+  background-image: url(../img/design/port-selfportrait.png);
+  background-repeat: no-repeat;
+  position: relative;
+}
+.card-bg::before, 
+.bg-music-0000::before {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  content: '';
+background-image: radial-gradient(90deg, rgba(50,125,150,.75) 90%, rgba(0,200,250,.5) 10%);
+filter: hue-rotate(69deg);
+}
+
+.card-img-overlay {
+      border-radius: inherit;
+    background: linear-gradient(135deg, rgba(10, 20, 30, .9) 30%, rgba(10, 20, 30, .1)) 60%;
+}
+.music .box ul li {
+    background-color: white;
+    border-radius: 0;
+    border-top: 1px solid rgba(0,0,0,.25);
+    padding: 5px;
+    margin: 0 5px;
+    color: #111;
+    font-size: 12px;
+}
+.music .box ul li:first-child {
+  border-top:  none !important; 
+}
+
+.banner-ukhits-2015 {
+    background-image: url(../img/music/faces/face-glee.jpg);
+
+}
+.banner-ukhits-2009 {
+    background-image: url(../img/music/bg-music-rihanna.jpg);
+
+}
+.banner-ukhits-2004 {
+    background-image: url(../img/music/faces/face-diddy.jpg);
+}
+.banner-ukhits-1999 {
+    background-image: url(../img/music/faces/face-celine.jpg);
+}
+
+.banner-ukhits-1994 {
+    background-image: url(../img/music/faces/face-weddos.jpg);
+}
+
+.banner-ukhits-1989 {
+    background-image: url(../img/music/faces/face-madonna.jpg);
+
+}
+.banner-ukhits-1984 {
+    background-image: url(../img/music/faces/face-adam.jpg);
+
+}
+.banner-ukhits-1979 {
+    background-image: url(../img/music/faces/face-donna.jpg);
+
+}
+.banner-ukhits-1974 {
+    background-image: url(../img/music/faces/face-diana.jpg);
+
+}
+.banner-ukhits-1969 {
+    background-image: url(../img/music/faces/face-jones.jpg);
+}
+
+.banner-ukhits-1964 {
+    background-image: url(../img/music/faces/face-shadows.jpg);
+}
+
+.banner-ukhits-1959 {
+    background-image: url(../img/music/faces/face-elvis.jpg);
+}
+
+.banner-music-7079 {
+  background-image: url(../img/music/faces/face-bowie75.jpg);
+}
+.banner-music-8084 {
+  background-image: url(../img/music/faces/face-prince84.jpg);
+}
+.banner-music-9099 {
+  background-image: url(../img/music/faces/face-depechemode90.jpg);
+}
+
+
+#background9099 {
+  /* image is selected randomly from inline array */ 
+    background-size: 100%;
+  background-attachment: fixed;
+      background-position: center top;
+      padding-top:8em; 
+}
+.banner-music-9599 {
+  background-image: url(../img/music/faces/face-chemicalbrothers.jpg);
+    background-size: 100%;
+  background-position: top;
+  background-attachment: fixed;
+
+}
+
+.banner-music-0004 {
+  background-image: url(../img/music/faces/face-daftpunk01.jpg);
+    background-size: 100%;
+  background-position: center top;
+  background-attachment: fixed;
+}
+.banner-music-0009 {
+  background-image: url(../img/music/faces/face-dizzee.jpg);
+      background-size: 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.banner-music-0509 {
+  background-image: url(../img/music/faces/face-beyonce.jpg);
+      background-size: 150%;
+  background-position: center top;
+  background-attachment: fixed;
+}
+
+.banner-music-1014 {
+  background-image: url(../img/music/faces/face-laurelhalo.jpg);
+      background-size: 150%;
+  background-position: center top;
+  background-attachment: fixed;
+}
+
+.banner-music-1519 {
+  background-image: url(../img/music/faces/face-kendrick.jpg);
+  background-position: center top;   
+   background-size: 150%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+.bg-favourites-ukcharthits-seventies {
+  background-image: url(../img/music/faces/face-bowie75.jpg);
+  background-position: 45% 50% !important;
+    background-size: 200% !important;
+}
+.bg-favourites-ukcharthits-eighties {
+  background-image: url(../img/music/faces/face-prince84.jpg);
+  background-size: cover;
+  background-position: 30% top;
+  background-color: #033;
+}
+.bg-favourites-ukcharthits-nineties {
+  background-image: url(../img/music/faces/face-bjork93.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-color: #033;
+}
+
+
+.bg-2017 {
+  background-image: url(../img/music/faces/face-grace.jpg);
+  background-position: center 20%;    
+  background-size: cover;
+}
+
+.bg-2015-2019,
+.bg-2010-2019 {
+  background-image: url(../img/music/faces/face-kendrick.jpg);
+  background-position: center 20%;    
+  background-size: cover;
+
+}
+.bg-2010-2014 {
+  background-image: url(../img/music/faces/face-laurelhalo.jpg);
+  background-position: center 20%;    
+  background-size: cover;
+}
+
+.bg-2000-2009 {
+  background-image: url(../img/music/faces/face-dizzee.jpg);
+  background-position: center 20%;    
+  background-size: cover;
+}
+
+.bg-2005-2009 {
+  background-image: url(../img/music/faces/face-beyonce.jpg);
+  background-position: 60% 20%;    
+  background-size: cover;
+}
+
+.bg-2000-2004 {
+  background-image: url(../img/music/faces/face-daftpunk01.jpg);
+  background-position: center;    
+  background-size: cover;
+}
+
+.bg-1995-1999 {
+  background-image: url(../img/music/faces/face-chemicalbrothers.jpg);
+  background-position: center 20%;    
+  background-size: cover;
+}
+
+.bg-music-7079-inst {
+  background-image: url(../img/music/music-faves-instrumentals-7079-avatar.jpg);
+  background-position: center ;    
+  background-size: cover;
+}
+.bg-music-7079-nonh {
+  background-image: url(../img/music/music-faves-nonhits-7079-avatar.jpg);
+  background-position: center ;    
+  background-size: cover;
+}
+.bg-music-7079-nons {
+  background-image: url(../img/music/music-faves-nonsingles-7079-avatar.jpg);
+  background-position: center ;    
+  background-size: cover;
+}
+.bg-music-7079-trks {
+  background-image: url(../img/music/music-faves-tracks-7079-avatar.jpg);
+  background-position: center ;    
+  background-size: cover;
+}
+
+.bg-music-8089-inst {
+  background-image: url(../img/music/music-faves-instrumentals-8089-avatar.jpg);
+  background-position: center ;    
+  background-size: cover;
+}
+.bg-music-8089-nonh {
+  background-image: url(../img/music/music-faves-nonhits-8089-avatar.jpg);
+  background-position: center ;    
+  background-size: cover;
+}
+.bg-music-8089-nons {
+  background-image: url(../img/music/music-faves-nonsingles-8089-avatar.jpg);
+  background-position: center ;    
+  background-size: cover;
+}
+.bg-music-8089-trks {
+  background-image: url(../img/music/music-faves-tracks-8089-avatar.jpg);
+  background-position: center ;    
+  background-size: cover;
+}
+.bg-music-9099-inst {
+  background-image: url(../img/music/music-faves-instrumentals-9099-avatar.jpg);
+  background-position: center ;    
+  background-size: cover;
+}
+.bg-music-9099-nonh {
+  background-image: url(../img/music/music-faves-nonhits-9099-avatar.jpg);
+  background-position: center ;    
+  background-size: cover;
+}
+.bg-music-9099-nons {
+  background-image: url(../img/music/music-faves-nonsingles-9099-avatar.jpg);
+  background-position: center ;    
+  background-size: cover;
+}
+.bg-music-9099-trks {
+  background-image: url(../img/music/music-faves-tracks-9099-avatar.jpg);
+  background-position: center ;    
+  background-size: cover;
+}
+
+.bg-music-0009-inst {
+  background-image: url(../img/music/music-faves-instrumentals-0009-avatar.jpg);
+  background-position: center ;    
+  background-size: cover;
+}
+.bg-music-0009-nonh {
+  background-image: url(../img/music/music-faves-nonhits-0009-avatar.jpg);
+  background-position: center ;    
+  background-size: cover;
+}
+.bg-music-0009-nons {
+  background-image: url(../img/music/music-faves-nonsingles-0009-avatar.jpg);
+  background-position: center ;    
+  background-size: cover;
+}
+.bg-music-0009-trks {
+  background-image: url(../img/music/music-faves-tracks-0009-avatar.jpg);
+  background-position: center ;    
+  background-size: cover;
+}
+.bg-music-1019-inst {
+  background-image: url(../img/music/music-faves-instrumentals-1019-avatar.jpg);
+  background-position: center ;    
+  background-size: cover;
+}
+.bg-music-1019-nonh {
+  background-image: url(../img/music/music-faves-nonhits-1019-avatar.jpg);
+  background-position: center ;    
+  background-size: cover;
+}
+.bg-music-1019-nons {
+  background-image: url(../img/music/music-faves-nonsingles-1019-avatar.jpg);
+  background-position: center ;    
+  background-size: cover;
+}
+.bg-music-1019-trks {
+  background-image: url(../img/music/music-faves-tracks-1019-avatar.jpg);
+  background-position: center ;    
+  background-size: cover;
+}
+
+.bg-abigdig-2021 {
+    background-image: url(../img/music/abigdig2021.png);
+  background-position: center ;    
+  background-size: cover;
+}
+.bg-abigdig-2020 {
+    background-image: url(../img/music/abigdig2020.png);
+  background-position: center ;    
+  background-size: cover;
+}
+.bg-abigdig-2019 {
+    background-image: url(../img/music/abigdig2019.png);
+  background-position: center ;    
+  background-size: cover;
+}
+li.entry-re, li.entry-un {
+    opacity: .75;
+    position: relative;
+    padding: 0 0 0 16px !important;
+    margin:5px 0 !important;
+}
+li.entry-re::before, li.entry-un::before {
+    position: absolute;
+    display: inline-block;
+    content: "RE";
+    height: 100%;
+    width: 10px;
+    background: rgba(0,0,0,.5);
+    color: rgba(255,255,255,.9);
+    text-align: center;
+    line-height: 1;
+    font-size: 12px;
+    font-family: 'Barlow Condensed', 'Roboto Condensed';
+    letter-spacing: 0.015em;
+    padding: 3px 0 0 0;
+    font-weight: 400;
+    margin: 3px 0 0 -16px;
+    clear: both;
+}
+li.entry-un::before {
+  content:"UN";
+    background: rgba(0,0,0,.5);
+}
+span.playlist-fail {
+    opacity: .66;
+    position: relative;
+    width:100%;
+}
+li.playlist-predate::after, 
+ul li span.playlist-fail::after, ol li span.playlist-fail::after {
+    float: right;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 10px;
+    line-height: 16px;
+    content: "(:(";
+    color: rgba(0,0,0,.75);
+    background: #1DB954;
+    height: 16px;
+    width: 16px;
+    padding: 0 2px;
+    transform: rotate(90deg);
+    border-radius: 100%;
+    letter-spacing: .05em;
+    opacity: .7;
+}
+li.playlist-predate::after {
+    content: "|_"; /* indicates clock hands */
+    letter-spacing: -0.2em;
+    transform: rotate(0deg);
+    background: rgba(0,0,0,.15);
+    border: 1px solid rgba(0,0,0,.5);
+    font-size: 7px;
+    font-family: monospace;
+    font-weight: sans-serif;
+    line-height: 1;
+    padding: 2px 0 0 5px;
+    margin: 0 -3px 0 10px;
+}
+
+ol li span.playlist-fail::after {
+    position: absolute;
+    right:-12px;
+    top: 4px;
+
+}
+ul li span.playlist-fail::after {
+    position: absolute;
+    right: 0;
+    top: 4px;
+
+}
+ol li span.playlist-fail::before,
+ul li span.playlist-fail::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    display: block;
+    position: absolute;
+    right: -6px;
+    top: -4px;
+    z-index: 2;
+    color: rgba(0,0,0,.66);
+    font-size: 15px;
+    font-family: 'Barlow Condensed';
+    font-weight: 900;
+    line-height: 16px;
+    transform: rotate(135deg);
+    border-top:1px solid #F94B7D;
+}
+ul li span.playlist-fail {
+    padding-right: 24px !important;
+}
+
+ul li span.playlist-fail::before {
+    right: 5px;
+    top: -5px;
+}
+ul li.entry-re span.playlist-predate,
+ul li.entry-un span {
+  margin:4px 0 0 0;
+}
+#nav-inner {
+  border-radius: 0 0 1rem 1rem;
+
+}
+
+.box-pictorial-bg {
+
+    min-height: 200px;
+    border-radius: inherit;
+}
+@media screen and (max-width: 480px) {
+
+.col-xs-6 {
+  width:100%; /*an override to allow full width columns below 480px*/
+}
+
+  }
+@media screen and (min-width: 480px) {
+
+.box-pictorial span.content-caption {
+  width:fit-content;
+}
+
+.item-image-disc {
+  height:150px;
+  width:150px;
+  margin:5px 0 10px 10px;
+  border: none;
+}
+.item-image-main {
+  float:none;
+  margin:0 auto;
+}
+
+
+video {
+    left: -75%;
+}
+
+  }
+@media screen and (min-width: 640px) {
+
+.box-pictorial span.content-caption {
+  margin: 0 0 12px 0;
+  left:0;
+  right:0;
+}
+
+
+.align-center p {
+  margin-bottom:1em;
+}
+video {
+    left: -33.3%;
+}
+header.header-lg h1 {
+    font-size: 1000%;
+    line-height: 1.5;
+}
+header.header-lg h1,
+header.header-lg h2 {
+  animation-name: fadeInOut;
+  animation-duration: 5s;
+}
+
+#clip-favourites div {
+  font-size: 300%;
+}
+
+ }
+ @media screen and (max-width : 768px){
+  /*Make dropdown links appear inline*/
+  #nav-inner ul {
+    position: relative;
+    display: none;
+  }
+  /*Create vertical spacing*/
+  #nav-inner li {
+    margin-bottom: 5px;
+  }
+
+
+}
+@media screen and (min-width: 768px) {
+
+.row > div > .band-dark > .row, .banner-music-home {
+  padding:0;
+}
+
+#nav-inner {
+    float:left;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0,0,0,.5);
+    z-index: 100;
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed', sans-serif;
+      animation-name: fadeInOut;
+  animation-duration: 3s;
+}
+
+#nav-inner span, #nav-inner ul {
+    display:inline;
+    position: relative;
+    margin: 5px;
+}
+#nav-inner li {
+    display: inline-block;
+    float: none;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    background-color: transparent;
+    line-height: .9;
+}
+#nav-inner li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding:5px;
+    min-width: auto;
+    letter-spacing:-0.025em;
+    background-color: transparent;
+
+  }
+
+#nav-inner input[type=checkbox]:checked ~ #menu {
+  background-color: transparent;
+    margin: 0;
+    width: 100%;
+        display: contents;
+}
+
+#nav-inner > a, #nav-inner > a:first-of-type {
+  float:unset;
+  width:auto;
+    display: inline-block;
+}
+#nav-inner a img {
+    display: inline-block;
+}
+
+h1 {
+    font-size: 500%;
+    padding-bottom:10px;
+}
+header.header-lg h1 {
+    font-size: 1500%;
+    padding-top: 5rem;
+    line-height: 1.25;
+}
+
+#myVideo {
+    height: 600px;
+}
+video {
+    left: -15%;
+}
+
+#player {
+    height: 400px;
+}
+
+.item-image-disc {
+  height:175px;
+  width:175px;
+    margin: 10px 30px;
+    display: block;
+    border: none;
+}
+.box-dark .item-image-disc {
+  margin:10px 0 30px 10px;
+}
+
+.item-image-main { /* used for images that need to be positioned ABOVE the heading */
+  float:none;
+  margin:0 auto;
+  background-position: center;
+}
+
+#playlist-info div {
+  font-size:150%;  
+}
+
+#playlist-info div a, #playlist-info div + span {
+  font-size: 75%;
+  line-height: 2;
+}
+
+.box-pictorial span.content-caption {
+  max-width:40%;
+  min-width: 140px;
+}
+
+.clip-favourites-container {
+    height:80px;
+    margin: -30px auto 20px;
+}
+#clip-favourites div:nth-of-type(4) {
+    margin: -5px 10px 0 -20px;
+}
+  /*Display 'show menu' link*/
+  .show-menu {
+    display:none;
+  }
+
+body.music:after {
+background-image: linear-gradient(45deg, rgba(0,25,25,.5) 60%, rgba(0,250,250,0) 50%);
+}
+
+
+}
+@media screen and (min-width: 992px) {
+
+header.header-lg h1 {
+  padding-top: 5rem;
+  line-height: 1;
+}
+header.header-lg h1,
+header.header-lg h2 {
+  animation-name: fadeInOut;
+  animation-duration: 9s;
+}
+
+#nav-inner li {
+margin: 0 5px;
+}
+#nav-inner li a {
+  padding: 5px 10px;
+}
+#myVideo {
+    height: auto;
+    width: 100%;
+}
+
+video {
+  left:0;
+}
+#player {
+    height: 650px;
+}
+
+#clip-favourites div {
+  font-size: 500%;
+}
+#clip-favourites div:nth-of-type(4) {
+    margin: -20px 0 0 -10px;
+}
+.clip-favourites-container {
+   left: 20%;   
+   width: 60%;
+   height: 80px;
+   padding: 15px 0 5px 0;
+  }
+
+.item-image-disc {
+  height:200px;
+  width:200px;
+}
+
+.banner-music-home {
+/*  background: 
+  url(../img/1px-black-transparent-2s.gif), 
+  url(../img/music/music-soundwave.gif);  
+    background-size: auto, contain;
+    background-position: center top;*/
+    background-color: #011;
+}
+
+.banner-music-8084 {
+  background-image: url(../img/music/faces/face-prince84.jpg);
+  background-attachment: fixed;
+}
+.banner-music-7079, .banner-music-8084, 
+.banner-music-9599, .banner-music-0004, 
+.banner-music-0509, .banner-music-0009,
+.banner-music-1014, .banner-music-1519 {
+      background-size: cover;
+      padding-top:8em;
+}
+
+.banner-music-1014,
+.banner-music-1519 {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.banner-ukhits-2015,
+.banner-ukhits-2009,
+.banner-ukhits-2004,
+.banner-ukhits-1999,
+.banner-ukhits-1994,
+.banner-ukhits-1989,
+.banner-ukhits-1984,
+.banner-ukhits-1979,
+.banner-ukhits-1974,
+.banner-ukhits-1969,
+.banner-ukhits-1964,
+.banner-ukhits-1959 {
+      padding-top:8em;
+}
+
+.bg-saintetienne-comp {
+  background-image: url(../img/music/bg-music-saintetienne-comp.png);
+  background-size: cover;
+  background-position: left 10%;
+}
+.bg-saintetienne {
+  background-image: url(../img/music/faces/face-saintetienne.jpg);
+  background-size: cover;
+}
+.bg-petshopboys86 {
+  background-image: url(../img/music/faces/face-petshopboys86.jpg);
+  background-size: cover;
+  background-position: center 20%;
+}
+
+.banner-music-9599 {
+    background-image: url(../img/music/faces/face-chemicalbrothers.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+
+
+
+
+} /* close media queries @ 992 */
+
+
+@media screen and (min-width: 1200px) {
+
+
+body.music:after {
+background-image: linear-gradient(45deg, rgba(0,25,25,.5) 55%, rgba(0,250,250,0) 50%);
+}
+
+.banner-music-9599 {
+    background-size: cover;
+    background-position: bottom;
+}
+
+.banner-music-7079, 
+.banner-music-0004,
+.banner-music-0509,
+.banner-music-0009,
+.banner-music-1014, 
+.banner-music-1519 {
+    background-size: cover;
+    background-position: center;
+}
+
+
+}

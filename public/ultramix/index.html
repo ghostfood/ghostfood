@@ -1,0 +1,674 @@
+﻿<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Ultramix - a high density audio presentation from Ghost Food Productions">
+<meta name="keywords" content="ultramix, music, mix, dj, dance, 90s, nostalgia, reference">
+<meta name="author" content="ghostfood">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ULTRAMIX - A high density audio presentation from Ghost Food Productions</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/ultramix.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700|Roboto+Condensed:300,400,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900" rel="stylesheet">
+<style type="text/css">
+
+body {
+  background-color:#e6e7e8; 
+  color: #fff;   
+}
+
+.main {
+	z-index:0;
+  	position:relative;
+}
+.main::before {
+	 position: absolute;
+    content: '';
+    display: block;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+  background: linear-gradient(-130deg, #12e9e6 0%, #c471ed 35%, #ff5045 65%, #12e9e6 100%);
+  filter:saturate(120%);
+  z-index:-1;
+}
+.main::after {
+    position: absolute;
+    content: '';
+    display: block;
+    bottom:0;
+    left:0;
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(180deg, rgba(0, 0, 50, 0), rgba(0, 0, 50, 0.9));
+    z-index: -1;
+}
+
+.card {
+  border-radius:1.5rem;
+  padding: .5rem;
+  min-height:300px;
+  border: 2px solid rgba(0,0,0,.05);
+  box-shadow:0 5px 10px 5px rgba(0,0,0,.015);
+  color:rgba(255,255,255,.9);
+  position:relative;
+  background-color: transparent;
+}
+.card::before, .card::after {
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 1.5rem;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(7px);
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	position: absolute;
+	content: '';
+	display:block;
+	width: 101%;
+    height: 102%;
+    top: -4px;
+    left: -3px;
+	z-index:0;
+}
+.card::after {
+  background: linear-gradient(320deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.1) 40%, rgba(0, 0, 0, 0.1) 70%, rgba(255, 255, 255, 0.75));
+  opacity:.5;
+
+}
+.card * {
+	z-index:1;
+	position:relative;
+}
+.card-body {
+	padding:.5rem;
+}
+
+h3.card-title {
+	font-size:2rem !important;
+}
+a.card:hover {
+  text-decoration:none;
+  border:2px solid rgba(255,255,255,.85);
+  transition:border .5s ease-in;
+}
+
+a.card p {
+  font-size:90%;
+  line-height:1.35;
+}
+.card-year-star {
+	position:absolute;
+	z-index:0;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    opacity: .9;
+}
+.card-year-star::before { 
+	position:absolute;
+	content:'';
+	display:block;
+	width:100%;
+	height:100%;
+	background-size:200%;
+	background-position:left top;
+	top:0;
+	left:0;
+    position: absolute;
+    border-radius: inherit;
+    border: 1px solid rgba(255, 255, 255, .1);
+    background-color: rgba(255, 255, 255, .025);
+	z-index:-1;
+	}
+	.card-year-star::after { 
+	position:absolute;
+	content:'';
+	display:block;
+	width:101%;
+	height:103%;
+	top:-5px;
+	left:0;
+    position: absolute;
+    border-radius: inherit;
+    background-color: rgba(0, 0, 0, .15);
+	z-index:-2;
+	}
+
+a.card:hover::before,
+a.card:hover::after {
+	opacity:.5;
+	width:5px;
+	border-radius:3px;
+	transition: all ease-in-out .35s;
+
+}
+.card-year-star-90::before { 
+	background-image: url(img/bg-rotate-left/bg-90-left.png);
+	background-position: 50% 0%;
+	background-color: rgba(255,255,255,.5);
+	}
+.card-year-star-91::before { 
+	background-image: url(img/bg-rotate-left/bg-91-left.png);
+	background-position: 40% 0%;
+	background-color: #411e74;
+	}
+.card-year-star-92::before { 
+	background-image: url(img/bg-rotate-left/bg-92-left.png);
+	}
+.card-year-star-93::before { 
+	background-image: url(img/bg-rotate-left/bg-93-left.png);
+	}
+.card-year-star-94::before { 
+	background-image: url(img/bg-rotate-left/bg-94-left.png);
+	background-position: 20% 0%;
+	}
+.card-year-star-95::before { 
+	background-image: url(img/bg-rotate-left/bg-95-left.png);
+	background-position: 20% 0%;
+	}
+.card-year-star-96::before { 
+	background-image: url(img/bg-rotate-left/bg-96-left.png);
+	}
+.card-year-star-97::before { 
+	background-image: url(img/bg-rotate-left/bg-97-left.png);
+	}
+.card-year-star-98::before { 
+	background-image: url(img/bg-rotate-left/bg-98-left.png);
+	background-position: 20% 20%;
+	}
+.card-year-star-99::before { 
+	background-image: url(img/bg-rotate-left/bg-99-left.png);
+	}
+.card-year-star-00::before { 
+	background-image: url(img/bg-rotate-left/bg-00-left.png);
+	}
+.card-year-star-01::before { 
+	background-image: url(img/bg-rotate-left/bg-01-left.png);
+	}
+.card-year-star-02::before { 
+	background-image: url(img/bg-rotate-left/bg-02-left.png);
+	background-position: 20% 20%;
+	}
+.card-year-star-03::before { 
+	background-image: url(img/bg-rotate-left/bg-03-left.png);
+	}
+.card-year-star-04::before { 
+	background-image: url(img/bg-rotate-left/bg-04-left.png);
+	}
+.card-year-star-05::before { 
+	background-image: url(img/bg-rotate-left/bg-05-left.png);
+	}
+.card-year-star-06::before { 
+	background-image: url(img/bg-rotate-left/bg-06-left.png);
+	background-position: 0% 20%;
+	}
+.card-year-star-07::before { 
+	background-image: url(img/bg-rotate-left/bg-07-left.png);
+	background-position: 50% 0%;
+	}
+.card-year-star-08::before { 
+	background-image: url(img/bg-rotate-left/bg-08-left.png);
+	background-position: 50% 0%;
+	}
+.card-year-star-09::before { 
+	background-image: url(img/bg-rotate-left/bg-09-left.png);
+	background-position: 10% 0%;
+}
+
+</style>
+</head>
+<body>
+
+<div class="main">
+<div class="container container-xl">
+<div class="row">
+  <div class="col-12">
+    <header class="py-5">
+      <h1 data-splitting class="display-1 pt-3">Ultramix</h1>
+      <h2>Epic music mixes covering dance and pop music between 1990 and 2009</h2>
+    </header>
+  </div>
+</div>
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-5 py-5">
+  <div class="col d-flex align-items-stretch">
+    <a href="90.html" class="card text-dark flex-fill">
+    	<!--style="background-color:#e6e7e8;">-->
+    <div class="card-year-star card-year-star-90">
+</div>
+      <div class="card-body card-90">
+<div class="card-year-90"></div>
+        <h3 class="card-title p-0">Ultramix 90</h3>
+        <p class="card-text m-0 me-5 pb-3">First released in 2005,<br>re-edited in 2010.</p>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">5</div><div>Chapters</div>
+        </div>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">291</div><div>Minutes</div>
+        </div>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">166</div><div>Tracks</div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col d-flex align-items-stretch">
+    <a href="91.html" class="card flex-fill">
+    	<!--style="background-color:#411e74;">-->
+    <div class="card-year-star card-year-star-91">
+</div>
+      <div class="card-body card-91">
+<div class="card-year-91"></div>
+        <h3 class="card-title p-0">Ultramix 91</h3>
+        <p class="card-text m-0 me-5 pb-3">First released in 2005,<br>re-edited in 2010.</p>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">7</div><div>Chapters</div>
+        </div>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">379</div><div>Minutes</div>
+        </div>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">213</div><div>Tracks</div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col d-flex align-items-stretch">
+    <a href="92.html" class="card flex-fill">
+    	<!--style="background-color:#f90;">-->
+    <div class="card-year-star card-year-star-92">
+</div>
+      <div class="card-body card-00">
+<div class="card-year-92"></div>
+        <h3 class="card-title p-0">Ultramix 92</h3>
+        <p class="card-text m-0 me-5 pb-3">First released in 2005,<br>re-edited in 2010.</p>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">7</div><div>Chapters</div>
+        </div>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">408</div><div>Minutes</div>
+        </div>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">200</div><div>Tracks</div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col d-flex align-items-stretch">
+    <a href="93.html" class="card flex-fill">
+    	<!--style="background-color:#7BB666;">-->
+    <div class="card-year-star card-year-star-93">
+</div>
+      <div class="card-body card-00">
+<div class="card-year-93"></div>
+        <h3 class="card-title p-0">Ultramix 93</h3>
+        <p class="card-text m-0 me-5 pb-3">First released in 2006,<br>re-edited in 2010.</p>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">9</div><div>Chapters</div>
+        </div>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">504</div><div>Minutes</div>
+        </div>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">242</div><div>Tracks</div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col d-flex align-items-stretch">
+    <a href="94.html" class="card flex-fill">
+    	<!--style="background-color:#09c;">-->
+    <div class="card-year-star card-year-star-94">
+</div>
+      <div class="card-body card-00">
+<div class="card-year-94"></div>
+        <h3 class="card-title p-0">Ultramix 94</h3>
+        <p class="card-text m-0 me-5 pb-3">First released in 2007,<br>re-edited in 2011.</p>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">9</div><div>Chapters</div>
+        </div>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">535</div><div>Minutes</div>
+        </div>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">226</div><div>Tracks</div>
+        </div>
+      </div>
+    </a>
+  </div>
+    <div class="col d-flex align-items-stretch">
+    <a href="95.html" class="card flex-fill">
+    	<!--style="background-color:#c00;">-->
+    <div class="card-year-star card-year-star-95">
+</div>
+      <div class="card-body card-00">
+<div class="card-year-95"></div>
+        <h3 class="card-title p-0">Ultramix 95</h3>
+        <p class="card-text m-0 me-5 pb-3">First released in 2007,<br>re-edited in 2011.</p>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">10</div><div>Chapters</div>
+        </div>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">553</div><div>Minutes</div>
+        </div>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">241</div><div>Tracks</div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col d-flex align-items-stretch">
+    <a href="96.html" class="card flex-fill">
+    	<!--style="background-color:#630;">-->
+    <div class="card-year-star card-year-star-96">
+</div>
+      <div class="card-body card-00">
+<div class="card-year-96"></div>
+        <h3 class="card-title p-0">Ultramix 96</h3>
+        <p class="card-text m-0 me-5 pb-3">First parts released in 2008,<br>the rest between 2011 and 2012.</p>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">11</div><div>Chapters</div>
+        </div>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">621</div><div>Minutes</div>
+        </div>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">264</div><div>Tracks</div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col d-flex align-items-stretch">
+    <a href="97.html" class="card text-dark flex-fill">
+    	<!--style="background-color:#fff460;">-->
+    <div class="card-year-star card-year-star-97">
+</div>
+      <div class="card-body card-00">
+<div class="card-year-97"></div>
+        <h3 class="card-title p-0">Ultramix 97</h3>
+        <p class="card-text m-0 me-5 pb-3">First parts released in 2012, the rest in 2013.</p>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">8</div><div>Chapters</div>
+        </div>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">475</div><div>Minutes</div>
+        </div>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">237</div><div>Tracks</div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col d-flex align-items-stretch">
+    <a href="98.html" class="card flex-fill">
+    	<!--style="background-color:#66c;">-->
+    <div class="card-year-star card-year-star-98">
+</div>
+      <div class="card-body card-00">
+<div class="card-year-98"></div>
+        <h3 class="card-title p-0">Ultramix 98</h3>
+        <p class="card-text m-0 me-5 pb-3">First part released in 2013, the rest in 2026.</p>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">9</div><div>Chapters</div>
+        </div>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">151+</div><div>Minutes</div>
+        </div>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">94+</div><div>Tracks</div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col d-flex align-items-stretch">
+    <a href="99.html" class="card flex-fill">
+    	<!--style="background-color:#344C55;">-->
+    <div class="card-year-star card-year-star-99">
+</div>
+      <div class="card-body card-00">
+<div class="card-year-99"></div>
+        <h3 class="card-title p-0">Poptimix 99</h3>
+        <p class="card-text m-0 me-5 pb-3">First released in 2014.</p>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">2</div><div>Chapters</div>
+        </div>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">187</div><div>Minutes</div>
+        </div>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">96</div><div>Tracks</div>
+        </div>
+      </div>
+    </a>
+  </div>
+    <div class="col d-flex align-items-stretch">
+    <a href="00.html" class="card text-dark flex-fill">
+    	<!--style="background-color:#99C;">-->
+    <div class="card-year-star card-year-star-00">
+</div>
+      <div class="card-body card-00">
+<div class="card-year-00"></div>
+        <h3 class="card-title p-0">Ultramix 00</h3>
+        <p class="card-text m-0 me-5 pb-3">First parts released in 2009, including the singular Poptimix 00, the rest in 2011 and 2012.</p>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">10</div><div>Chapters</div>
+        </div>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">630</div><div>Minutes</div>
+        </div>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">262</div><div>Tracks</div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col d-flex align-items-stretch">
+    <a href="01.html" class="card flex-fill">
+    	<!--style="background-color:#f287b7;">-->
+    <div class="card-year-star card-year-star-01">
+</div>
+      <div class="card-body card-00">
+<div class="card-year-01"></div>
+        <h3 class="card-title p-0">Poptimix 01</h3>
+        <p class="card-text m-0 me-5 pb-3">First released in 2015.</p>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">2</div><div>Chapters</div>
+        </div>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">160</div><div>Minutes</div>
+        </div>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">80</div><div>Tracks</div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col d-flex align-items-stretch">
+    <a href="02.html" class="card flex-fill">
+    	<!--style="background-color:#e53a41;">-->
+    <div class="card-year-star card-year-star-02">
+</div>
+      <div class="card-body card-00">
+<div class="card-year-02"></div>
+        <h3 class="card-title p-0">Poptimix 02</h3>
+        <p class="card-text m-0 me-5 pb-3">First released in 2016.</p>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">2</div><div>Chapters</div>
+        </div>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">189</div><div>Minutes</div>
+        </div>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">83</div><div>Tracks</div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col d-flex align-items-stretch">
+    <a href="03.html" class="card flex-fill">
+    	<!--style="background-color:#f68b4b;">-->
+    <div class="card-year-star card-year-star-03">
+</div>
+      <div class="card-body card-00">
+<div class="card-year-03"></div>
+        <h3 class="card-title p-0">Poptimix 03</h3>
+        <p class="card-text m-0 me-5 pb-3">First released in December 2016.</p>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">2</div><div>Chapters</div>
+        </div>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">186</div><div>Minutes</div>
+        </div>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">88</div><div>Tracks</div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col d-flex align-items-stretch">
+    <a href="04.html" class="card text-dark flex-fill">
+    	<!--style="background-color:#ff0;">-->
+    <div class="card-year-star card-year-star-04">
+</div>
+      <div class="card-body card-00">
+<div class="card-year-04"></div>
+        <h3 class="card-title p-0">Poptimix 04</h3>
+        <p class="card-text m-0 me-5 pb-3">First released in December 2004.</p>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">2</div><div>Chapters</div>
+        </div>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">160</div><div>Minutes</div>
+        </div>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">84</div><div>Tracks</div>
+        </div>
+      </div>
+    </a>
+  </div>
+    <div class="col d-flex align-items-stretch">
+    <a href="05.html" class="card text-dark flex-fill">
+    	<!--style="background-color:#b4cc2d;">-->
+    <div class="card-year-star card-year-star-05">
+</div>
+      <div class="card-body card-00">
+<div class="card-year-05"></div>
+        <h3 class="card-title p-0">Poptimix 05</h3>
+        <p class="card-text m-0 me-5 pb-3">First released in 2011,<br>replacing the original 7 part Ultramix 05 released in December 2005.</p>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">2</div><div>Chapters</div>
+        </div>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">179</div><div>Minutes</div>
+        </div>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">94</div><div>Tracks</div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col d-flex align-items-stretch">
+    <a href="06.html" class="card flex-fill">
+    	<!--style="background-color:#066;">-->
+    <div class="card-year-star card-year-star-06">
+</div>
+      <div class="card-body card-00">
+<div class="card-year-06"></div>
+        <h3 class="card-title p-0">Ultramix 06</h3>
+        <p class="card-text m-0 me-5 pb-3">First parts released in 2006,<br>the rest in 2008.</p>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">10</div><div>Chapters</div>
+        </div>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">531</div><div>Minutes</div>
+        </div>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">244</div><div>Tracks</div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col d-flex align-items-stretch">
+    <a href="07.html" class="card text-dark flex-fill">
+    	<!--style="background-color:#6cf;">-->
+    <div class="card-year-star card-year-star-07">
+</div>
+      <div class="card-body card-00">
+<div class="card-year-07"></div>
+        <h3 class="card-title p-0">Poptimix 07</h3>
+        <p class="card-text m-0 me-5 pb-3">First released in December 2007.</p>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">2</div><div>Chapters</div>
+        </div>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">194</div><div>Minutes</div>
+        </div>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">80</div><div>Tracks</div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col d-flex align-items-stretch">
+    <a href="08.html" class="card flex-fill">
+    	<!--style="background-color:#039;">-->
+    <div class="card-year-star card-year-star-08">
+</div>
+      <div class="card-body card-00">
+<div class="card-year-08"></div>
+        <h3 class="card-title p-0">Ultramix 08</h3>
+        <p class="card-text m-0 me-5 pb-3">First parts released in 2008 and the rest in 2009 with selected chapters re-edited and merged in 2011.</p>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">9</div><div>Chapters</div>
+        </div>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">478</div><div>Minutes</div>
+        </div>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">209</div><div>Tracks</div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col d-flex align-items-stretch">
+    <a href="09.html" class="card flex-fill">
+    	<!--style="background-color:#9b2583;">-->
+    <div class="card-year-star card-year-star-09">
+</div>
+      <div class="card-body card-00">
+<div class="card-year-09"></div>
+        <h3 class="card-title p-0">Ultramix 09</h3>
+        <p class="card-text m-0 me-5 pb-3">First parts released in 2009, the rest in 2010.</p>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">12</div><div>Chapters</div>
+        </div>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">00</div><div>Minutes</div>
+        </div>
+        <div class="d-flex flex-row align-items-center mb-1">
+          <div class="fs-3 mix-figure ms-0 me-2">270</div><div>Tracks</div>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+  </div>
+  <div class="shade-50 py-4">
+     <ul class="content">
+        <li><a class="d-block" href="http://www.mixcloud.com/ghostfood/playlists" title="Ghost Food mixes on Mixcloud"><img src="img/icon-mixcloud.png" alt="Mixcloud"/></a> </li>
+      <li><a class="d-block" href="http://soundcloud.com/ghostfood" title="Ghost Food mixes and original music on Soundcloud"><img src="img/icon-soundcloud.png" alt="Soundcloud" hspace="3"/></a> </li>
+       <li><a class="d-block" href="http://www.last.fm/music/Ghost+Food" title="Ghost Food creator Steve Mannion on last fm"><img src="img/icon-lastfm.png" alt="Last FM" hspace="3"/></a> </li>
+       
+       
+     </ul>
+  </div>
+</div>
+<footer>
+  <span>© <a href="http://ghostfood.uk">Ghost Food</a> Productions</span>
+</footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</html>

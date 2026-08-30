@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghost Food Productions</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+<link rel="stylesheet" href="css/ghostfood-home.css">
+<link rel="stylesheet" href="css/gfp-bg-design.css">
+<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:100,400,700,900|Roboto:300,400,700&display=swap" rel="stylesheet">
+<style type="text/css">
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+  font-family:'Barlow Condensed', sans-serif;
+  letter-spacing: -0.05em;
+  line-height: 1;
+  padding-bottom:.25em 0;
+}
+h1:first-line {
+  font-weight:700;
+  letter-spacing: -0.025em;
+  line-height: .75;
+}
+h2 {
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  padding:.5em 0;
+  text-transform: uppercase;
+  margin-left:5px;
+}
+
+
+.promotion-carousel .promotions {
+  width: 100%;
+  height: 100%;
+}
+.promotion-carousel .promotion {
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.shade {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.25) 50%);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.shade::before,
+.shade::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0,0,0,.75) 0, transparent 50% );
+    top: 0;
+    left: 0;
+}
+.shade::after {
+    right:0;
+    left:50%;
+    background: linear-gradient(-90deg, rgba(0,0,0,.75) 0, transparent 50%);
+  }
+
+.promotion-carousel .promotion:first-of-type .shade {
+    opacity:.15;
+  }
+.promo-text {
+  color: #fff;
+  position: relative;
+  border-left: 3px solid #0cc;
+  padding: .5em 1em 0;
+}
+.promo-text .copy {
+  display: block;
+}
+
+.promo-detail {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: 100;
+  width: 85%;
+  margin-left: 5%;
+  padding: 10% 10% 10% 0;
+  transform: translate(0, -50%);
+}
+
+.promo-detail .body {
+  font-size: 14px;
+  line-height: 1.3;
+  margin-bottom: 5px;
+  text-transform: none;
+}
+.promo-detail .buttons {
+  padding: 15px 0;
+}
+.promo-detail .button {
+  box-sizing: content-box;
+  height: auto;
+  line-height: 1;
+  padding: 15px 30px;
+  width: auto;
+  display: inline-block;
+  font-weight:600;
+  letter-spacing: 1px;
+  font-size:16px;
+  background: #0cc;
+  border-radius: 25px;
+  text-transform:uppercase;
+}
+.promo-detail .button:hover {
+  border-color: #c00;
+  background-color: #0ff;
+  color:#033;
+}
+
+
+.promo-detail .headline {
+font-weight: 900;
+    font-size: 5em;
+    line-height: 1;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0 0 0.2em 0;
+}
+
+.promo-detail .promo-flag {
+  background: 0 0;
+  font-size: 14px;
+  line-height: 14px;
+  margin-bottom: 8px;
+  position: relative;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+
+.navigation {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5%;
+  z-index:9999;
+}
+.navigation ul {
+  list-style: none;
+  padding: 0;
+}
+.navigation li {
+  position: relative;
+    width: 16px;
+    height: 16px;
+    margin: 16px 0;
+}
+.navigation li a {
+  border: 1.5px solid #fff;
+  border-radius: 100%;
+  height: 100%;
+  width: 100%;
+  display: block;
+  transition: 0.2s ease;
+}
+.navigation li a.active::after {
+  background-color: #0cc;
+  position: absolute;
+    display: block;
+    top: 3px;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+    content: '';
+    border-radius: 100%;
+}
+.img-wrapper {
+  height:100%;
+  width:100%;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  filter:blur(2px);
+  transform: scale(1.25);
+}
+.img-wrapper img {
+  width:auto;
+  height:100%;
+  object-fit:cover;
+      transform: scale(1.5);
+    filter: blur(2px);
+}
+	  
+    @keyframes animate-fade {
+	    0% { opacity: 0; }
+	    100% { opacity: 1; }
+      }
+
+	  #fwall {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0;
+	  }
+	  #fwall div {
+		height: 200px;
+		flex-grow: 1;
+	  }
+	  
+	  #fwall img {
+		max-height: 100%;
+		min-width: 100%;
+		object-fit: cover;
+		vertical-align: bottom;
+		
+        animation-duration: 1s;
+        animation-name: animate-fade;
+        animation-delay: .3s;
+        animation-fill-mode: backwards;
+	  }
+  </style>
+
+
+</head>
+<body>
+<div class="promotion-carousel">
+  <div class="promotions">
+    <div>
+
+    	<div class="promotion" id="section1"> 
+        <div class="position-absolute img-wrapper" style="background-image: url(img/bg-ghostfoodformat.jpg);filter:saturate(2);transform:scale(1);"></div>
+        <div class="shade"></div>
+        <div class="promo-detail cycle-overlay">
+          <div class="promo-text">
+            
+            <h1>GHOST FOOD<br/>PRODUCTIONS</h1>
+            <h2>Adventures in sound and vision<br/>with Steve Mannion</h2>
+        </div>
+      </div>
+    </div>
+    <div class="promotion" id="section2"> 
+      <div class="position-absolute img-wrapper" style="background-image: url(statjam/img/backgrounds/ataglance-home-banner.svg)"></div>
+      <div class="shade"></div>
+      <div class="promo-detail cycle-overlay">
+        <div class="promo-text">
+          
+            <h2 class="headline">STATJAM</h2>
+            <p class="body long">A flagship project presenting stats <em>at a glance</em></p>
+          <div class="buttons">
+            <a class="button info-button" href="/statjam/ataglance">GO THERE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="promotion" id="section3">
+      <div class="position-absolute img-wrapper" style="background-image: url('img/hires/28259403018_b9194e7cce_o.jpg');"></div>
+      <div class="shade"></div>
+      <div class="promo-detail cycle-overlay">
+        <div class="promo-text">
+          
+            <h2 class="headline">DESIGN</h2>
+            <p class="body long">From UX to UI to front-end web development</p>
+          <div class="buttons">
+            <a class="button" href="/design">GO THERE</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="promotion" id="section4">
+  <div class="position-absolute img-wrapper" style="background-image: url(img/music/gfmusic-mobile-screenshots1.jpg)"></div>
+  <div class="shade"></div>
+  <div class="promo-detail cycle-overlay">
+    <div class="promo-text">
+      
+        <h2 class="headline">MUSIC</h2>
+        <p class="body long">Playlists, mixes, videos and more</p>
+      <div class="buttons">
+        <a class="button" href="/music">GO THERE</a>
+    </div>
+  </div>
+</div>
+</div>
+<div class="promotion" id="section5">
+  <div class="position-absolute img-wrapper" style="background-image: url(ultramix/graphics/mixbank-ultramix90.png)"></div> 
+  <div class="shade"></div>
+  <div class="promo-detail cycle-overlay">
+    <div class="promo-text">
+      
+        <h2 class="headline">ULTRAMIX</h2>
+        <p class="body long">Epic music mixes from 1990 to 2009</p>
+      <div class="buttons">
+        <a class="button" href="/ultramix">GO THERE</a>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="promotion" id="section6">
+<div id="fwall">
+  <!-- Photos will be inserted here by the javascript code -->
+</div>
+
+  <div class="shade"></div>
+  <div class="promo-detail cycle-overlay">
+    <div class="promo-text">
+      
+        <h2 class="headline">PICTURES</h2>
+      <div class="buttons">
+        <a class="button" href="https://www.flickr.com/photos/stevem78/">FLICKR</a>
+    </div>
+  </div>
+</div>
+</div>
+<div class="promotion" id="section7">
+    <div class="position-absolute img-wrapper" style="background-image: url(img/header-banner.png)"></div> 
+  <div class="shade"></div>
+  <div class="shade"></div>
+  <div class="promo-detail cycle-overlay">
+    <div class="promo-text">
+        <h2 class="headline">MORE</h2>
+    </div>
+<a href="https://youtube.com/c/ghostfood/playlists" class="button m-3">
+    YouTube
+</a><br>
+<a href="https://mixcloud.com/ghostfood/" class="button m-3">
+    Mixcloud
+</a><br>
+<a href="https://soundcloud.com/ghostfood"  class="button m-3">
+    Soundcloud
+</a><br>
+<a href="https://last.fm/user/b1ue5ki" class="button m-3">
+    last.fm
+</a>
+    </div>  
+</div>
+
+</div>
+</div>
+</div>
+<div class="navigation">
+  <ul>
+
+    <li><a href="#section1" data-number="1"></a></li>
+
+    <li><a href="#section2" data-number="2"></a></li>
+
+    <li><a href="#section3" data-number="3"></a></li>
+
+    <li><a href="#section4" data-number="4"></a></li>
+
+    <li><a href="#section5" data-number="5"></a></li>
+
+    <li><a href="#section6" data-number="6"></a></li>
+
+    <li><a href="#section7" data-number="7"></a></li>
+
+  </ul>
+</div>
+    <footer class="pad-top-lg">
+<a href="http://ghostfood.tv"><img src="img/icon-ghostfood.png" class="swing"></a><br/>
+   <span class="small">  
+© Ghost Food Productions
+   </span>
+   </footer>
+
+ <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  <script>
+  const ele = '.promotion-carousel';
+	const $window = $(window);
+	const viewportHeight = $window.height();
+
+let ui = {
+  promo: ele + ' .promotion',
+  promoText: ele + ' .promo-text',
+  navigationItems: '.navigation a'
+};
+function isOnScreen(el) {
+  const viewport = {
+    top : $window.scrollTop()
+  };
+
+  viewport.bottom = viewport.top + viewportHeight;
+
+  const bounds = el.offset();
+  bounds.bottom = el.offset().top + el.outerHeight();
+
+  return (!(viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+}
+
+class ScrollEvents {
+
+  run() {
+    const $promo = $('.promotion');
+    const $promoText = $('.promo-text');
+
+    function smoothScroll(target) {
+      $('body, html').animate({'scrollTop':target.offset().top}, 600);
+    }
+
+    $(ui.navigationItems).on('click', e => {
+      e.preventDefault();
+      smoothScroll($(e.currentTarget.hash));
+    });
+
+    $window.on('scroll', () => {
+
+      $(ui.promo).toArray().forEach(el => {
+        const $el = $(el);
+        if (isOnScreen($el)) {
+          this.scrolly($el);
+        }
+      });
+      this.updateNavigation();
+      this.fadeAtTop($(ui.promoText));
+    });
+
+    this.updateNavigation();
+  }
+
+  scrolly(el) {
+    const topOffset = el.offset().top;
+    const height = el.height();
+    let scrollTop = $window.scrollTop();
+    const maxPixels = height / 4;
+    const percentageScrolled = (scrollTop - topOffset) / height;
+    let backgroundOffset = maxPixels * percentageScrolled;
+
+    backgroundOffset = Math.round(Math.min(maxPixels, Math.max(0, backgroundOffset)));
+
+  }
+
+  fadeAtTop(el) {
+    const startPos = 0.25;
+
+    el.toArray().forEach(el => {
+      const $el = $(el);
+      let position = $el.offset().top - $window.scrollTop() + viewportHeight / 7;
+      let opacity = position < viewportHeight * startPos ? position / (viewportHeight * startPos) * 1 : 1;
+
+      $el.css('opacity', opacity);
+    });
+  }
+
+  updateNavigation() {
+    $(ui.promo).toArray().forEach((el) => {
+      let $el = $(el);
+      let activeSection = $(`.navigation a[href="#${$el.attr('id')}"]`).data('number') - 1;
+
+      if ( ( $el.offset().top - $window.height()/2 < $window.scrollTop() ) && ( $el.offset().top + $el.height() - $window.height()/2 > $window.scrollTop() ) ) {
+        $(ui.navigationItems).eq(activeSection).addClass('active');
+      } else {
+        $(ui.navigationItems).eq(activeSection).removeClass('active');
+      }
+    });
+  }
+};
+const scrollEvents = new ScrollEvents();
+scrollEvents.run();
+
+
+let fwitems = null;
+	function flickrWall() {
+	  if (fwitems) {
+		let fwall = document.getElementById('fwall');
+		fwitems.forEach(function(item) {
+		  let elem = document.createElement('div');
+		  let link = document.createElement('a');
+		  // link.setAttribute('href', item.link);
+		  link.setAttribute('title', item.title + " by " + item.author.match(/\("(.+)"\)$/)[1]);
+		  elem.appendChild(link);
+		  let image = document.createElement('img');
+		  image.setAttribute('src', item.media.m.replace('_m.','.')); // Default photos in feed are 240px wide XXXX_m.jpg photos, but I want the 500px wide XXXX.jpg photos.
+		  image.setAttribute('alt', ' [Image: ' + item.title + '] ');
+		  image.setAttribute('loading', 'lazy');
+		  link.appendChild(image);
+		  fwall.appendChild(elem);
+		});
+	  }
+	}
+	function flickrWallEndAdjust() {
+	  let fwall = document.getElementById('fwall');
+	  if (fwall.offsetWidth === fwall.lastChild.offsetWidth || fwall.lastChild.offsetWidth < 75) {
+		fwall.lastChild.style.display = 'none'; 
+		// if last (empty) item fills a full line -
+	  }
+	}
+	function jsonFlickrFeed(photos) {
+	  fwitems = photos.items;
+	  window.addEventListener('DOMContentLoaded', flickrWall, false);
+	  window.addEventListener('load', flickrWallEndAdjust, false);
+	}
+</script>
+<script defer src="https://www.flickr.com/services/feeds/photos_public.gne?id=25465614@N00&lang=en-us&format=json&nojsoncallback=0"></script>
+</body>
+</html>

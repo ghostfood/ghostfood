@@ -1,0 +1,2507 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="description" content="Music with ghostfood.uk - Playlists, mixes, videos and more">
+<meta name="keywords" content="music, playlists, mixes, video, music videos, jukebox, hits, DJ, curation">
+<meta name="author" content="ghostfood">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Music with Ghost Food</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> 
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.css'><link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" type="text/css" href="../css/ghostfood-2018.css" />
+<link rel="stylesheet" type="text/css" href="../css/ghostfood-music-2018.css" />
+<link rel="stylesheet" type="text/css" href="../css/grid-auto.css">
+<link rel="stylesheet" type="text/css" href="../css/mod-carousel.css">
+<link rel="stylesheet" type="text/css" href="../css/mod-clearfix.css">
+<link rel="stylesheet" type="text/css" href="../css/mod-data-table.css">
+
+<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:100,400,700,900|Roboto:300,400,700|Roboto+Condensed:400,700&display=swap" rel="stylesheet">
+<style type="text/css">
+
+.sr-only {
+    display:none;
+}
+.jukebox {
+   background: linear-gradient(to bottom, rgba(51,200,200,.75) 0%,rgba(0,0,0,.95) 25%,rgba(0,0,0,0.5) 100%);
+}
+.jukebox::before {
+    position: absolute;
+    display: block;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .9) 25%, rgba(0, 0, 0, .05) 75%);
+    top: 0;
+    z-index: -1;
+}
+
+.jukebox-screenshots {
+    height:320px;
+    width:100%;
+}
+
+.table.dataTable>tbody>tr>td {
+    padding: 1px 4px;
+    color: rgba(255,255,255,.66);
+}
+.table.dataTable>tbody>tr>td > div {
+    line-height: 1.3;
+}
+.table.dataTable>tbody>tr>td:nth-of-type(2) {
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 1.1em;
+    color: rgba(255,255,255,.9);
+}
+section {
+    padding:1rem 0;
+}
+
+section:nth-of-type(odd) {
+    background:  #033;
+}
+section:nth-of-type(even) {
+    background:  #022;
+}
+section:nth-of-type(1) {
+    background: transparent;
+}
+section:nth-of-type(2) {
+    background: transparent;
+}
+section h3 {
+    padding-top: 0 !important;
+    font-weight: 100;
+    letter-spacing: -0.05em;
+    font-size: 2.5rem;
+}
+#jump2juke {
+    position: relative;
+    top: -20px;
+}
+#myVideo {
+    transition: display .5s ease-in ;
+}
+.responsive-slider h5,
+.carousel-content h5 {
+    padding: 0;
+    font-family: 'Roboto Condensed';
+    font-weight: 600;
+    font-size: 1.75em !important;
+    text-transform: capitalize;
+    letter-spacing: -0.035em;
+    line-height: 1.1;
+}
+
+h4 {
+    font-family: 'Roboto Condensed';
+    font-weight: 600;
+    font-size: 1.5em !important;
+    letter-spacing: -0.035em;   
+}
+.card-text.text-left {
+    text-align:left;
+}
+.card-bg {
+    min-height: 300px;
+    position: relative;
+}
+.auto-grid-1 .card-bg.card-bg-extra .card-body,
+.auto-grid-2 .card-bg.card-bg-extra .card-body,
+.auto-grid-3 .card-bg .card-body,
+.auto-grid-4 .card-bg .card-body,
+.responsive-slider .card-bg .card-body {
+    position: absolute;
+    bottom: 0;
+    width:100%;
+}
+.carousel-item a.btn.btn-sm {
+    border-radius: 50px;
+    text-transform: capitalize;
+    letter-spacing: -0.035em;   
+}
+.hide-sm {
+    display:none;
+}
+.card a.btn {
+    padding: .75rem 1.25rem !important;
+    line-height: 1.3;
+    font-weight: 600;
+    font-size: .8rem;
+    font-family: 'Roboto';
+    margin: 4px;
+}
+.holder{
+  height:260px;
+  color:#fff;
+  text-align:center;
+}
+.holder .card-bg {
+    background-image: none;
+}
+.holder .card-bg::after {
+    background-image: linear-gradient(135deg, rgba(0,0,0,.5) 1%, rgba(100,50,150,.3) 50%, rgba(50,0,50,.5) 99%);
+}
+.holder .card-bg::before {
+    position: absolute;
+    display: block;
+    z-index: 1;
+  content: '';
+  width: 0px;
+   height: 0px;
+   border-style: solid;
+   border-radius:0 !important;
+   border-width: 50px 0 50px 100px;
+   border-color: transparent transparent transparent #0cc;
+   opacity:.5;
+   top:15%;
+   left:33%;
+   margin:auto;
+
+}
+.center{
+  margin:10px;
+}
+.inside-image{
+  width:100%;
+  height:100%;
+}
+.lazy-height{
+  height:300px;
+}
+.fade-height{
+  height:400px;
+}
+
+.responsive-slider {
+    position: relative;
+    top: 0;
+    width: 100%;
+    min-height: 200px;
+    margin-right: -100%;
+    max-width: 80%;
+    left: 10% !important;
+
+}
+.responsive-slider .card-bg {
+    min-height:unset;
+    height:200px;
+}
+.bg-highlight {
+    background: linear-gradient(to top, rgba(51, 200, 200, .25) 0%, rgba(10, 10, 10, 1) 50%, rgba(51, 200, 200, .25) 100%);
+}
+
+.slick-dots li {
+    cursor: pointer;
+    height: 16px;
+    width: 8px;
+    min-width: 8px;
+    margin: 0 2px;
+    padding: 0;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, .5);
+    background-color: transparent;
+    position: relative;
+    flex: none;
+    box-sizing: inherit;
+
+}
+.slick-dots li button {
+    height: 16px;
+    width: 8px;
+    min-width: 8px;
+
+}
+.slick-dots li button::before {
+    background-color: transparent;
+    transition: all 0.5s ease;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: block;
+    content: '';
+    border-radius: 2px;
+    top: 0;
+    left: 0;
+    transition: all 0.25s ease;
+}
+.slick-dots li button:hover::before, .slick-dots li button:focus::before {
+    background-color: rgba(255, 255, 255, .8);
+}
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, .9);
+}
+
+.slick-prev, .slick-next {
+    left: -10%;
+    height: 100%;
+    margin-left: -50px;
+    text-decoration: none;
+    outline: 0;
+    min-width: 36px;
+    max-width: 100px;
+    border-radius: 0.5em !important;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 13%;
+    color: #fff;
+    opacity: .9 !important;
+    transition: opacity .15s ease;
+}
+.slick-next {
+    left: unset;
+    right: -10%;
+    margin-left: unset;
+    margin-right: -50px;
+}
+.slick-prev::before, 
+.slick-next::before {
+    display: inline-block;
+    background: transparent no-repeat center center;
+    background-size: 50%;
+    content:'';
+    position: absolute;
+    top: 45%;
+    height: 20px;
+    width: 20px;
+    transition: all ease-out .15s;
+    transform: rotate(225deg);
+    left: 38.33%;
+    content: "";
+    opacity: 1 !important;
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+
+.slick-next::before {
+    left:unset;
+    right: 33.3%;
+    transform: rotate(45deg);
+
+}
+.slick-prev:hover, .slick-next:hover {
+    background-color: rgba(255, 255, 255, .25);
+    transition: all 0.5s ease;
+    border-radius: .5rem !important;
+}
+
+@media screen and (max-width: 480px) {
+
+.jukebox {
+    margin-top:240px;
+}
+video {
+    scale: 1;
+    left:unset;
+    top: -100%;
+    position: absolute;
+    max-width: 100%;
+    margin-top: 573px;
+    background: linear-gradient(to top, rgba(51, 200, 200, .05) 0%, rgba(0, 0, 0, .5) 25%, rgba(0, 0, 0, 0) 100%);
+}
+header {
+    min-height:150px;
+}
+header.header-lg h1 {
+    line-height: 1;
+}
+
+.card-bg.card-bg-xs {
+    min-height: 180px;
+}
+/*---------*/
+}
+@media screen and (min-width: 480px) {
+.auto-grid-3, .auto-grid-4, .auto-grid-6 {
+    grid-gap: 0.5em;
+}
+.hide-sm {
+    display:inherit;
+}
+video {
+    max-width:100%;
+    scale: unset;
+    left: unset;
+    top: unset;
+}
+.jukebox p {
+    font-size:1rem;
+}
+header {
+    min-height:150px;
+    background: linear-gradient(to top, rgba(51, 200, 200, .75) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+.card-bg.card-bg-xs {
+    min-height: 200px;
+}
+
+/*---------*/
+}
+@media screen and (min-width: 600px) {
+.carousel-content, .carousel-inner {
+    min-height: unset;
+}
+header {
+    min-height:200px;
+    background: transparent;
+}
+
+.slick-prev::before, 
+.slick-next::before {
+    height: 36px;
+    width: 36px;
+}
+.slick-dots {
+    bottom:-40px;
+}
+.slick-dots li {
+    height: 24px;
+    width: 24px;    
+    min-width: 24px;
+    border-radius: 100%;
+    border: 2px solid rgba(255, 255, 255, .5);
+
+
+}
+.slick-dots li button::before {
+    height: 16px;
+    width: 16px;
+    border-radius: 100%;
+    top: 2px;
+    left: 2px;
+}
+
+}
+@media screen and (min-width: 768px) {
+section {
+    padding:1rem 0 3rem 0;
+}
+section:nth-of-type(1) {
+    top: 44px;
+    max-width:100%;
+    width:100%;
+    position:absolute;
+    padding:0;
+}
+.card-bg, .responsive-slider .card-bg {
+    min-height: 250px;
+}
+    .jukebox {
+        margin:300px 0 0 0;
+        background: transparent;
+    }
+}
+@media screen and (min-width: 992px) {
+    .jukebox {
+        margin:220px 0 0 0;
+        background: transparent;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .jukebox {
+        margin:420px 0 0 0;
+        background: transparent;
+    }
+    .card-bg, .card-bg.card-bg-xs {
+        min-height: 300px;
+    }
+}
+@media screen and (min-width: 1600px) {
+.auto-grid-4 {
+    --auto-grid-min-size: 17rem;
+}
+.container-xl {
+    max-width:90%;
+}
+    video {
+        min-width: 80%;
+        max-width: 1600px;
+    }
+
+}
+</style>
+</head>
+<body class="banner-music-home">
+<header class="header-lg">
+<div id="nav-inner" class="pvs">
+<span>
+<a href="http://ghostfood.uk"><img src="../img/icon-ghostfood.png" class="swing"></a>
+</span>
+<label for="show-menu" class="show-menu"></label>
+<input type="checkbox" id="show-menu" role="button">
+<ul id="menu">
+<li><a href="#videos">Videos</a></li>
+<li><a href="#favourites">FAVOURITES</a></li>
+<li><a href="ukcharthits/">UK Chart hits</a></li> 
+<li><a href="/ultramix">Ultramix</a></li>
+<li><a href="#abigdig">A Big Dig</a></li> 
+<li><a href="#timezones">Time zones</a></li> 
+<li><a href="#playindex">Other playlists</a></li> 
+<li><a href="#more">More</a></li>
+</ul></div>
+<div class="position-absolute top-0 start-0 align-center width-100">
+<h1 class="px-4">MUSIC</h1>
+<h2 class="px-4">Playlists, mixes, videos and more</h2>
+
+</div>
+</header>
+  
+<section class="clearfix p-0">
+<video autoplay muted loop id="myVideo">
+<source src="video/gfm2112a.mp4" type="video/mp4">
+</video>
+</section>
+
+<section id="videos" class="align-center jukebox">
+<div class="container container-xl">
+<div class="row">
+<div class="col">
+
+<div class="width-100-then-50 align-center">
+	<p class="px-4">Watch great music videos old and new from over 20 <a href="https://www.youtube.com/channel/UCY_890xi6SeeQs-fxlbAKhw?view_as=subscriber">YouTube playlists</a>, many adapted from their <a href="#playindex">Spotify</a> equivalents.</p>
+    <a role="button" href="videos/" class="align-center btn btn-lg btn-primary my-3">Watch Music Videos</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="align-center" id="favourites">
+<h3>Favourites</h3>
+<div class="width-max pan hue-tanz">
+     <div id="carousel-faves" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-faves" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-faves" data-slide-to="1"></li>
+        <li data-target="#carousel-faves" data-slide-to="2"></li>
+        <li data-target="#carousel-faves" data-slide-to="3"></li>
+        <li data-target="#carousel-faves" data-slide-to="4"></li>
+        <li data-target="#carousel-faves" data-slide-to="5"></li>
+      </ol>
+      <div class="carousel-inner">
+       <div class="carousel-item active transparent">
+<div class="carousel-content ">
+      <h4>21st Century Favourites</h4>
+    <p >In descending order, the 100 best tracks from the other five 00s Favourites lists in one handy playlist.</p>
+<div class="auto-grid-1">
+        <div class="card card-bg card-bg-extra bg-2015-2019">
+            <div class="card-body">
+    <h5 class="card-title">10s Top Tracks</h5>
+    <p class="card-text">In descending order, the 100 best tracks from the  five categorised 10s Favourites lists in one handy playlist.</p>
+    <a href="https://open.spotify.com/playlist/2BZ8U0PqeipfGbNVWbKQuc?si=e1cfe6f14edc45f6" class="btn btn-primary">Launch playlist</a>
+    <a href="earcatchers-2010-2019.html" class="btn btn-outline">View all 10s lists</a>    
+                </div>
+            </div>
+              </div>
+
+          </div><!-- content -->
+        </div><!-- item -->
+       <div class="carousel-item">
+<div class="carousel-content ">
+      <h4>21st Century Favourites</h4>
+    <p>In descending order, the 100 best tracks from the other five 00s Favourites lists in one handy playlist.</p>
+<div class="auto-grid-1">
+        <div class="card card-bg card-bg-extra bg-2005-2009">
+            <div class="card-body">
+    <h5 class="card-title">00s Top Tracks</h5>
+    <a href="https://open.spotify.com/playlist/2l5hZlWEIuaft3kBuEXuSb?si=adf4bda0d9d14447" class="btn btn-primary">Launch playlist</a>
+    <a href="favourites-2000-2009.html" class="btn btn-outline">View all 00s lists</a>     
+                </div>
+            </div>
+              </div>
+
+          </div><!-- content -->
+        </div><!-- item -->
+          <div class="carousel-item">
+        <div class="carousel-content ">
+      <h4>20th Century Favourites</h4>
+            <p>Compiled and ranked lists of favourite tracks from each decade.</p>
+
+              <div class="auto-grid-3">
+        <div class="card card-bg card-bg-xs bg-favourites-ukcharthits-seventies">
+            <div class="card-body">
+    <h5 class="card-title">1970-1979</h5>
+    <a href="https://open.spotify.com/playlist/4cixro8WLyM4NreadHYCW8?si=4fa1f4f4ea9d4b4e" class="btn btn-primary">Launch main playlist</a>
+    <a href="favourites-1970-1979.html" class="btn btn-outline">View all 70s lists</a>
+                </div>
+            </div>
+        <div class="card card-bg card-bg-xs bg-favourites-ukcharthits-eighties">
+            <div class="card-body">
+    <h5 class="card-title">1980-1989</h5>
+        <a href="https://open.spotify.com/playlist/6jN1P5qXnSkhkqDd7CzSaU?si=35102e3a8d0e4397" class="btn btn-primary">Launch main playlist</a>
+    <a href="favourites-1980-1989.html" class="btn btn-outline">View all 80s lists</a>
+                </div>
+            </div>
+        <div class="card card-bg card-bg-xs bg-favourites-ukcharthits-nineties">
+            <div class="card-body">
+    <h5 class="card-title">1990-1999</h5>
+        <a href="https://open.spotify.com/playlist/6yX04HCtWMEfo95swoK7KU?si=494600d2e52d458c" class="btn btn-primary">Launch main playlist</a>
+    <a href="favourites-1990-1999.html" class="btn btn-outline">View all 90s lists</a>
+                </div>
+            </div>
+              </div>
+    </div>
+  </div><!-- item -->
+
+          <div class="carousel-item">
+        <div class="carousel-content ">
+      <h4>Earcatchers</h4>
+      <p>End of year Lists from 2005-2019</p>
+              <div class="auto-grid-1">
+        <div class="card card-bg bg-2015-2019">
+            <div class="card-body">
+      <h4>2015-2019</h4>
+    <div class="d-flex flex-row flex-wrap justify-content-center">
+        <div class="d-flex align-items-stretch text-center py-1">
+        <a href="https://open.spotify.com/playlist/32fB3663zFTqYaazO60o1L?si=de0c15d1eb824234" class="btn btn-primary">Launch 2019 playlist</a>
+        </div>
+        <div class="d-flex align-items-stretch text-center py-1">
+        <a href="https://open.spotify.com/playlist/0VAiGAIY8OKX1Pg6B5BUM9?si=072ed36acb2a414a" class="btn btn-primary">Launch 2018 playlist</a>
+        </div>
+        <div class="d-flex align-items-stretch text-center py-1">
+        <a href="https://open.spotify.com/playlist/3JtZQ7pRCXwpUE20rOslvi?si=3d3b85486b3c4192" class="btn btn-primary">Launch 2017 playlist</a>
+        </div> 
+        <div class="d-flex align-items-stretch text-center py-1">
+        <a href="https://open.spotify.com/playlist/1C4mImOevS5gDYT5OF65eI?si=e0eff79d76934f7b" class="btn btn-primary">Launch 2016 playlist</a>
+        </div>
+        <div class="d-flex align-items-stretch text-center py-1">
+        <a href="https://open.spotify.com/playlist/2jKPbokF9YqkA6RHfchgdw?si=df752fa08049492c" class="btn btn-primary">Launch 2015 playlist</a>
+        </div>
+        <div class="d-flex align-items-stretch text-center py-1">
+        <a href="earcatchers-2015-2019.html" class="btn btn-primary width-100">View 2015-2019 Lists</a>
+        </div>
+            </div>
+              </div>
+    </div>
+            </div>
+              </div>
+  </div><!-- item -->
+
+          <div class="carousel-item">
+        <div class="carousel-content ">
+      <h4>Earcatchers</h4>
+      <p>End of year Lists from 2005-2019</p>
+              <div class="auto-grid-1">
+        <div class="card card-bg bg-2010-2014">
+            <div class="card-body">
+      <h4>2010-2014</h4>
+    <div class="d-flex flex-row flex-wrap justify-content-center">
+        <div class="d-flex align-items-stretch text-center py-1">
+        <a href="https://open.spotify.com/playlist/2KtI9UJkazECWlOauRzzop?si=ccfae5fd2b7a4c93" class="btn btn-primary">Launch 2014 playlist</a>
+        </div>
+        <div class="d-flex align-items-stretch text-center py-1">
+        <a href="https://open.spotify.com/playlist/3yApIB3amThSxty27ycf3p?si=98fbdc51bde24ca9" class="btn btn-primary">Launch 2013 playlist</a>
+        </div>
+        <div class="d-flex align-items-stretch text-center py-1">
+        <a href="https://open.spotify.com/playlist/4gT5pS0SNvwpIOpZI4hQxt?si=ece7ff20272d46a5" class="btn btn-primary">Launch 2012 playlist</a>
+        </div> 
+        <div class="d-flex align-items-stretch text-center py-1">
+        <a href="https://open.spotify.com/playlist/62KiJ5ybA2gRv0Nu3ySJpW?si=a3f893067ac3440b" class="btn btn-primary">Launch 2011 playlist</a>
+        </div>
+        <div class="d-flex align-items-stretch text-center py-1">
+        <a href="https://open.spotify.com/playlist/3fiXUTvtqlP8QQiDss4ZUn?si=c169fccec85146b4" class="btn btn-primary">Launch 2010 playlist</a>
+        </div>
+        <div class="d-flex align-items-stretch text-center py-1">
+        <a href="earcatchers-2010-2014.html" class="btn btn-primary">View 2010-2014 Lists</a>
+         </div>
+            </div>
+              </div>
+    </div>
+            </div>
+              </div>
+  </div><!-- item -->
+
+          <div class="carousel-item">
+        <div class="carousel-content ">
+      <h4>Earcatchers</h4>
+      <p>End of year Lists from 2005-2019</p>
+              <div class="auto-grid-1">
+        <div class="card card-bg bg-2005-2009">
+            <div class="card-body">
+      <h4>2005-2009</h4>
+
+    <div class="d-flex flex-row flex-wrap justify-content-center">
+        <div class="d-flex align-items-stretch text-center py-1">
+        <a href="https://open.spotify.com/playlist/2qvGw13Nx0LuYcdTl6TV1v?si=2355936f08f7428d" class="btn btn-primary">Launch 2009 playlist</a>
+    </div> 
+        <div class="d-flex align-items-stretch text-center py-1">
+        <a href="https://open.spotify.com/playlist/0AsVlHTLphO2VBq0Mt8Ypk?si=884605bf7b4d4f94" class="btn btn-primary">Launch 2008 playlist</a>
+    </div>
+        <div class="d-flex align-items-stretch text-center py-1">
+        <a href="https://open.spotify.com/playlist/0IGG73mZXctBPARGObU0Uu?si=86c5ea26c91848f5" class="btn btn-primary">Launch 2007 playlist</a>
+    </div>
+        <div class="d-flex align-items-stretch text-center py-1">
+        <a href="https://open.spotify.com/playlist/1yzISHlt84MsnwyT1RcXwb?si=ef88de71a3fe4b51" class="btn btn-primary">Launch 2006 playlist</a>
+    </div>
+        <div class="d-flex align-items-stretch text-center py-1">
+        <a href="https://open.spotify.com/playlist/4VTabWFzDdiFgJAD9KAWjt?si=55d907f250344958" class="btn btn-primary">Launch 2005 playlist</a>
+    </div>  
+        <div class="d-flex align-items-stretch text-center py-1">
+        <a href="earcatchers-2005-2009.html" class="btn btn-primary width-100">View 2005-2009 Lists</a>
+    </div>  
+    </div>
+                </div>
+            </div>
+
+              </div>
+    </div>
+  </div><!-- item -->
+
+      </div><!--inner -->
+      <a class="carousel-control-prev" href="#carousel-faves" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel-faves" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span>
+      </a>
+    </div>
+</div>
+</section>
+
+<section class="align-center bg-highlight" id="abigdig">
+<h3>A Big Dig</h3>
+<div class="px-4 mx-4 mb-4">
+<div class="width-max pan hue-tanz">
+<!--Responsive Slider-->
+      <p>Singles, tracks from albums and EPs, remixes... all together year by year</p>
+       <div class="responsive-slider mt-3">
+         <div class="holder">
+            <div class="card card-bg bg-music-2000">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">2024</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/0zOoPaM2EGGxqGbi9x5nR3?si=6cecbc4a09cb4cc7"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        </div>
+         <div class="holder">
+            <div class="card card-bg bg-music-2000">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">2023</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/5w3qvXCBEDQQP2HkiAcM9n?si=9286fe413a974680"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div></div>
+         <div class="holder">
+            <div class="card card-bg bg-music-2000">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">2022</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/27OERXX3zQbFsckUOxxDco?si=39666af8b427474a"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div></div>
+         <div class="holder">
+            <div class="card card-bg bg-music-2000">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">2021</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/5brV168NxBmX4TwgVrAtsd?si=b875f3f443d84730"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div></div>
+         <div class="holder">
+            <div class="card card-bg bg-music-2000">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">2020</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/2EYBGRFHSrKCKgFwIDxM6r?si=325d38842e684f8b"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div></div>
+         <div class="holder">
+            <div class="card card-bg bg-music-2000">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">2019</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/5hnntzBGn8iqHirMaqgEr8?si=aae09db33dcf4250"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <div class="card card-bg bg-music-2000">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">2018</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/4gR8VB6w0wB6i4aW7iyXN5?si=f7bc4848c7a94071"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <div class="card card-bg bg-music-2000">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">2017</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/151jEgBH83jaGzwk7TH8Yb?si=0d74a18c62e54e62"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <div class="card card-bg bg-music-2000">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">2016</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/1kqGyNUecwScscZonZsyk6?si=97ce4533b89b45b8"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <div class="card card-bg bg-music-2000">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">2015</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/5m3jOnDFtNTjbdDzbNN5nO?si=94fa0aeb42b14ec0"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <div class="card card-bg bg-music-2000">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">2014</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/3AprAR336CqSMsmoyr1BSE?si=4c6c91b0d2bd4580"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <div class="card card-bg bg-music-2000">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">2013</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/1kxyEMYBlbrojr7B3cdBh6?si=6db80c0371294087"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <div class="card card-bg bg-music-2000">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">2012</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/2SVlxHTAq6tWef8xLOPjrU?si=824c8f2b35914954"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <div class="card card-bg bg-music-2000">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">2011</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/1EXPl6lOrK0eKQB3Ydydrj?si=522c20996ef24f5c"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <div class="card card-bg bg-music-2000">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">2010</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/6dbnMGmeTEG4RLy7zFBOFf?si=ed76eb02b4bd4e02"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <div class="card card-bg bg-music-2000">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">2009</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/3yX8ts9ZhXz4C1n2t8pTuL?si=32908dba5c0545e5"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <div class="card card-bg bg-music-2000">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">2008</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/1qWU2d5MNfl16GMHZNZQWD?si=c337ba29872a4ccf"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <div class="card card-bg bg-music-2000">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">2007</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/554sl367RfqLXh1WjEB06o?si=1d4d9d6ff84b4d01"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <div class="card card-bg bg-music-2000">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">2006</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/3Gs1Hjb4LEnlJ57en3pxIw?si=87d2fc9ad1604714"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <div class="card card-bg bg-music-2000">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">2005</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/11oHiknqLCn7OfQtbk9kL5?si=a7fc39b69739484a"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <div class="card card-bg bg-music-2000">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">2004</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/6zsE6k6xMjkSOd8n9hTqNm?si=d44c83fcdeb045f6"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <div class="card card-bg bg-music-2000">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">2003</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/30h6ylGoEt32NKNOiX1s4n?si=71d0ae5ba9314bd2"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <div class="card card-bg bg-music-2000">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">2002</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/4Z2r962zjoKvkPZjP1MIBo?si=9b22cffa63924aa3"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <div class="card card-bg bg-music-2000">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">2001</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/6XphNaMyLTBFWo0NpYqkhW?si=19bc98fe801d4343"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <div class="card card-bg bg-music-2000">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">2000</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/294QVFbyi1Fcz5J61cvfMN?si=67bd6c4772824b1f"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <div class="card card-bg bg-music-1900">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">1999</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/2Oh8H1qx3NC5IRikBKHCbB?si=e53671bb71354066"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <div class="card card-bg bg-music-1900">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">1998</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/1OfMyG1btmrS301Vr0cpxR?si=f778e71402a6475c"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <div class="card card-bg bg-music-1900">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">1997</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/7v92LVTnNn7ry2F1rfLDjN?si=4b5a29cb045a4719"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <div class="card card-bg bg-music-1900">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">1996</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/36G4Y57rJwiSrj63lBdIo4?si=7b01cb81443642a6"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <div class="card card-bg bg-music-1900">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">1995</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/6ozlTHqxDUBlu61wGVvGJm?si=f7e1586c654a4059"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <div class="card card-bg bg-music-1900">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">1994</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/0PkDgSKA72ACBCdGzW5KO7?si=738044b639f54a9d"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <div class="card card-bg bg-music-1900">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">1993</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/2aLBRoJ2jxM5srPPhGq81m?si=a51fed49909e41f7"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <div class="card card-bg bg-music-1900">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">1992</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/41J2Azk3lYThTyU8AybMRj?si=950a9afcb6e045ea"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <div class="card card-bg bg-music-1900">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">1991</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/2vu9julFJLaC0RmUqEiEC2?si=80413dcdec014f85"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <div class="card card-bg bg-music-1900">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">1990</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/1zpuYV9cB3Ylrdb4FYGp9j?si=ea45968b3a8043a4"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <div class="card card-bg bg-music-1900">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">1989</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/4DY6Cx84UJK1Pe3Atm99gs?si=a636089ff2654eaa"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <div class="card card-bg bg-music-1900">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">1988</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/6bVvryBxRssC3m6O4i4qx4?si=6266a33f185b4bdd"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <div class="card card-bg bg-music-1900">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">1987</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/0j9TSilHhj0BCrwCumvUqa?si=ae23dc4d7f734bf3"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <div class="card card-bg bg-music-1900">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">1986</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/1STRhrAIPxl1lhDXsk9pS4?si=b27dab875551475d"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <div class="card card-bg bg-music-1900">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">1985</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/0uuNmdfePTTHp9JyNMUUC8?si=ee926956acc2433c"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <div class="card card-bg bg-music-1900">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">1984</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/3guMBs9D35oCGGBVKRv5LE?si=22ec496f548640ca"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <div class="card card-bg bg-music-1900">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">1983</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/4vVV6zHxPvfDU2VnKsApcd?si=5d45c985111344a2"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <div class="card card-bg bg-music-1900">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">1982</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/0cEcLUAfSKUBGStoqpLTly?si=0bf95db567174574"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <div class="card card-bg bg-music-1900">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">1981</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/6oL2sbDqUyGHEwhS4urpRR?si=70cb4a3cfa524b88"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <div class="card card-bg bg-music-1900">
+                <div class="card-body">
+                    <h5 class="card-title m-auto">1980</h5>
+                    <p class="card-text"><!--Including artists--></p>
+                    <a href="https://open.spotify.com/playlist/6cNsZ2enjsuJh3TF6anEYV?si=41221bc05c4646f4"  class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<section class="align-center" id="timezones">
+<h3>Time Zones</h3>
+<div class="width-max pan hue-tanz">
+    <div id="carousel-timezones" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-timezones" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-timezones" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active transparent">
+            
+<div class="carousel-content ">
+      <h4>2010s Dance Music</h4>
+<div class="auto-grid-3">
+        <div class="card card-bg bg-music-0000">
+            <div class="card-body">
+    <h5 class="card-title">10s Disco - 100-120 BPM</h5>
+    <p class="card-text"><!--Including artists--></p>
+    <a href="https://open.spotify.com/user/stevem78/playlist/1iHyWwvNC7ScDpuquSI1ii?si=8qOtcLCmRbKUaGpl9mEcoA" class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        <div class="card card-bg bg-music-0000">
+            <div class="card-body">
+    <h5 class="card-title">10s Disco - 120-130 BPM</h5>
+    <p class="card-text"><!--Including artists--></p>
+    <a href="https://open.spotify.com/user/stevem78/playlist/28HuqEMEe0ne3zQiUiztBH?si=LDNPVIXcTm-21gRULVxaHQ" class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        <div class="card card-bg bg-music-0000">
+            <div class="card-body">
+    <h5 class="card-title">10s Techno</h5>
+    <p class="card-text"><!--Including artists--></p>
+    <a href="https://open.spotify.com/user/stevem78/playlist/1r2wMSctzfa0TQZXGeAdnz?si=DzpbZQhzTLCNxGlFikTmcQ" class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+              </div>
+</div>
+  </div><!-- item -->
+    <div class="carousel-item">
+            
+<div class="carousel-content ">
+      <h4>Extended Hits</h4>
+    <div class="auto-grid-3">
+        <div class="card card-bg bg-music-0000">
+            <div class="card-body">
+    <h5 class="card-title text-">70s Extended Hits</h5>
+    <p class="card-text text-">Extended mixes of various hits between 1970 and 1979 including Curtis Mayfield, Jimi Hendrix, Kraftwerk, Stevie Wonder and Television.</p>
+    <a href="https://open.spotify.com/user/stevem78/playlist/6z6E9eHBkkX4JUk9idZUbo?si=hIWqIdHBTEGtS5WnydMOyA" class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        <div class="card card-bg bg-music-0000">
+            <div class="card-body">
+    <h5 class="card-title text-">80s Extended Hits</h5>
+    <p class="card-text text-">Extended mixes of various hits between 1980 and 1989 including Art of Noise, Frankie Goes to Hollywood, New Order, Sisters of Mercy and Soft Cell.</p>
+    <a href="https://open.spotify.com/user/stevem78/playlist/0I0OiTZwKzBhwbzjTujjgl?si=QK95GPd5ROOhRAdSecaI1Q" class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+        <div class="card card-bg bg-music-0000">
+            <div class="card-body">
+    <h5 class="card-title text-">90s Extended Hits</h5>
+    <p class="card-text text-">Extended mixes of various hits between 1990 and 1999 including B.T., Faithless, Orbital, Primal Scream and Underworld.</p>
+    <a href="https://open.spotify.com/playlist/6XXX3fsk8qGIf90CCV6jHE?si=09bde97f809148ec" class="btn btn-primary">Launch playlist</a>
+                </div>
+            </div>
+              </div>
+</div>
+  </div><!-- item -->
+      </div><!--inner -->
+      <a class="carousel-control-prev" href="#carousel-timezones" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel-timezones" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span>
+      </a>
+    </div>
+</div>
+</section>
+
+<section class="align-center" id="playindex">
+<h3>Other Playlists</h3>
+<div class="width-max pan hue-tanz">
+
+    <div class="container container-xl">
+        <div class="row">
+            <div class="col-12">
+<div class="table-responsive shade-50 border-round-sm mvm">
+<table id="playlists-index" class="table table-hover table-striped mvm">
+<thead> 
+<tr>
+<th style="width:100px;min-width:48px !important;">Created <a href="__" class="sort active"></a></th>
+<th style="width:40%;min-width:150px;">Title <a href="__" class="sort"></a></th>
+<th style="min-width:100px;">Tracks <a href="__" class="sort"></a></th>
+<th style="width:20%;">Type <a href="__" class="sort"></a></th>
+<th style="width:20%;">Notes <a href="__" class="sort"></a></th>
+</tr> 
+</thead> 
+<tbody>
+    <tr>
+    <td>2020-08-26</td>
+    </td>
+    <td><div class="align-left text-left">More Instrumentals 2010-2019</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/playlist/2kQR91ercgnCdegX82LxZ5?si=4de2b9720f884011">Open</a></td>
+ <td>15+</td>
+ <td>Specific to decade</td>
+ <td>A varied selection of instrumental tracks from the 10s that were not included in the Favourites list</td>
+</tr>
+    <tr>
+    <td>2020-08-26</td>
+    </td>
+    <td><div class="align-left text-left">100 Favourite Tracks 2010-2019</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/playlist/2BZ8U0PqeipfGbNVWbKQuc?si=a734e961ed954718">Open</a></td>
+ <td>100</td>
+ <td>RANKED; Specific to decade</td>
+ <td></td>
+</tr>
+    <tr>
+    <td>2020-09-22</td>
+    </td>
+    <td><div class="align-left text-left">Favourite under-rated hits of the 90s</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/playlist/6I727U6slBlPPyHvQwGmpE?si=38fe0ec635714643">Open</a></td>
+ <td>250</td>
+ <td>Specific to decade</td>
+ <td></td>
+</tr>
+    <tr>
+    <td>2020-03-02</td>
+    </td>
+    <td><div class="align-left text-left">More Non Singles 2010-2019</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/playlist/3QXHiwHDALGUG6DzwqW7Wg?si=d0b9f5a3d47243c5">Open</a></td>
+ <td>15+</td>
+ <td>Specific to decade</td>
+ <td>A varied selection of tracks from the 10s that were not released as singles nor included in the Favourites list</td>
+</tr>
+    <tr>
+    <td>2020-10-12</td>
+    </td>
+    <td><div class="align-left text-left">More Non-Singles 2000-2009</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/playlist/0fsvLR8iJgtgzt3g2LD6QZ?si=f026634e746f4799">Open</a></td>
+ <td>20+</td>
+ <td>Specific to decade</td>
+ <td>A varied selection of tracks from the 00s that were not released as singles nor included in the Favourites list</td>
+</tr>
+<tr>
+    <td>2022-07-31</td>
+    </td>
+    <td><div class="align-left text-left">2010s Late Bloomers and New Finds</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/playlist/5yeCAFEXgDWSlEKJBZxNub?si=3fd8790de45a4f10">Open</a></td>
+ <td>200+</td>
+ <td>Specific to decade</td>
+ <td>A varied selection of under-rated tracks from the 2010s</td>
+</tr>
+<tr>
+    <td>2020-08-26</td>
+    </td>
+    <td><div class="align-left text-left">More Instrumentals 2000-2009</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/playlist/5JSZqbJUKwG2NZW6lCoqJQ?si=wQ1EM3lYR-2Ra5z6BG_8Hg">Open</a></td>
+ <td>30+</td>
+ <td>Specific to decade</td>
+ <td>A varied selection of instrumental tracks from the 00s that were not included in the Favourites list</td>
+</tr>
+<tr>
+    <td>2020-07-29</td>
+    </td>
+    <td><div class="align-left text-left">Lockdown Blues</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/playlist/6oWgki4ekOph1GHC1wGLhy?si=9I5MD21EQVuCYFBuZBh__Q">Open</a></td>
+ <td>43</td>
+ <td>Vaguely thematic</td>
+ <td>A varied selection of music for the time</td>
+</tr>
+<tr>
+    <td>2020-07-29</td>
+    </td>
+    <td><div class="align-left text-left">Saint Etienne presents: Songs For A Central Park Picnic</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/playlist/3rBvBuh0lcTsTj8RzgynqM?si=mUWDfqqFTYewezProj8dmA">Open</a></td>
+ <td>23</td>
+ <td>Conceptual</td>
+ <td>Based on the compilation released in 2013</td>
+</tr>
+<tr>
+    <td>2019-12-31</td>
+    </td>
+    <td><div class="align-left text-left">100 Favourite Hit Singles 1990-1999</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/playlist/6yX04HCtWMEfo95swoK7KU?si=23EQo4xJSba0HaqsyhkEcg">Open</a></td>
+ <td>100</td>
+ <td><div class="align-left text-left">RANKED; Specific to decade</div></td>
+ <td>Favourite hits (UK singles peaking within the Top 75 chart) of the decade in reverse order</td>
+</tr>
+<tr>
+    <td>2019-12-31</td>
+    </td>
+    <td><div class="align-left text-left">Earcatchers 2019</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/playlist/32fB3663zFTqYaazO60o1L?si=m-XEOJzzRjaitwDE5fIQ1Q">Open</a></td>
+ <td>100</td>
+ <td><div class="align-left text-left">RANKED; Specific to year</div></td>
+ <td>Favourite tracks of the year in reverse order</td>
+</tr>
+
+<tr>
+    <td>2019-12-23</td>
+    </td>
+    <td><div class="align-left text-left">100 Favourite hits of 1999</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/playlist/28upgTOgSdXkiAkojgJ99t?si=_0Dn4K5HTQyEefesYxVN8w">Open</a></td>
+ <td>100</td>
+ <td><div class="align-left text-left">RANKED; Specific to year</div></td>
+ <td>In descending order, singles that spent one or more weeks in the UK Top 75 in 1999 on their first release including AA sides, EP tracks and 12" mixes or other extended versions. </td>
+</tr>
+
+<tr>
+    <td>2019-12-23</td>
+    </td>
+    <td><div class="align-left text-left">100 Favourite hits of 1998</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/playlist/2C90CKQOwUzGFsJkhJiBub?si=Pwzp2ADGTkuAun14i1RKSg">Open</a></td>
+ <td>100</td>
+ <td><div class="align-left text-left">RANKED; Specific to year</div></td>
+ <td>In descending order, singles that spent one or more weeks in the UK Top 75 in 1998 on their first release including AA sides, EP tracks and 12" mixes or other extended versions. </td>
+</tr>
+<tr>
+    <td>2019-10-01</td>
+    </td>
+    <td><div class="align-left text-left">100 Favourite hits of 1997</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/playlist/5f0zuJYOmAnA59p1A7rWXc?si=WKMLF_oeQtCnl28RQpZhgQ">Open</a></td>
+ <td>100</td>
+ <td><div class="align-left text-left">RANKED; Specific to year</div></td>
+ <td>In descending order, singles that spent one or more weeks in the UK Top 75 in 1997 on their first release including AA sides, EP tracks and 12" mixes or other extended versions. </td>
+</tr>
+<tr>
+    <td>2019-07-27</td>
+    </td>
+    <td><div class="align-left text-left">100 Favourite hits of 1996</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/playlist/5gCg4RW0WssWxNwsdQXtWy?si=vQUBMREEQcOTN3PlTyZxIw">Open</a></td>
+ <td>100</td>
+ <td><div class="align-left text-left">RANKED; Specific to year</div></td>
+ <td>In descending order, singles that spent one or more weeks in the UK Top 75 in 1996 on their first release including AA sides, EP tracks and 12" mixes or other extended versions. </td>
+</tr>
+<tr>
+    <td>2019-05-25</td>
+    </td>
+    <td><div class="align-left text-left">100 Favourite hits of 1995</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/playlist/4CAm9BBbi8MEwgCo2eVxWN?si=59SJwSpiTlOjdU2vRbksdg">Open</a></td>
+ <td>100</td>
+ <td><div class="align-left text-left">RANKED; Specific to year</div></td>
+ <td>In descending order, singles that spent one or more weeks in the UK Top 75 in 1995 on their first release including AA sides, EP tracks and 12" mixes or other extended versions. </td>
+</tr>
+
+<tr>
+    <td>2019-02-22</td>
+    </td>
+    <td><div class="align-left text-left">Made Inside 2 Minutes</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/playlist/2RtAqWoNtt2tuEgHvoB1HP?si=doJT9RWbQhWBmAbHRpg3ww">Open</a></td>
+ <td>150+</td>
+ <td><div class="align-left text-left">Specific to criteria</div></td>
+ <td>Tracks no more than 2 minutes long</td>
+</tr>
+<tr>
+    <td>2019-01-22</td>
+    </td>
+    <td><div class="align-left text-left">BOLERODROME</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/playlist/0VAiGAIY8OKX1Pg6B5BUM9?si=wKzW_XFtQkGalZ15PSA5hA">Open</a></td>
+ <td>30+</td>
+ <td><div class="align-left text-left">Specific to track</div></td>
+ <td>Different performances of the classical composer Ravel's piece 'Bolero'</td>
+</tr>
+<tr>
+    <td>2018-12-31</td>
+    </td>
+    <td><div class="align-left text-left">Earcatchers 2018</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/playlist/32fB3663zFTqYaazO60o1L?si=m-XEOJzzRjaitwDE5fIQ1Q">Open</a></td>
+ <td>100</td>
+ <td><div class="align-left text-left">RANKED; Specific to year</div></td>
+ <td>Favourite tracks of the year in reverse order</td>
+</tr>
+<tr>
+    <td>2018-12-01</td>
+    </td>
+    <td><div class="align-left text-left">Nextstep 2010-2019</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/playlist/1g1sByldxY0xj9hpBzwFca?si=zFG-4ZZ0Q9W3SQ0vpgpLhw">Open</a></td>
+ <td>15+</td>
+ <td><div class="align-left text-left">Specific to genre/style</div></td>
+ <td><div class="badge incomplete"></div><span class="small align-left pad-all-xs">ONGOING</span></td>
+</tr>
+
+<tr>
+    <td>2018-11-04</td>
+    </td>
+    <td><div class="align-left text-left">100 Favourite hits of 1994</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/playlist/47nyuRCQEkpfEkmEpwv9JN?si=Ip0v9JkjStqMhDC3g3jnXA">Open</a></td>
+ <td>100</td>
+ <td><div class="align-left text-left">RANKED; Specific to year</div></td>
+ <td>In descending order, singles that spent one or more weeks in the UK Top 75 in 1994 on their first release including AA sides, EP tracks and 12" mixes or other extended versions. </td>
+</tr>
+<tr>
+    <td>2018-10-14</td>
+    </td>
+    <td><div class="align-left text-left">100 Favourite hits of 1993</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/playlist/47nyuRCQEkpfEkmEpwv9JN?si=Ip0v9JkjStqMhDC3g3jnXA">Open</a></td>
+ <td>100</td>
+ <td><div class="align-left text-left">RANKED; Specific to year</div></td>
+ <td>In descending order, singles that spent one or more weeks in the UK Top 75 in 1993 on their first release including AA sides, EP tracks and 12" mixes or other extended versions. </td>
+</tr>
+<tr>
+    <td>2018-09-14</td>
+    </td>
+    <td><div class="align-left text-left">100 Favourite hits of 1992</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/playlist/16eO3RcjSxOJtHxuNL763p?si=Iq11ITayShyXf2K4rXKpyw">Open</a></td>
+ <td>100</td>
+ <td><div class="align-left text-left">RANKED; Specific to year</div></td>
+ <td>In descending order, singles that spent one or more weeks in the UK Top 75 in 1992 on their first release including AA sides, EP tracks and 12" mixes or other extended versions. </td>
+</tr>
+<tr>
+    <td>2018-09-02</td>
+    </td>
+    <td><div class="align-left text-left">100 Favourite hits of 1991</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/playlist/6TG2jm2NCeBDt6ENP5mCGk?si=SHc6Q5F_REGbDBb37ijM7A">Open</a></td>
+ <td>100</td>
+ <td><div class="align-left text-left">RANKED; Specific to year</div></td>
+ <td>In descending order, singles that spent one or more weeks in the UK Top 75 in 1991 on their first release including AA sides, EP tracks and 12" mixes or other extended versions. </td>
+</tr>
+
+
+
+<tr>
+    <td>2018-06-02</td>
+    </td>
+    <td><div class="align-left text-left">Disco 2010-2019: BPM 100-120</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/1iHyWwvNC7ScDpuquSI1ii?si=SbOhTTBNQG2svFObmfVF7w">Open</a></td>
+ <td>50+</td>
+ <td><div class="align-left text-left">Specific to genre, decade</div></td>
+ <td><div class="badge incomplete"></div><span class="small align-left pad-all-xs">ONGOING</span></td>
+</tr>
+<tr>
+    <td>2018-06-02</td>
+    </td>
+    <td><div class="align-left text-left">Disco 2020-2019: BPM 120-130</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/28HuqEMEe0ne3zQiUiztBH?si=fs8nCOalRsCg2gsMOj9yOg">Open</a></td>
+ <td>80+</td>
+ <td><div class="align-left text-left">Specific to genre, decade</div></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2018-05-29</td>
+    </td>
+    <td><div class="align-left text-left">Techno 2010-2019</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/1r2wMSctzfa0TQZXGeAdnz?si=15YRNNUBTlaNXitdfwvGMw">Open</a></td>
+ <td>30+</td>
+ <td><div class="align-left text-left">Specific to genre, decade</div></td>
+ <td><div class="badge incomplete"></div><span class="small align-left pad-all-xs">ONGOING</span></td>
+</tr>
+<tr>
+    <td>2018-05-01</td>
+    </td>
+    <td><div class="align-left text-left">Steve's Top 40th</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/7eoVTI3oBLmDliqCs1PCrs?si=OKz-ieXuTIiqh9-Y-YO_BQ">Open</a></td>
+ <td>40</td>
+ <td><div class="align-left text-left">Specific to criteria</div></td>
+ <td>Favourite track in the UK Top 40 singles chart for each week of each birthday of each year from 1979 to 2018</td>
+</tr>
+<!--
+<tr>
+<td>2018-03-29</td>
+</td>
+<td><div class="align-left text-left">Yes But...</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/4Xml5V9vaoejfnkcL2mzue?si=KeAiYZapSJqY-zkXPvKEUA">Open</a></td>
+ <td>10</td>
+ <td></td>
+ <td>Interesting tracks but challenging listening</td>
+ </tr>
+-->
+
+
+<tr>
+    <td>2018-01-30</td>
+    </td>
+    <td><div class="align-left text-left">100 Favourite hits of 1990</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/playlist/3IMwVNiVLFnWB0atySEq8s?si=Ws5CpikrR2Gj_L81DqNzpA">Open</a></td>
+ <td>100</td>
+ <td><div class="align-left text-left">RANKED; Specific to year</div></td>
+ <td>In descending order, singles that spent one or more weeks in the UK Top 75 in 1990 on their first release including AA sides, EP tracks and 12" mixes or other extended versions. </td>
+</tr>
+
+<tr>
+    <td>2018-01-04</td>
+    </td>
+    <td><div class="align-left text-left">GHOST.FM LITE</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/1qH2ae2LgmQzRQ8K27DGlY?si=fLVdMfQDRlCRdZL-_iWl5A">Open</a></td>
+ <td>1515</td>
+ <td><div class="align-left text-left">Compendium</div></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2017-12-31</td>
+    </td>
+    <td><div class="align-left text-left">Earcatchers 2017</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/playlist/3JtZQ7pRCXwpUE20rOslvi?si=elaB8ieAST6vJcLMMbidLw">Open</a></td>
+ <td>100</td>
+ <td><div class="align-left text-left">RANKED; Specific to year</div></td>
+ <td>Favourite tracks of the year in reverse order</td>
+</tr>
+<tr>
+    <td>2017-11-26</td>
+    </td>
+    <td><div class="align-left text-left">A23</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/7LO68RuliCIjsMyfdZVJkM?si=iy6DYfWPTwKVTriMUgGgpw">Open</a></td>
+ <td>38</td>
+ <td></td>
+ <td>Travel inspired</td>
+</tr>
+<tr>
+    <td>2017-11-12</td>
+    </td>
+    <td><div class="align-left text-left">80s HOUSE</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/7tmT0OZAXkEaDQ8ZmpEEix?si=V6CveJdPRB-CezBG7zwiIg">Open</a></td>
+ <td>19</td>
+ <td><div class="align-left text-left">Specific to genre, decade</div></td>
+ <td><div class="badge incomplete"></div><span class="small align-left pad-all-xs">ONGOING</span></td>
+</tr>
+<tr>
+    <td>2017-11-05</td>
+    </td>
+    <td><div class="align-left text-left">Disco 1978</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/44645jRbjemXzJ631PNgiz?si=DKQ1tyQJThO0n-9YZml4ew">Open</a></td>
+ <td>19</td>
+ <td><div class="align-left text-left">Specific to genre, year</div></td>
+ <td><div class="badge incomplete"></div><span class="small align-left pad-all-xs">ONGOING</span></td>
+</tr>
+<tr>
+    <td>2017-11-05</td>
+    </td>
+    <td><div class="align-left text-left">Disco 1979</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/3VZxdlNEtdKifGvI7YwGy2?si=rFoRfW1CRTSifHUIk1LYzg">Open</a></td>
+ <td>141</td>
+ <td><div class="align-left text-left">Specific to genre, year</div></td>
+ <td><div class="badge incomplete"></div><span class="small align-left pad-all-xs">ONGOING</span></td>
+</tr>
+<tr>
+    <td>2017-11-05</td>
+    </td>
+    <td><div class="align-left text-left">Disco 1980</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/0ythPPXQ9ysZua3wE2cdNY?si=9MfPXBcjS8Gdo8KUCI0P5g">Open</a></td>
+ <td>19</td>
+ <td><div class="align-left text-left">Specific to genre, year</div></td>
+ <td><div class="badge incomplete"></div><span class="small align-left pad-all-xs">ONGOING</span></td>
+</tr>
+<tr>
+    <td>2017-11-05</td>
+    </td>
+    <td><div class="align-left text-left">Disco 1981</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/6v3L4itqHVhoyvQ6ke43UF?si=Q_lR5fIxRguj5hPteviXzg">Open</a></td>
+ <td>21</td>
+ <td><div class="align-left text-left">Specific to genre, year</div></td>
+ <td><div class="badge incomplete"></div><span class="small align-left pad-all-xs">ONGOING</span></td>
+</tr>
+<tr>
+    <td>2017-11-05</td>
+    </td>
+    <td><div class="align-left text-left">Disco 1982</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/4pngK1AyqZ36hBMuzucgaP?si=L1AOYjTfT6mOvDg0g7LEug">Open</a></td>
+ <td>15</td>
+ <td><div class="align-left text-left">Specific to genre, year</div></td>
+ <td><div class="badge incomplete"></div><span class="small align-left pad-all-xs">ONGOING</span></td>
+</tr>
+<tr>
+    <td>2017-11-05</td>
+    </td>
+    <td><div class="align-left text-left">Disco 1983</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/1Ke6HIO8KZRfJkRDEf2PY6?si=Cl5RfUb6RN-CU4i8wY51HQ">Open</a></td>
+ <td>27</td>
+ <td><div class="align-left text-left">Specific to genre, year</div></td>
+ <td><div class="badge incomplete"></div><span class="small align-left pad-all-xs">ONGOING</span></td>
+</tr>
+<tr>
+    <td>2017-11-05</td>
+    </td>
+    <td><div class="align-left text-left">Disco 1984</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/40abwqOeeyB2DqlOTxAwja?si=lEP07TxcQjqxhM0cheTTUA">Open</a></td>
+ <td>17</td>
+ <td><div class="align-left text-left">Specific to genre, year</div></td>
+ <td><div class="badge incomplete"></div><span class="small align-left pad-all-xs">ONGOING</span></td>
+</tr>
+<tr>
+    <td>2017-10-22</td>
+    </td>
+    <td><div class="align-left text-left">90s TECHNO</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/7JY63UBPmoFiwV5ZpJBNN6?si=HZupaf1vRk6D4wlF1UWuPw">Open</a></td>
+ <td>18</td>
+ <td><div class="align-left text-left">Specific to genre, decade</div></td>
+ <td><div class="badge incomplete"></div><span class="small align-left pad-all-xs">ONGOING</span></td>
+</tr>
+<tr>
+    <td>2017-10-11</td>
+    </td>
+    <td><div class="align-left text-left">70s Extended Hits</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/6z6E9eHBkkX4JUk9idZUbo?si=vi2dTpIGQC60WR1QMcfgYA">Open</a></td>
+ <td>35</td>
+ <td><div class="align-left text-left">Specific to decade</div></td>
+ <td>Longer versions of 70s classics</td>
+</tr>
+<tr>
+    <td>2017-10-11</td>
+    </td>
+    <td><div class="align-left text-left">Favourites: Indie Rock & Alternative Pop hits 1985-1989</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/7bI56GcZb6sIFc1RdTCN41?si=Q8019SpnTyeM6cGMm6GiJA">Open</a></td>
+ <td>35</td>
+ <td><div class="align-left text-left">Specific to genre, decade half</div></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2017-10-11</td>
+    </td>
+    <td><div class="align-left text-left">Favourites: Soul & RnB hits 1985-1989</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/4oPq3Epzae1jA458lEmjEG?si=0cF4kvSBTjK_8x2wsVwmmA">Open</a></td>
+ <td>77</td>
+ <td><div class="align-left text-left">Specific to genre, decade half</div></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2017-10-11</td>
+    </td>
+    <td><div class="align-left text-left">Favourites: Synth Pop hits 1980-1989</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/5oV4vjQwhxsbUFq9iPpLIQ?si=xJTTDmWXTxGWmCz8KCNwcA">Open</a></td>
+ <td>103</td>
+ <td><div class="align-left text-left">Specific to genre, decade</div></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2017-10-11</td>
+    </td>
+    <td><div class="align-left text-left">Favourites: Electro, House & Techno hits 1980-1989</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/1N8Nypx9A4rwnTfcI43DqD?si=bbMj-BgETKqNiw7qnzTvzw">Open</a></td>
+ <td>69</td>
+ <td><div class="align-left text-left">Specific to genre, decade</div></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2017-09-21</td>
+    </td>
+    <td><div class="align-left text-left">Favourites: MOR & AOP hits 1980-1989</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/30LWxTjcTCMAAYgT1hsSFh?si=GEZBbMzrQkqzIUjmpZdKYg">Open</a></td>
+ <td>151</td>
+ <td><div class="align-left text-left">Specific to genre, decade</div></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2017-09-21</td>
+    </td>
+    <td><div class="align-left text-left">Favourites: Rock hits 1980-1989</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/24kHHI8q7q1K8qzYwEVqiO?si=QjjRZpehRbywC-ATr96bNA">Open</a></td>
+ <td>37</td>
+ <td><div class="align-left text-left">Specific to genre, decade</div></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2017-09-21</td>
+    </td>
+    <td><div class="align-left text-left">Favourites: Power Pop & Rock hits 1980-1989</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/6NYEw1YdSwUv7vPoekU0sr?si=CtXtCk-NQAulnEwsVPAP4g">Open</a></td>
+ <td>97</td>
+ <td><div class="align-left text-left">Specific to genre, decade</div></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2017-09-21</td>
+    </td>
+    <td><div class="align-left text-left">Favourites: Pop hits 1980-1989</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/6gV7wFA3VDMluNd6dV8Hbd?si=rxWCkii8R9Wz18KDxS58Ag">Open</a></td>
+ <td>193</td>
+ <td><div class="align-left text-left">Specific to genre, decade</div></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2017-09-21</td>
+    </td>
+    <td><div class="align-left text-left">Favourites: Rap hits 1980-1989</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/2R8RyKah9lDP8VufIBF6Mn?si=SeVa6gXeR6Kg5kVy_CBAxA">Open</a></td>
+ <td>34</td>
+ <td><div class="align-left text-left">Specific to genre, decade</div></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2017-09-21</td>
+    </td>
+    <td><div class="align-left text-left">Favourites: Reggae & Related hits 1980-1989</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/6rlCybLkrTvtDxqrWDB06x?si=eCz1w74gRCS9CaM_xLyy_w">Open</a></td>
+ <td>32</td>
+ <td><div class="align-left text-left">Specific to genre, decade</div></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2017-09-21</td>
+    </td>
+    <td><div class="align-left text-left">Favourites: New wave hits 1980-1984</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/3O4LFzY86sXYJXFw23baBO?si=yttGDrBgQbmNG63S-TUn_w">Open</a></td>
+ <td>81</td>
+ <td><div class="align-left text-left">Specific to genre, decade half</div></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2017-09-21</td>
+    </td>
+    <td><div class="align-left text-left">Favourites: Disco-Dance hits 1980-1984</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/2ThMflmEICINZ27lDFEI0S?si=flspg7hnRsqJb-e4LZiouQ">Open</a></td>
+ <td>67</td>
+ <td><div class="align-left text-left">Specific to genre, decade half</div></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2017-09-21</td>
+    </td>
+    <td><div class="align-left text-left">Favourites: Funk, Groove & Boogie hits 1980-1984</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/2JkI0lLCTdgd5SYkapj1oh?si=ytWNLVnkSvKucaOEzPR0Qg">Open</a></td>
+ <td>89</td>
+ <td><div class="align-left text-left">Specific to genre, decade half</div></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2017-09-21</td>
+    </td>
+    <td><div class="align-left text-left">Favourites: Soul & RnB hits 1980-1984</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/2G1ZacBglqAOihae9Qsjal?si=bbiEpqVERMC3rGiEgamaEw">Open</a></td>
+ <td>20</td>
+ <td><div class="align-left text-left">Specific to genre, decade half</div></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2017-09-05</td>
+    </td>
+    <td><div class="align-left text-left">GHOST.FM LATE</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/7KMVJNanPVbCLqKU4FoZBL?si=70bhpP11SSOZGaGeMtX6kg">Open</a></td>
+ <td>1620</td>
+ <td></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2017-07-30</td>
+    </td>
+    <td><div class="align-left text-left">100 Favourite Non-Singles 1990-1999</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/playlist/7diR4zgMvUha2yj9BPqlR7?si=p_oyTkBuTVekSkQB6ESSPA">Open</a></td>
+ <td>50+</td>
+ <td><div class="align-left text-left">Specific to decade</div></td>
+ <td><div class="badge incomplete"></div><span class="small align-left pad-all-xs">ONGOING</span></td>
+</tr>
+<tr>
+    <td>2017-07-26</td>
+    </td>
+    <td><div class="align-left text-left">Earcatchers Instrumental Dance</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/2UFNkRnFuEHdcGH6jOYpPj?si=oBUk4Te4SZmPbWwUPM8w4Q">Open</a></td>
+ <td>105</td>
+ <td></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2017-07-19</td>
+    </td>
+    <td><div class="align-left text-left">Noughties Nook</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/0oFTb88T3oeySVXmYoUmse?si=AP_MvyfRTgKOJv2RbtXydw">Open</a></td>
+ <td>270</td>
+ <td><div class="align-left text-left">Specific to decade</div></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2017-07-19</td>
+    </td>
+    <td><div class="align-left text-left">Nineties Nook</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/06IipOctcFprOGEnDcBlNW?si=M_1FVWMLSYSYiRNAcxRhrw">Open</a></td>
+ <td>68</td>
+ <td><div class="align-left text-left">Specific to decade</div></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2017-07-17</td>
+    </td>
+    <td><div class="align-left text-left">GHOST.FM DARK</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/7gBa9RbpikZX0SW1L4RrQA?si=MXwIy6eqTe6tjHhojZCazw">Open</a></td>
+ <td>568</td>
+ <td></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2017-07-17</td>
+    </td>
+    <td><div class="align-left text-left">Big Bangers 00-09</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/4b63eimZUrzLlTnbPWgfkN?si=KbKCGi_wSUGLy743fFmQqw">Open</a></td>
+ <td>235</td>
+ <td></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2017-07-17</td>
+    </td>
+    <td><div class="align-left text-left">Bailiwick Beats 00-09</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/04YrWBNXKJfMkPcd7ewHoG?si=knF6CD3cSGelg3Rwgl3u8g">Open</a></td>
+ <td>19</td>
+ <td><div class="align-left text-left">Specific to decade</div></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2017-07-14</td>
+    </td>
+    <td><div class="align-left text-left">80s GROOVES</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/0CIodA3HP8KAvMHVxuD0kl?si=r8hSTQ-PRfC6vCsX1xMZNg">Open</a></td>
+ <td>243</td>
+ <td><div class="align-left text-left">Specific to decade</div></td>
+ <td></td>
+</tr>
+
+
+<tr>
+    <td>2017-06-30</td>
+    </td>
+    <td><div class="align-left text-left">Bailiwick Beats 90-99</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/0gLXfzW2msGlSTl2vSzj3O?si=CfYRDEYVTSCr4GkKlU9bkQ">Open</a></td>
+ <td>75</td>
+ <td><div class="align-left text-left">Specific to decade</div></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2017-06-27</td>
+    </td>
+    <td><div class="align-left text-left">Long Distance Disco</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/5IT2MHpw9b4eoWR1OBSqOO?si=uDO1WzgCQIOmGwIBs6zedA">Open</a></td>
+ <td>31</td>
+ <td></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2017-06-27</td>
+    </td>
+    <td><div class="align-left text-left">Bailiwick Breaks 90-09</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/7bVtEdQqaohMv3Vy5WwEr9?si=EZIdpuG9SiG3JpkJJqEmVA">Open</a></td>
+ <td>60</td>
+ <td><div class="align-left text-left">Specific to decade</div></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2017-06-27</td>
+    </td>
+    <td><div class="align-left text-left">GHOST.FM CLUB</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/02CUmvuSB7m8ImbFrZdX24?si=LXOQQl82Sl6IfRoXCUiBlw">Open</a></td>
+ <td>218</td>
+ <td></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2017-06-27</td>
+    </td>
+    <td><div class="align-left text-left">FUKDAGLITZNGLAMMA</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/5Au9uGFWpqCxAJvxNFo3oi?si=-c9nh2RUSnqoLt8pfnusGg">Open</a></td>
+ <td>84</td>
+ <td></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2017-06-19</td>
+    </td>
+    <td><div class="align-left text-left">Favourite under-rated hits of the 80s</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/0IaAtoy6E8vYglvNYcebAE?si=OGQ6IaBTTl-Os2IMhqx8tA">Open</a></td>
+ <td>120</td>
+ <td><div class="align-left text-left">Specific to decade</div></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2017-06-11</td>
+    </td>
+    <td><div class="align-left text-left">100 Favourite Hit Singles 1980-1989</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/6jN1P5qXnSkhkqDd7CzSaU?si=joYPVzSAToWeGgy87yiPTQ">Open</a></td>
+ <td>100</td>
+ <td><div class="align-left text-left">RANKED; Specific to decade</div></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2017-06-06</td>
+    </td>
+    <td><div class="align-left text-left">100 Favourite Instrumentals 1990-1999</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/2DAWBV4EpCNNreBfImeQVA?si=83ggxbWXSAy1w-zpMR_8lA">Open</a></td>
+ <td>100</td>
+ <td><div class="align-left text-left">RANKED; Specific to decade</div></td>
+ <td>Finalised in late 2020</td>
+</tr>
+<tr>
+    <td>2017-05-26</td>
+    </td>
+    <td><div class="align-left text-left">80s DANCE HITS</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/5l7yQU6qUkpcXFrgpmd6pt?si=ZjoWVhDLQQi1mkFgjf6Kyg">Open</a></td>
+ <td>313</td>
+ <td><div class="align-left text-left">Specific to decade</div></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2017-05-26</td>
+    </td>
+    <td><div class="align-left text-left">80s EXTENDED HITS</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/0I0OiTZwKzBhwbzjTujjgl?si=PGLYMHd0S6eGgSJEW48nfQ">Open</a></td>
+ <td>142</td>
+ <td><div class="align-left text-left">Specific to decade</div></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2017-05-17</td>
+    </td>
+    <td><div class="align-left text-left">Earcatchers Mobile</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/5BZTcgBElw1NHC6v7BlCel?si=COTIXiMNQwCKXicyjBd1gA">Open</a></td>
+ <td>50</td>
+ <td></td>
+ <td>Mostly for older tunes as they are re/discovered, only the 50 most recent are listed with previous additions transferred to the appropriate 'A Big Dig' year-by-year playlists.</td>
+</tr>
+
+<!--
+<tr>
+<td>2017-00-00</td>
+</td>
+<td><div class="align-left text-left">DePartYaLounj</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/5fXAGJXMLIpU9Q2Qrdf1kb?si=0zy_0eU8SsWYwCG4fi3u9w">Open</a></td>
+ <td>51</td>
+ <td></td>
+ <td></td>
+ </tr>
+-->
+
+<tr>
+    <td>2016-12-31</td>
+    </td>
+    <td><div class="align-left text-left">100 Favourite Hit Singles 2010-2019</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/5M4dPDhaccCcnUyo3qKaDd?si=PUXcsIHWSC2rkGxMrZRaFA">Open</a></td>
+ <td>100</td>
+ <td><div class="align-left text-left">RANKED; Specific to decade</div></td>
+ <td>Finalised in January 2020</td>
+</tr>
+<tr>
+    <td>2016-12-31</td>
+    </td>
+    <td><div class="align-left text-left">Earcatchers 2016</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/playlist/1C4mImOevS5gDYT5OF65eI?si=-_lDU7YHT-O5mlMWfbF_xA">Open</a></td>
+ <td>100</td>
+ <td><div class="align-left text-left">RANKED; Specific to year</div></td>
+ <td>Favourite tracks of the year in reverse order</td>
+</tr>
+
+
+<tr>
+    <td>2016-12-28</td>
+    </td>
+    <td><div class="align-left text-left">Tracks from Speculator's Short Bus Radio 2006-2009</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/2N4M7GpjdAucJK4ZDuMSxP?si=t-xQ7FsRRXyjjnKoixz9Vg">Open</a></td>
+ <td>75</td>
+ <td></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2016-11-20</td>
+    </td>
+    <td><div class="align-left text-left">100 Favourite Instrumentals 1980-1989</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/3mYPJVvGPSfe3uZt0yF9QP?si=Q0PFuN1ITsKbUlPXo-NKdQ">Open</a></td>
+ <td>100</td>
+ <td><div class="align-left text-left">RANKED; Specific to decade</div></td>
+ <td>Finalised in late 2020</td>
+</tr>
+<tr>
+    <td>2016-11-20</td>
+    </td>
+    <td><div class="align-left text-left">100 Favourite Instrumentals 1970-1979</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/58pVr1Gl3u9kAlkE1cqWUw?si=XkP9_SUwQm6mP7Kne6X9mw">Open</a></td>
+ <td>100</td>
+ <td><div class="align-left text-left">RANKED; Specific to decade</div></td>
+ <td>Finalised in 2020, a vaguely ranked 'pop leaning' list of instrumentals (some with brief vocals) in reverse order. Some instrumentals that entered the UK Top 40 chart instead appear in 100 Favourite Hit Singles 1970-1979.</td>
+</tr>
+<tr>
+    <td>2016-11-17</td>
+    </td>
+    <td><div class="align-left text-left">pOptiMists O tIME</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/3iqlInhv97lTsbQwthNlaY?si=83klXOK6SkG67eAwE_8Lmg">Open</a></td>
+ <td>428</td>
+ <td></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2016-11-17</td>
+    </td>
+    <td><div class="align-left text-left">Big Bangers 90-99</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/21yMTDHzYFdSeoJK3MQepa?si=b-FZTQsLRMSFTWoeyjaS9w">Open</a></td>
+ <td>126</td>
+ <td><div class="align-left text-left">Specific to decade</div></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2016-11-02</td>
+    </td>
+    <td><div class="align-left text-left">100 Favourite Hit Singles 1970-1979</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/4cixro8WLyM4NreadHYCW8?si=eVFCmKJqTkCaQxBEIe4kJw">Open</a></td>
+ <td>100</td>
+ <td><div class="align-left text-left">RANKED; Specific to decade</div></td>
+ <td>See <a href="100-favourite-hits-1970-1979.html">the full list</a> in the FAVOURITES section</td>
+</tr>
+<tr>
+    <td>2016-10-06</td>
+    </td>
+    <td><div class="align-left text-left">100 Favourite Instrumentals 2010-2019</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/playlist/7Kts2AsXYgnCdbbzdjsxFW?si=SHxJyPuUT5OhrwQ4GprIIQ">Open</a></td>
+ <td>100</td>
+ <td><div class="align-left text-left">RANKED; Specific to decade</div></td>
+ <td>Finalised in January 2020</td>
+</tr>
+<tr>
+    <td>2016-10-06</td>
+    </td>
+    <td><div class="align-left text-left">100 Favourite Non-Singles 2010-2019</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/5ZmjLILhUts7sglYpqirqp?si=BKqJpcWYQqO6LSUh3Ri-Ig">Open</a></td>
+ <td>100</td>
+ <td><div class="align-left text-left">RANKED; Specific to decade</div></td>
+ <td>Finalised in January 2020</td>
+</tr>
+<tr>
+    <td>2016-10-06</td>
+    </td>
+    <td><div class="align-left text-left">100 Favourite Non-Hit Singles 2010-2019</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/32sMJRksf7jyYBRONWlJ3l?si=iXnihKmQS3alZ9wniSCAKA">Open</a></td>
+ <td>100</td>
+ <td><div class="align-left text-left">RANKED; Specific to decade</div></td>
+ <td>Finalised in January 2020</td>
+</tr>
+<tr>
+    <td>2016-09-05</td>
+    </td>
+    <td><div class="align-left text-left">100 Favourite Hit Singles 2010-2014 </div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/56gaMwYKTya35NfaNYqGGh?si=YHqkOB6pTqqMNH2LNaatgg">Open</a></td>
+ <td>100</td>
+ <td><div class="align-left text-left">RANKED; Specific to half-decade</div></td>
+ <td>Finalised in January 2015</td>
+</tr>
+<tr>
+    <td>2016-09-05</td>
+    </td>
+    <td><div class="align-left text-left">UK chart hits 10-14</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/26BEVknumaA4QtuVuLtUBT?si=tEL4e7rFShuYkf46XApYWg">Open</a></td>
+ <td>2143</td>
+ <td><div class="align-left text-left">Specific to half-decade</div></td>
+ <td>Excludes re-entries of hits released before 2010</td>
+</tr>
+<tr>
+    <td>2016-03-16</td>
+    </td>
+    <td><div class="align-left text-left">500 UK chart favourites 1970-1979</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/5vWsldipyN3znTsQcmTUaM?si=dGxlXPTySu6y-zzrj4z2CQ">Open</a></td>
+ <td>503</td>
+ <td><div class="align-left text-left">Specific to decade</div></td>
+ <td>Compiled from the <a href="ukcharthits-1970-1974.html">UK Chart hits</a> lists</td>
+</tr>
+<tr>
+    <td>2016-02-27</td>
+    </td>
+    <td><div class="align-left text-left">80s MELLOW</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/73YYpqKsg4UkI2KPx9v12t?si=dZ4L9YBYR6SUzIHrFw9r6Q">Open</a></td>
+ <td>264</td>
+ <td></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2015-12-31</td>
+    </td>
+    <td><div class="align-left text-left">Earcatchers 2015</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/playlist/2jKPbokF9YqkA6RHfchgdw?si=UVtwhcsrTiWZYRrpydeIEQ">Open</a></td>
+ <td>100</td>
+ <td><div class="align-left text-left">Specific to year</div></td>
+ <td>Favourite tracks of the year in reverse order</td>
+</tr>
+<tr>
+    <td>2015-12-15</td>
+    </td>
+    <td><div class="align-left text-left">100 Favourite Remixes & Edits 2010-2019</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/3QR0cjWpjZmeqbgEzAcMPO?si=7K8IcjgmRqiZS_ZBY70-vQ">Open</a></td>
+ <td>100</td>
+ <td><div class="align-left text-left">RANKED; Specific to decade</div></td>
+ <td>Finalised in January 2020</td>
+</tr>
+<tr>
+    <td>2015-12-15</td>
+    </td>
+    <td><div class="align-left text-left">100 Favourite Remixes & Edits 1990-1999</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/0PGnFKAA8FF3uy1DHXZVub?si=a0DKDLsCT_GK47-m_1bLng">Open</a></td>
+ <td>55</td>
+ <td></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2015-06-10</td>
+    </td>
+    <td><div class="align-left text-left">41 singles that peaked at #41 in the UK chart</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/6PKZ669NZ02n285MHWpFWn?si=b28bS5rFSk-xJ3V4gurmkQ">Open</a></td>
+ <td>41<td></td>
+ </td>
+ <td></td>
+ <td></td>
+</tr>
+<!--
+<tr>
+<td>2014-06-29</td>
+</td>
+<td><div class="align-left text-left">40 Instrumental hits 1959-1999</div>
+ <a class="align-right btn btn-xs btn-primary mvs" href="">Open</a></td>
+ <td>23</td>
+ <td></td>
+ <td></td>
+ </tr>
+-->
+
+ <tr>
+    <td>2014-12-31</td>
+    </td>
+    <td><div class="align-left text-left">Earcatchers 2014</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/playlist/2KtI9UJkazECWlOauRzzop?si=CKWOYetTQSCToL531enGXQ">Open</a></td>
+ <td>100</td>
+ <td><div class="align-left text-left">Specific to year</div></td>
+ <td>Favourite tracks of the year in reverse order</td>
+</tr>
+<tr>
+    <td>2014-02-16</td>
+    </td>
+    <td><div class="align-left text-left">HIPPOS IN TANKS</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/10AuvbWAVC6EkXQXqMFXwa?si=UhxMESR8QVC-EPJ83-OnNg">Open</a></td>
+ <td>23</td>
+ <td><div class="align-left text-left">Specific to record label</div></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2014-02-16</td>
+    </td>
+    <td><div class="align-left text-left">Software Records</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/4wKQ2kJEXsUTva5T8XVSeI?si=F7Cwk136S_6T8f1_2bIjDg">Open</a></td>
+ <td>20</td>
+ <td><div class="align-left text-left">Specific to record label</div></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2013-12-31</td>
+    </td>
+    <td><div class="align-left text-left">Earcatchers 2013</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/playlist/3yApIB3amThSxty27ycf3p?si=0RruzH2sS3COpYlnBiP5ww">Open</a></td>
+ <td>100</td>
+ <td><div class="align-left text-left">Specific to year</div></td>
+ <td>Favourite tracks of the year in reverse order</td>
+</tr>
+<tr>
+    <td>2013-10-13</td>
+    </td>
+    <td><div class="align-left text-left">Last.fm loved tracks</div>
+ <a class="align-right btn btn-xs btn-primary mvs" href="https://open.spotify.com/playlist/4YlI9ZuspmKyaHEoAJDaW1?si=Z-c5ibsPQQujlHVMljfXoQ">Open</a></td>
+ <td>827</td>
+ <td></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2013-01-20</td>
+    </td>
+    <td><div class="align-left text-left">Prince UK singles</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/17Sb78vHTTCiltRgBMwGH1?si=VPBc7NFfS7eu3NbebjoRuQ">Open</a></td>
+ <td>37</td>
+ <td><div class="align-left text-left">Specific to artist; chronological</div></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2012-12-31</td>
+    </td>
+    <td><div class="align-left text-left">Earcatchers 2012</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/playlist/4gT5pS0SNvwpIOpZI4hQxt?si=JefcZzCaTLabL0Xdyj4gNQ">Open</a></td>
+ <td>100</td>
+ <td><div class="align-left text-left">Specific to year</div></td>
+ <td>Favourite tracks of the year in reverse order</td>
+</tr>
+<tr>
+    <td>2012-04-05</td>
+    </td>
+    <td><div class="align-left text-left">ILM (I Love Music online community) Top 100 Tracks Of The 1970s</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/6SIE3wnzqoGw4TB0CZZOtX?si=EH1koMlqTPe3_H4uVUd-mg">Open</a></td>
+ <td>100</td>
+ <td><div class="align-left text-left">RANKED; Specific to decade</div></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2012-04-05</td>
+    </td>
+    <td><div class="align-left text-left">ILM (I Love Music online community) Top 100 Tracks Of The 1980s</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/5r0OGFExzXd0tygjFCg8Rh?si=PlLELzShQzOBakOFqerU3w">Open</a></td>
+ <td>99</td>
+ <td></td>
+ <td></td>
+</tr>
+
+<tr>
+    <td>2011-12-31</td>
+    </td>
+    <td><div class="align-left text-left">Earcatchers 2011</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/playlist/62KiJ5ybA2gRv0Nu3ySJpW?si=kBsNsbDLS62dehi7giswAg">Open</a></td>
+ <td>100</td>
+ <td><div class="align-left text-left">Specific to year</div></td>
+ <td>Favourite tracks of the year in reverse order</td>
+</tr>
+<tr>
+    <td>2011-12-31</td>
+    </td>
+    <td><div class="align-left text-left">Earcatchers 2010</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/playlist/3fiXUTvtqlP8QQiDss4ZUn?si=P7beC4x3QxukN6-6wXZ60A">Open</a></td>
+ <td>100</td>
+ <td><div class="align-left text-left">Specific to year</div></td>
+ <td>Favourite tracks of the year in reverse order</td>
+</tr>
+<tr>
+    <td>2011-11-06</td>
+    </td>
+    <td><div class="align-left text-left">1976 50 Great Hits</div>
+ <a class="align-right btn btn-xs btn-primary mvs" href="https://open.spotify.com/playlist/1Xq2JkgDGfwiokGKVdouwz?si=8i_pixfHRhq-Pa-cDD7z-g">Open</a></td>
+ <td>54</td>
+ <td></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2011-09-25</td>
+    </td>
+    <td><div class="align-left text-left">100 Favourite Non-Hit Singles 2000-2009</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/playlist/52G7duBBVvW2MgGIEUhfYU?si=_dGVqvfJQCa5eV3piJERXw">Open</a></td>
+ <td>100</td>
+ <td><div class="align-left text-left">RANKED; Specific to decade</div></td>
+ <td>Favourite singles of the decade that failed to reach the UK Top 40 chart - in reverse order</td>
+</tr>
+<tr>
+    <td>2011-09-25</td>
+    </td>
+    <td><div class="align-left text-left">100 Favourite Hit Singles 2000-2009</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/playlist/58DJCwfTFo94Gr2o0LXc8D?si=ypWJH_PeRWyrj-jy9ENk-A">Open</a></td>
+ <td>100</td>
+ <td><div class="align-left text-left">RANKED; Specific to decade</div></td>
+ <td>Favourite singles of the decade that reached the UK Top 40 chart - in reverse order</td>
+</tr>
+<tr>
+    <td>2011-09-25</td>
+    </td>
+    <td><div class="align-left text-left">100 Favourite Remixes & Edits 2000-2009</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/playlist/0J06wkBCe676bEociGE8Cl?si=Jl0Jcuf6THyLijgkI-5OlQ">Open</a></td>
+ <td>100</td>
+ <td><div class="align-left text-left">RANKED; Specific to decade</div></td>
+ <td>Favourite remixes, edits and mash-ups of the decade in reverse order</td>
+</tr>
+<tr>
+    <td>2011-09-25</td>
+    </td>
+    <td><div class="align-left text-left">100 Favourite Non-Singles 2000-2009</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/playlist/51X0WLmp3wxMTOqByrR0qF?si=_QOgY-ijSjWOW7nub9Zzbg">Open</a></td>
+ <td>100</td>
+ <td><div class="align-left text-left">RANKED; Specific to decade</div></td>
+ <td>Favourite tracks of the decade that were not released as singles in the UK - in reverse order</td>
+</tr>
+<tr>
+    <td>2011-09-04</td>
+    </td>
+    <td><div class="align-left text-left">100 Favourite Instrumentals 2000-2009</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/playlist/1gAoskR9COKtKjc6C9tSDg?si=4JNMZoeHTDOzcOa9Jd00FQ">Open</a></td>
+ <td>100</td>
+ <td><div class="align-left text-left">RANKED; Specific to decade</div></td>
+ <td>Favourite instrumental tracks of the decade in reverse order</td>
+</tr>
+
+<tr>
+    <td>2011-04-25</td>
+    </td>
+    <td><div class="align-left text-left">Hangover Lounge 110515</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/62swzZoVDqy684QcVn1GSM?si=kLFPwpvyTgq-90aPmD0-UA">Open</a></td>
+ <td>30</td>
+ <td></td>
+ <td></td>
+</tr>
+
+<tr>
+    <td>2010-12-16</td>
+    </td>
+    <td><div class="align-left text-left">Sample Parking Day And Night </div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/65xEYlnm1HHLATU6Lt70WJ?si=IxbguhRZQhSxMLzvMUQDqQ">Open</a>
+</td>
+ <td>150+</td>
+ <td> <div class="align-right align-inline width-100"><div class="badge badge-sm often fader"><span class="small">UPDATED OFTEN</span></div></td>
+ <td>Tracks sampled in other tracks</td>
+</tr>
+<tr>
+    <td>2010-11-28</td>
+    </td>
+    <td><div class="align-left text-left">The Mighty Robyn</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/1zjp5H7Fn6kwg5MPevQFmq?si=WG6Dc4PlQ7KzMG29S2QHqQ">Open</a></td>
+ <td>39</td>
+ <td><div class="align-left text-left">Specific to artist</div></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2010-11-26</td>
+    </td>
+    <td><div class="align-left text-left">As sampled by Kanye West</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/7FDnaI3s4OV1gyeySqUumH?si=DOhjfwQ8TaK98WC0CWsyXA">Open</a></td>
+ <td>98</td>
+ <td><div class="align-left text-left">Specific to artist; criteria</div></td>
+ <td></td>
+</tr>
+<tr>
+    <td>2010-08-31</td>
+    </td>
+    <td><div class="align-left text-left">The Scenic Route: Saint Etienne</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/2gtYVsVUVjWUHFy58xpaCf?si=JMYD1kSESGSB15sV-PozdA">Open</a></td>
+ <td>30</td>
+ <td><div class="align-left text-left">Specific to artist</div></td>
+ <td>Favourite tracks excluding "A-side" hits</td>
+</tr>
+<tr>
+    <td>2010-05-17</td>
+    </td>
+    <td><div class="align-left text-left">The Brit Box: Dance '88-'99</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/4jA2ELeLzDUrcNvi2Z6GU0?si=LpIjYNn9Sv60Y_UBmY40XQ">Open</a></td>
+ <td>68</td>
+ <td><div class="align-left text-left">Specific to genres, time period</div></td>
+ <td>An equivalent of the 'Brit Box' compilation of UK Indie rock and pop, covering British strains of House, Techno, Rap and Breakbeat from the end of the 20th century.</td>
+</tr>
+<tr>
+    <td>2010-00-00</td>
+    </td>
+    <td><div class="align-left text-left">Origins of Big Beat (1988-1994)</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/7zGFFtixytmpusjQ3A2Ii2?si=U5eEDTBSTISqgMsY34uYMA">Open</a></td>
+ <td>16</td>
+ <td><div class="align-left text-left">Specific to genre, time period</div></td>
+ <td><div class="badge complete"></div><span class="small align-left pad-all-xs">COMPLETE</span></td>
+</tr>
+<tr>
+    <td>2010-00-00</td>
+    </td>
+    <td><div class="align-left text-left">As sampled by Saint Etienne</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/12XrmOzxDJmXEGAeq2Ts5H?si=muZB9dogThOLdjYA8XOtQg">Open</a><div class="align-right align-inline width-100"><div class="badge badge-sm popular fader"></div><span class="small">POPULAR</span></td>
+ <td>50+</td>
+ <td><div class="align-left text-left">Specific to artist; criteria</div></td>
+ <td>Also includes tracks that provided clear inspiration for specific Saint Etienne tracks without being sampled directly</td>
+</tr>
+<tr>
+    <td>2010-00-00</td>
+    </td>
+    <td><div class="align-left text-left">The Scenic Route: Pet Shop Boys</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/225NqFz14N8017EeCQmUWW?si=dC3QuAWNSqyOEei26YP7qw">Open</a></td>
+ <td>40+</td>
+ <td><div class="align-left text-left">Specific to artist</div></td>
+ <td>Favourite tracks excluding "A-side" hits</td>
+</tr>
+<tr>
+    <td>2010-00-00</td>
+    </td>
+    <td><div class="align-left text-left">100 Favourite Tracks 2000-2009</div>
+ <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/playlist/2l5hZlWEIuaft3kBuEXuSb?si=_CeWb3mvTSuP1hNYNOxbHQ">Open</a></td>
+ <td>100</td>
+ <td><div class="align-left text-left">RANKED; Specific to decade</div></td>
+ <td>Favourite tracks of the decade in reverse order</td>
+</tr>
+</tbody> 
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer>
+    <div class="align-center" id="more">
+        <h3>Out There</h3>
+            <div class="width-max pan hue-tanz">
+                <div class="container container-xl">
+                    <div class="row">
+                        <div class="col col-6 col-md-3 p-4">
+<a href="https://www.youtube.com/c/ghostfood/playlists" class="btn btn-primary w-100">YouTube
+</a>
+</div>
+<div class="col col-6 col-md-3 p-4">
+<a href="https://www.mixcloud.com/ghostfood/" class="btn btn-primary w-100">
+    Mixcloud
+</a>
+</div>
+<div class="col col-6 col-md-3 p-4">
+<a href="https://soundcloud.com/ghostfood"  class="btn btn-primary w-100">
+    Soundcloud
+</a>
+</div>
+<div class="col col-6 col-md-3 p-4">
+<a href="https://www.last.fm/user/b1ue5ki" class="btn btn-primary w-100">
+    last.fm
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a href="http://ghostfood.uk"><img src="../img/icon-ghostfood.png" class="swing"></a><br/>
+   <span class="small">  
+© Ghost Food Productions
+   </span>
+<a onclick="topFunction()" id="top" href="#" class="pos-rel shade-50 disc-sm nav-arrow top" title="Go to top of page"></a>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js'></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<!-- popper required to enable randomised first slide -->
+<script src="../js/functions-general.js"></script>
+<script src='../js/jquery.dataTables.min.js'></script>
+<!-- enables table with pagination, sorting and filtering -->
+<script src="../js/table-sort-numeric.js"></script>
+<!-- enables correct numerical sorting only AFTER datatables script -->
+<script>
+    $('.carousel').carousel({
+  interval: 200000,
+  pause: "false"
+});
+      $(document).ready(function(){
+        var slideNum = $('.carousel-inner .carousel-item').length;
+        var randomNum = Math.floor(Math.random() * slideNum) + 1;
+        var randomNumIndex = randomNum - 1;
+        $('.carousel').carousel( randomNumIndex );
+        $('.carousel-item').removeClass('transparent');
+      });
+
+// Get the video
+var video = document.getElementById("myVideo");
+
+// When we scroll down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+document.getElementById("top").style.display = "block";
+document.getElementById("myVideo").style.display = "none";
+}
+else {
+document.getElementById("top").style.display = "none";
+document.getElementById("myVideo").style.display = "inherit";
+}
+}
+function newSrc() {
+var e = document.getElementById("plistmenu");
+var newSrc = e.options[e.selectedIndex].value;
+document.getElementById("player").src=newSrc;
+}
+  
+  //Responsive slider
+  $('.responsive-slider').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 6,
+  slidesToScroll: 6,
+  responsive: [
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3
+      }
+    },
+    {
+      breakpoint: 1600,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 4
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+  });
+  
+  //Event Handlers
+   $('.events-slider').slick({
+        infinite: false,
+        arrows: true
+  });
+  
+  // On swipe event
+  $('.events-slider').on('swipe', function(event, slick, direction){
+    //Direction : direction of the current slide(swipe direction).
+    console.log(direction);
+  });
+
+  // On edge hit
+  $('.events-slider').on('edge', function(event, slick, direction){
+    //Edge: last slide of the slider when infinity=false
+    console.log('edge was hit');
+  });
+  
+  // On before slide change
+  $('.events-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+    //currentSlide: index of current slide
+  //nextSlide: index of next slide
+    console.log("Next Slide:",nextSlide);
+  });
+
+$('#playlists-index').dataTable({
+    "order": [[0, "desc"]],
+aLengthMenu: [
+[10, 25, 50, 100, 200, -1],
+[10, 25, 50, 100, 200, "All"]
+],
+iDisplayLength: 10
+});
+
+</script>
+</body>
+</html>

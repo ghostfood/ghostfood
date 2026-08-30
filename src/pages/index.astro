@@ -3,6 +3,230 @@ import Layout from "../layouts/Layout.astro";
 const title = "Home";
 ---
 <Layout title={title}>
+	<style type="text/css">
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+  font-family:'Barlow Condensed', sans-serif;
+  letter-spacing: -0.05em;
+  line-height: 1;
+  padding-bottom:.25em 0;
+}
+h1:first-line {
+  font-weight:700;
+  letter-spacing: -0.025em;
+  line-height: .75;
+}
+h2 {
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  padding:.5em 0;
+  text-transform: uppercase;
+  margin-left:5px;
+}
+
+
+.promotion-carousel .promotions {
+  width: 100%;
+  height: 100%;
+}
+.promotion-carousel .promotion {
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.shade {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.25) 50%);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.shade::before,
+.shade::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0,0,0,.75) 0, transparent 50% );
+    top: 0;
+    left: 0;
+}
+.shade::after {
+    right:0;
+    left:50%;
+    background: linear-gradient(-90deg, rgba(0,0,0,.75) 0, transparent 50%);
+  }
+
+.promotion-carousel .promotion:first-of-type .shade {
+    opacity:.15;
+  }
+.promo-text {
+  color: #fff;
+  position: relative;
+  border-left: 3px solid #0cc;
+  padding: .5em 1em 0;
+}
+.promo-text .copy {
+  display: block;
+}
+
+.promo-detail {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: 100;
+  width: 85%;
+  margin-left: 5%;
+  padding: 10% 10% 10% 0;
+  transform: translate(0, -50%);
+}
+
+.promo-detail .body {
+  font-size: 14px;
+  line-height: 1.3;
+  margin-bottom: 5px;
+  text-transform: none;
+}
+.promo-detail .buttons {
+  padding: 15px 0;
+}
+.promo-detail .button {
+  box-sizing: content-box;
+  height: auto;
+  line-height: 1;
+  padding: 15px 30px;
+  width: auto;
+  display: inline-block;
+  font-weight:600;
+  letter-spacing: 1px;
+  font-size:16px;
+  background: #0cc;
+  border-radius: 25px;
+  text-transform:uppercase;
+}
+.promo-detail .button:hover {
+  border-color: #c00;
+  background-color: #0ff;
+  color:#033;
+}
+
+
+.promo-detail .headline {
+font-weight: 900;
+    font-size: 5em;
+    line-height: 1;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0 0 0.2em 0;
+}
+
+.promo-detail .promo-flag {
+  background: 0 0;
+  font-size: 14px;
+  line-height: 14px;
+  margin-bottom: 8px;
+  position: relative;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+
+.navigation {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5%;
+  z-index:9999;
+}
+.navigation ul {
+  list-style: none;
+  padding: 0;
+}
+.navigation li {
+  position: relative;
+    width: 16px;
+    height: 16px;
+    margin: 16px 0;
+}
+.navigation li a {
+  border: 1.5px solid #fff;
+  border-radius: 100%;
+  height: 100%;
+  width: 100%;
+  display: block;
+  transition: 0.2s ease;
+}
+.navigation li a.active::after {
+  background-color: #0cc;
+  position: absolute;
+    display: block;
+    top: 3px;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+    content: '';
+    border-radius: 100%;
+}
+.img-wrapper {
+  height:100%;
+  width:100%;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  filter:blur(2px);
+  transform: scale(1.25);
+}
+.img-wrapper img {
+  width:auto;
+  height:100%;
+  object-fit:cover;
+      transform: scale(1.5);
+    filter: blur(2px);
+}
+	  
+    @keyframes animate-fade {
+	    0% { opacity: 0; }
+	    100% { opacity: 1; }
+      }
+
+	  #fwall {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0;
+	  }
+	  #fwall div {
+		height: 200px;
+		flex-grow: 1;
+	  }
+	  
+	  #fwall img {
+		max-height: 100%;
+		min-width: 100%;
+		object-fit: cover;
+		vertical-align: bottom;
+		
+        animation-duration: 1s;
+        animation-name: animate-fade;
+        animation-delay: .3s;
+        animation-fill-mode: backwards;
+	  }
+  </style>
 <div class="promotion-carousel">
   <div class="promotions">
     <div>

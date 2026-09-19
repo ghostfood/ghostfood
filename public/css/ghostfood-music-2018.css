@@ -56,7 +56,7 @@ html {
     height: 12px;
     border-radius: 2px;
     left: 6px;
-    top: 3px;
+    top: 1px;
 }
 
 .youtube-video:after {
@@ -66,7 +66,7 @@ html {
     border-width: 3px 0 3px 5px;
     border-color: transparent transparent transparent rgba(255, 255, 255, .75);
     left: -1px;
-    top: -6px;
+    top: -8px;
     transform: translate(254%, 200%);
 }
 
@@ -1773,7 +1773,7 @@ header.header-lg h1 {
   min-width: 40%;
 }
 .box-pictorial span.content-caption {
-  min-width: 55%;
+  min-width: 60%;
 }
 .clip-favourites-container {
     height:80px;

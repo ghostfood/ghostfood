@@ -45,6 +45,21 @@
     background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .9) 25%, rgba(0, 0, 0, .05) 75%);
 }
 
+.table.dataTable,
+.table.dataTable thead th,
+.table.dataTable tbody td {
+    background-color: rgba(0,0,0,.35);
+    color: rgba(255,255,255,.8);
+    border-color: rgba(255,255,255,.08);
+}
+.table.dataTable>thead>tr>th,
+.table.dataTable>tbody>tr>td {
+    padding: 2px 4px !important;
+    border-radius: 5px;
+    border: none !important;
+    color: rgba(255,255,255,.8);
+    font-size: .75rem;
+}
 .table.dataTable>tbody>tr>td {
     padding: 1px 4px;
 }
@@ -57,6 +72,18 @@
     font-weight: 600;
     font-size: 1.1em;
     text-align:center;
+}
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter,
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_paginate {
+    color: rgba(255,255,255,.8);
+}
+.dataTables_wrapper .dataTables_filter input,
+.dataTables_wrapper select {
+    background: rgba(0,0,0,.4);
+    color: rgba(255,255,255,.9);
+    border: 1px solid rgba(255,255,255,.15);
 }
 section {
     padding:1rem 0;
@@ -78,7 +105,6 @@ section:nth-of-type(2) {
 section h3 {
     padding-top: 0 !important;
     font-weight: 100;
-    letter-spacing: -0.05em;
     margin: 1rem 0;
 }
 h1 {
@@ -417,7 +443,7 @@ section h3 {
             <div class="card-body position-absolute bottom-0 w-100">
     <h5 class="card-title">00s Top Tracks</h5>
     <a href="https://open.spotify.com/playlist/2l5hZlWEIuaft3kBuEXuSb?si=adf4bda0d9d14447" class="btn btn-primary">Launch <span class="hide-sm">playlist</span></a>
-    <a href="favourites-2000-2009.html" class="btn btn-outline">View all 00s lists</a>     
+    <a href="/faves/00s/" class="btn btn-outline">View all 00s lists</a>     
                 </div>
             </div>
           </div>
@@ -433,7 +459,7 @@ section h3 {
             <div class="card-body position-absolute bottom-0 w-100">
     <h5 class="card-title">1970-1979</h5>
     <a href="https://open.spotify.com/playlist/4cixro8WLyM4NreadHYCW8?si=4fa1f4f4ea9d4b4e" class="btn btn-primary">Launch <span class="hide-sm">main playlist</span></a>
-    <a href="favourites-1970-1979.html" class="btn btn-outline">View all 70s lists</a>
+    <a href="/faves/70s/" class="btn btn-outline">View all 70s lists</a>
         </div>
     </div>
       </div>
@@ -449,7 +475,7 @@ section h3 {
             <div class="card-body position-absolute bottom-0 w-100">
     <h5 class="card-title">1980-1989</h5>
         <a href="https://open.spotify.com/playlist/6jN1P5qXnSkhkqDd7CzSaU?si=35102e3a8d0e4397" class="btn btn-primary">Launch <span class="hide-sm">main playlist</span></a>
-    <a href="favourites-1980-1989.html" class="btn btn-outline">View all 80s lists</a>
+    <a href="/faves/80s/" class="btn btn-outline">View all 80s lists</a>
         </div>
     </div>
       </div>
@@ -465,7 +491,7 @@ section h3 {
             <div class="card-body position-absolute bottom-0 w-100">
     <h5 class="card-title">1990-1999</h5>
         <a href="https://open.spotify.com/playlist/6yX04HCtWMEfo95swoK7KU?si=494600d2e52d458c" class="btn btn-primary">Launch <span class="hide-sm">main playlist</span></a>
-    <a href="favourites-1990-1999.html" class="btn btn-outline">View all 90s lists</a>
+    <a href="/faves/90s/" class="btn btn-outline">View all 90s lists</a>
         </div>
     </div>
       </div>
@@ -481,7 +507,7 @@ section h3 {
       <h4>2015-2019</h4>
     <div class="d-flex flex-row flex-wrap justify-content-center">
         <div class="d-flex align-items-stretch text-center p-1">
-        <a href="earcatchers-2015-2019.html" class="btn btn-primary width-100">View 2015-2019 Lists</a>
+        <a href="/faves/10s/" class="btn btn-primary width-100">View 2015-2019 Lists</a>
         </div>
     </div>
           </div>
@@ -500,7 +526,7 @@ section h3 {
       <h4>2010-2014</h4>
     <div class="d-flex flex-row flex-wrap justify-content-center">
         <div class="d-flex align-items-stretch text-center p-1">
-        <a href="earcatchers-2010-2014.html" class="btn btn-primary">View 2010-2014 Lists</a>
+        <a href="/faves/10s/" class="btn btn-primary">View 2010-2014 Lists</a>
          </div>
      </div>
            </div>
@@ -519,7 +545,7 @@ section h3 {
       <h4>2005-2009</h4>
 
         <div class="d-flex align-items-stretch text-center p-1">
-        <a href="earcatchers-2005-2009.html" class="btn btn-primary width-100">View 2005-2009 Lists</a>
+        <a href="/faves/00s/" class="btn btn-primary width-100">View 2005-2009 Lists</a>
     </div>  
     </div>
         </div>
@@ -1417,7 +1443,7 @@ section h3 {
  <a class="align-right btn btn-xs btn-primary max" href="https://open.spotify.com/user/stevem78/playlist/4cixro8WLyM4NreadHYCW8?si=eVFCmKJqTkCaQxBEIe4kJw">Open</a></td>
  <td>100</td>
  <td><div class="align-left text-left">RANKED; Specific to decade</div></td>
- <td>See <a href="100-favourite-hits-1970-1979.html">the full list</a> in the FAVOURITES section</td>
+ <td>See <a href="/faves/70s/">the full list</a> in the FAVOURITES section</td>
 </tr>
 <tr>
     <td>2016-10-06</td>
@@ -1742,21 +1768,21 @@ section h3 {
         <div class="width-max pan hue-tanz">
             <div class="container container-xl">
                 <div class="row py-4">
-                    <div class="col col-6 col-md-3 col-lg-2 p-4">
+                    <div class="col col-6 col-md-2 col-lg-2 p-4">
 <a href="https://www.youtube.com/c/ghostfood/playlists" class="btn btn-primary w-100">YouTube
 </a>
 </div>
-<div class="col col-6 col-md-3 col-lg-2 p-4">
+<div class="col col-6 col-md-2 col-lg-2 p-4">
 <a href="https://www.mixcloud.com/ghostfood/" class="btn btn-primary w-100">
     Mixcloud
 </a>
 </div>
-<div class="col col-6 col-md-3 col-lg-2 p-4">
+<div class="col col-6 col-md-2 col-lg-2 p-4">
 <a href="https://soundcloud.com/ghostfood"  class="btn btn-primary w-100">
     Soundcloud
 </a>
 </div>
-<div class="col col-6 col-md-3 col-lg-2 p-4">
+<div class="col col-6 col-md-2 col-lg-2 p-4">
 <a href="https://www.last.fm/user/b1ue5ki" class="btn btn-primary w-100">
     last.fm
 </a>
@@ -1773,7 +1799,7 @@ section h3 {
    </span>
 <a onclick="topFunction()" id="top" href="#" class="pos-rel shade-50 disc-sm nav-arrow top" title="Go to top of page"></a>
 </footer>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 
@@ -1815,24 +1841,15 @@ document.getElementById("player").src=newSrc;
         var randomNumIndex = randomNum - 1;
         $('.carousel').carousel( randomNumIndex );
         $('.carousel-item').removeClass('');
-    var table = $('#playlists-index').DataTable( {
-        "dom": '<flip<t>ip>',
-"order": [[0, "desc"]],
-"iDisplayLength": 25,
-columnDefs: [ { type: 'formatted-num', targets: 0 } ],
-"aoColumns": [
-null,
-null,
-null,
-null,
-null,
-null
-],
-aLengthMenu: [
+    $('#playlists-index').DataTable({
+        dom: '<"top"f>t<"bottom"ip>',
+        order: [[0, 'desc']],
+        iDisplayLength: 25,
+        aLengthMenu: [
             [25, 50, 100, -1],
-            [25, 50, 100, "All"]
+            [25, 50, 100, 'All']
         ]
-    } );
+    });
     
 } );
 

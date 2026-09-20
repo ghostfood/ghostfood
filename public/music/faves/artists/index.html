@@ -189,60 +189,60 @@ display:none;
         });
     }
 
-    function parseRows(rawText) {
-        const json = rawText && rawText.trim() ? JSON.parse(rawText) : null;
-        if (!json) return [];
-        if (Array.isArray(json)) return json;
-        if (Array.isArray(json.data)) return json.data;
-        return [];
-    }
+    // function parseRows(rawText) {
+    //     const json = rawText && rawText.trim() ? JSON.parse(rawText) : null;
+    //     if (!json) return [];
+    //     if (Array.isArray(json)) return json;
+    //     if (Array.isArray(json.data)) return json.data;
+    //     return [];
+    // }
 
-    function loadWithXhr(url) {
-        return new Promise((resolve, reject) => {
-            const xhr = new XMLHttpRequest();
-            xhr.open('GET', url, true);
-            xhr.onload = function () {
-                if (xhr.status >= 200 && xhr.status < 300) {
-                    resolve(xhr.responseText);
-                } else {
-                    reject(new Error('HTTP ' + xhr.status));
-                }
-            };
-            xhr.onerror = function () {
-                reject(new Error('Network error while loading ' + url));
-            };
-            xhr.send();
-        });
-    }
+    // function loadWithXhr(url) {
+    //     return new Promise((resolve, reject) => {
+    //         const xhr = new XMLHttpRequest();
+    //         xhr.open('GET', url, true);
+    //         xhr.onload = function () {
+    //             if (xhr.status >= 200 && xhr.status < 300) {
+    //                 resolve(xhr.responseText);
+    //             } else {
+    //                 reject(new Error('HTTP ' + xhr.status));
+    //             }
+    //         };
+    //         xhr.onerror = function () {
+    //             reject(new Error('Network error while loading ' + url));
+    //         };
+    //         xhr.send();
+    //     });
+    // }
 
-    async function loadArtistsData() {
-        const loaders = [
-            () => fetch(dataUrl, { cache: 'no-store' }).then((response) => {
-                if (!response.ok) throw new Error('HTTP ' + response.status);
-                return response.text();
-            }),
-            () => loadWithXhr(dataUrl)
-        ];
+    // async function loadArtistsData() {
+    //     const loaders = [
+    //         () => fetch(dataUrl, { cache: 'no-store' }).then((response) => {
+    //             if (!response.ok) throw new Error('HTTP ' + response.status);
+    //             return response.text();
+    //         }),
+    //         () => loadWithXhr(dataUrl)
+    //     ];
 
-        for (const loader of loaders) {
-            try {
-                const raw = await loader();
-                const rows = parseRows(raw);
-                if (rows.length) {
-                    buildTable(rows);
-                    return;
-                }
-            } catch (error) {
-                console.warn('Artist table fallback loader failed:', error);
-            }
-        }
+    //     for (const loader of loaders) {
+    //         try {
+    //             const raw = await loader();
+    //             const rows = parseRows(raw);
+    //             if (rows.length) {
+    //                 buildTable(rows);
+    //                 return;
+    //             }
+    //         } catch (error) {
+    //             console.warn('Artist table fallback loader failed:', error);
+    //         }
+    //     }
 
-        if (location.protocol === 'file:') {
-            console.warn('The artists table could not be loaded from a file:// URL because the browser blocks local fetches. Serve the site over a local HTTP server to populate it.');
-        }
-    }
+    //     if (location.protocol === 'file:') {
+    //         console.warn('The artists table could not be loaded from a file:// URL because the browser blocks local fetches. Serve the site over a local HTTP server to populate it.');
+    //     }
+    // }
 
-    loadArtistsData();
+    // loadArtistsData();
 
 var images = ['face-beyonce.jpg', 'face-beyonce.jpg', 'face-kendrick.jpg', 'face-laurelhalo.jpg', 'face-saintetienne.jpg', 'face-beyonce.jpg', 'face-daftpunk01.jpg', 'face-theknife.jpg'];
  $('#background0009').css({'background-image': 'url(../../../img/music/faces/' + images[Math.floor(Math.random() * images.length)] + ')'});

@@ -1,0 +1,1986 @@
+Last.fm artist scrobbles
+Range: Saint Etienne through all artists with 50 plays
+Total artists: 991
+
+1. Saint Etienne 
+2600
+2. Broadcast 
+1400
+3. Pet Shop Boys 
+1300
+4. Underworld
+1300
+5. Boards of Canada
+1100
+6. The Knife 
+1000
+7. Goldfrapp 
+1000
+8. Neon Indian 
+900
+9. Magdalena Bay 
+900
+10. Daft Punk
+900
+11. Röyksopp
+800
+12. Basement Jaxx
+800
+13. Orbital
+800
+14. 808 State
+800
+15. David Bowie
+800
+16. Hot Chip
+800
+17. Róisín Murphy
+700
+18. Kate Bush
+700
+19. Prince
+700
+20. Ladytron
+700
+21. The Chemical Brothers
+700
+22. The Avalanches
+600
+23. Oneohtrix Point Never
+600
+24. Madonna
+600
+25. Propaganda
+600
+26. Cocteau Twins
+600
+27. Aphex Twin
+600
+28. Air
+600
+29. Massive Attack
+600
+30. GusGus
+600
+31. Björk
+600
+32. Charli xcx
+600
+33. M83
+600
+34. Tennis
+600
+35. New Order
+600
+36. Caribou
+600
+37. The Juan Maclean
+600
+38. DJ Shadow
+600
+39. Radiohead
+600
+40. Ghost Food
+600
+41. School of Seven Bells
+600
+42. Depeche Mode
+600
+43. Flying Lotus
+600
+44. The Orb
+600
+45. Brian Eno
+600
+46. Kendrick Lamar
+600
+47. St. Vincent
+60 0
+48. Twin Shadow
+500
+49. Junior Boys
+500
+50. Erykah Badu
+500
+51. Annie
+500
+52. Fleetwood Mac
+500
+53. Dawn Richard
+500
+54. Hudson Mohawke
+500
+55. Washed Out
+500
+56. Sébastien Tellier
+500
+57. Real Lies
+500
+58. The Durutti Column
+500
+59. Nite Jewel
+500
+60. Toro y Moi
+500
+61. Moon King
+500
+62. Hercules and Love Affair
+400
+63. Gang Gang Dance
+400
+64. U.S. Girls
+40 0
+65. Gorillaz
+400
+66. Kraftwerk
+400
+67. FaltyDL
+400
+68. Laurel Halo
+400
+69. Feist
+400
+70. Fever Ray
+400
+71. Beyoncé
+400
+72. Janelle Monáe
+400
+73. Jessie Ware
+400
+74. Simian Mobile Disco
+400
+75. Britney Spears
+400
+76. Kanye West
+400
+77. Tame Impala
+400
+78. Robyn
+400
+79. Blood Orange
+400
+80. A Tribe Called Quest
+400
+81. Cut Copy
+400
+82. Beach House
+400
+83. base58.com
+400
+84. Khruangbin
+400
+85. Young Galaxy
+400
+86. Carl Craig
+400
+87. Orchestral Manoeuvres in the Dark
+400
+88. Ikonika
+400
+89. Julia Holter
+400
+90. Beastie Boys
+400
+91. Kindness
+400
+92. LFO
+400
+93. Disclosure
+400
+94. Portishead
+400
+95. Studio
+300
+96. Lone
+300
+97. LCD Soundsystem
+300
+98. Grace Jones
+300
+99. Shura
+300
+100. Lady Gaga
+300
+101. Martyn
+300
+102. Felix da Housecat
+300
+103. Friendly Fires
+300
+104. Wiley
+300
+105. Girls Aloud
+300
+106. M.I.A.
+300
+107. Sault
+300
+108. Burial
+300
+109. Kelis
+300
+110. Justice
+300
+111. Leon Vynehall
+300
+112. Art of Noise
+300
+113. Cassius
+300
+114. Fila Brazillia
+300
+115. Stereolab
+300
+116. Little Boots
+300
+117. Miguel
+300
+118. Mr Twin Sister
+300
+119. Primal Scream
+300
+120. Perfume Genius
+300
+121. Simple Minds
+300
+122. The 1975
+300
+123. The Human League
+300
+124. El Perro del Mar
+300
+125. The Beach Boys
+300
+126. Doves
+300
+127. PJ Harvey
+300
+128. Four Tet
+300
+129. Kelly Lee Owens
+300
+130. Jane Weaver
+300
+131. Yello
+300
+132. ROSALÍA
+300
+133. Lindstrøm
+300
+134. OutKast
+300
+135. Yeah Yeah Yeahs
+300
+136. Leftfield
+300
+137. Weyes Blood
+300
+138. The Future Sound of London
+300
+139. Jamie xx
+200
+140. Kaitlyn Aurelia Smith
+200
+141. Solange
+200
+142. Phoenix
+200
+143. Bis
+200
+144. Tricky
+200
+145. Janet Jackson
+200
+146. Jungle
+200
+147. Peaking Lights
+200
+148. Actress
+200
+149. Talking Heads
+200
+150. Animal Collective
+200
+151. Crystal Castles
+200
+152. Prince & The Revolution
+200
+153. The Cure
+200
+154. D. Lissvik
+20 0
+155. Luomo
+200
+156. The Prodigy
+200
+157. We Are King
+200
+158. Elton John
+200
+159. Stevie Wonder
+200
+160. Metronomy
+200
+161. Dizzee Rascal
+200
+162. The Strokes
+200
+163. Ariana Grande
+200
+164. Midnight Juggernauts
+200
+165. Groove Armada
+200
+166. Michael Jackson
+200
+167. Midnight Magic
+200
+168. Georgia
+200
+169. Rihanna
+200
+170. Ronika
+200
+171. Games
+200
+172. The xx
+200
+173. Daniel Avery
+200
+174. KAYTRANADA
+200
+175. Can
+200
+176. When Saints Go Machine
+200
+177. Kelley Polar
+200
+178. Scritti Politti
+200
+179. Herbert
+200
+180. Arthur Russell
+200
+181. Sudan Archives
+200
+182. R.E.M.
+200
+183. JAY-Z
+200
+184. Booka Shade
+200
+185. Machinedrum
+200
+186. Tori Amos
+200
+187. Chromatics
+200
+188. CHVRCHES
+200
+189. Roxy Music
+200
+190. Tamaryn
+200
+191. Bat for Lashes
+200
+192. Avalon Emerson
+200
+193. Ellen Allien & Apparat
+200
+194. Lost Horizon
+200
+195. Autechre
+200
+196. Pulp
+200
+197. Wu-Tang Clan
+200
+198. Christine and the Queens
+200
+199. Blur
+200
+200. Gonzales
+200
+201. Jam City
+200
+202. The Roots
+200
+203. Zomby
+200
+204. Arcade Fire
+200
+205. Katy B
+200
+206. Panda Bear
+200
+207. The Rolling Stones
+200
+208. Grace Lightman
+200
+209. Yves Tumor
+200
+210. Azari & III
+200
+211. Jessy Lanza
+200
+212. Joni Mitchell
+200
+213. Prefab Sprout
+200
+214. Sleigh Bells
+200
+215. Billie Eilish
+200
+216. Moby
+200
+217. Yellow Magic Orchestra
+200
+218. The Streets
+200
+219. Todd Terje
+200
+220. HAIM
+200
+221. Melody's Echo Chamber
+200
+222. Big Boi
+200
+223. Jenny Hval
+200
+224. Siouxsie and the Banshees
+200
+225. These New Puritans
+200
+226. Hatchie
+200
+227. J Dilla
+200
+228. Tears for Fears
+200
+229. Com Truise
+200
+230. Nilüfer Yanya
+200
+231. The Weeknd
+200
+232. Lana Del Rey
+200
+233. The Bird and the Bee
+200
+234. Thundercat
+200
+235. Little Dragon
+200
+236. Cortney Tidwell
+200
+237. James Blake
+200
+238. Clark
+200
+239. Ellen Allien
+200
+240. Let's Eat Grandma
+200
+241. The-Dream
+200
+242. Ariel Pink
+200
+243. Floating Points
+200
+244. Moderat
+200
+245. Dean Blunt
+100
+246. Bill Nelson
+100
+247. Caroline Polachek
+100
+248. Walter Jones
+100
+249. Childish Gambino
+100
+250. Funkadelic
+100
+251. The Blue Nile
+100
+252. Ford & Lopatin
+100
+253. Plaid
+100
+254. The B-52's
+100
+255. Kylie Minogue
+100
+256. Happy Mondays
+100
+257. The KLF
+100
+258. The Shortwave Set
+100
+259. Algiers
+100
+260. Gwenno
+100
+261. Mr. Fingers
+10 0
+262. Super Furry Animals
+100
+263. Etienne de Crécy
+100
+264. Destroyer
+100
+265. Talk Talk
+100
+266. Wild Beasts
+100
+267. Pink Floyd
+100
+268. Grimes
+100
+269. Kuedo
+100
+270. Memory Tapes
+100
+271. Public Enemy
+100
+272. Steely Dan
+100
+273. Low
+100
+274. David Holmes
+100
+275. U2
+100
+276. D'Angelo
+100
+277. Self Esteem
+100
+278. Django Django
+100
+279. Paul McCartney
+100
+280. Tangerine Dream
+100
+281. Drake
+100
+282. Mogwai
+100
+283. Erasure
+100
+284. Joy Division
+100
+285. Telefon Tel Aviv
+100
+286. Austra
+100
+287. Unknown Mortal Orchestra
+100
+288. Fatboy Slim
+100
+289. Frank Ocean
+100
+290. Jazmine Sullivan
+100
+291. Pinkshinyultrablast
+100
+292. Surkin
+100
+293. The Magnetic Fields
+100
+294. Oklou
+100
+295. Sparks
+100
+296. UNKLE
+100
+297. Blondie
+100
+298. Carly Rae Jepsen
+100
+299. Drab Majesty
+100
+300. ABBA
+100
+301. Blonde Redhead
+100
+302. Death in Vegas
+100
+303. Susanne Sundfør
+100
+304. Vitalic
+100
+305. Mount Kimbie
+100
+306. Beck
+100
+307. Ciara
+100
+308. Santigold
+100
+309. Goldie
+100
+310. Kings of Convenience
+100
+311. Rex the Dog
+100
+312. SBTRKT
+100
+313. The Fall
+100
+314. my bloody valentine
+100
+315. Stereo MC's
+100
+316. The White Stripes
+100
+317. Beyond The Wizards Sleeve
+100
+318. DJ Koze
+100
+319. Joy Orbison
+100
+320. Natalie Prass
+100
+321. Peter Gabriel
+100
+322. Apparat
+100
+323. Orange Juice
+100
+324. TOPS
+100
+325. Busta Rhymes
+100
+326. Cate Le Bon
+100
+327. Jamie Woon
+100
+328. John Maus
+100
+329. Public Image Ltd.
+100
+330. Darkstar
+100
+331. De La Soul
+100
+332. Djrum
+100
+333. Tensnake
+100
+334. Soft Cell
+100
+335. Trentemøller
+100
+336. Delorean
+100
+337. Erlend Øye
+100
+338. Laura Groves
+100
+339. Bob Dylan
+100
+340. De Lux
+100
+341. Dua Lipa
+100
+342. John Grant
+100
+343. Malcolm McLaren
+100
+344. Mitski
+100
+345. Pantha du Prince
+100
+346. ATELJE
+100
+347. Faithless
+100
+348. John Talabot
+100
+349. Phantogram
+100
+350. Run the Jewels
+100
+351. Sade
+100
+352. The Presets
+100
+353. The Sabres of Paradise
+100
+354. Todd Rundgren
+100
+355. Gina X Performance
+100
+356. George Michael
+100
+357. Azealia Banks
+100
+358. Classixx
+100
+359. Charlotte Gainsbourg
+100
+360. Escort
+100
+361. Missy Elliott
+100
+362. P.V.A.
+100
+363. Glasser
+100
+364. Mark Pritchard
+100
+365. Matthew Dear
+100
+366. The Associates
+100
+367. Barry Adamson
+100
+368. Elkka
+100
+369. Lxury
+100
+370. Alpha
+100
+371. Art School Girlfriend
+100
+372. Coldcut
+100
+373. Model 500
+100
+374. Tracey Thorn
+100
+375. Inner City
+100
+376. Nabihah Iqbal
+100
+377. Chic
+100
+378. Gil Scott-Heron
+100
+379. Justin Timberlake
+100
+380. Buzzy Lee
+100
+381. Drexciya
+100
+382. Ibibio Sound Machine
+100
+383. James K
+100
+384. Pacific!
+100
+385. Confidence Man
+100
+386. Everything But the Girl
+100
+387. Kero Kero Bonito
+100
+388. Major Lazer
+100
+389. Sly & The Family Stone
+100
+390. Chairlift
+100
+391. Disco Inferno
+100
+392. Gwen Stefani
+100
+393. Queen
+100
+394. Tegan and Sara
+100
+395. Coldplay
+100
+396. Empress Of
+100
+397. Holy Ghost!
+100
+398. Pharrell Williams
+100
+399. Air France
+100
+400. Fatima Yamaha
+100
+401. Joe Goddard
+100
+402. Lo Fidelity Allstars
+100
+403. Paramore
+100
+404. Shut Up and Dance
+100
+405. Listening Center
+100
+406. Herbie Hancock
+100
+407. L'Rain
+100
+408. Brothertiger
+100
+409. Vanishing Twin
+100
+410. Add N To (X)
+100
+411. Belle and Sebastian
+100
+412. Dam-Funk
+100
+413. Hystereo
+100
+414. Miss Kittin
+100
+415. Ada
+100
+416. Kelela
+100
+417. Eurythmics
+100
+418. Fleet Foxes
+100
+419. J-E-T-S
+100
+420. Prefuse 73
+100
+421. Girl Talk
+100
+422. Marvin Gaye
+100
+423. Prins Thomas
+100
+424. Solar Bears
+100
+425. Broadcast and The Focus Group
+100
+426. Global Communication
+100
+427. Rustie
+100
+428. ABC
+100
+429. Elbow
+100
+430. Sally Shapiro
+100
+431. Zero 7
+100
+432. Andy Stott
+100
+433. Hyetal
+100
+434. Nicki Minaj
+100
+435. Robert Wyatt
+100
+436. Wire
+100
+437. ML Buch
+100
+438. Rose Royce
+100
+439. SZA
+100
+440. Fred P
+100
+441. Mos Def
+100
+442. Alan Palomo
+100
+443. Chromeo
+100
+444. Diana Ross
+100
+445. Leila
+100
+446. Miley Cyrus
+100
+447. Nightmares on Wax
+100
+448. Rachel Stevens
+100
+449. Toddla T
+100
+450. Giorgio Moroder
+100
+451. Herb Alpert
+100
+452. Låpsley
+100
+453. This Mortal Coil
+100
+454. Vince Staples
+100
+455. CocoRosie
+100
+456. Fischerspooner
+100
+457. Mum & Dad
+100
+458. Patrick Cowley
+100
+459. The Focus Group
+100
+460. The Shamen
+100
+461. Charlotte Adigéry
+100
+462. Hype Williams
+100
+463. The Beta Band
+100
+464. Duran Duran
+100
+465. Ennio Morricone
+100
+466. Kimbra
+100
+467. Lamb
+100
+468. Mercury Rev
+100
+469. Serge Gainsbourg
+100
+470. Angel Olsen
+100
+471. Cassandra Jenkins
+100
+472. Gelli Haha
+100
+473. Sharon Van Etten
+100
+474. Au Suisse
+100
+475. Octo Octa
+100
+476. Scissor Sisters
+100
+477. Σtella
+100
+478. Jacques Greene
+100
+479. SASSY 009
+100
+480. The Go! Team
+100
+481. Young Fathers
+100
+482. Donna Summer
+100
+483. Nicolas Godin
+100
+484. Night Tapes
+100
+485. Teddybears STHLM
+100
+486. Broke One
+100
+487. Christina Aguilera
+100
+488. DJ Quik
+100
+489. Eddie Chacon
+100
+490. Japan
+100
+491. Japanese Breakfast
+100
+492. Tiga
+100
+493. Kilo Kish
+100
+494. Peluché
+100
+495. Bonobo
+100
+496. Dungen
+100
+497. Gary Numan
+100
+498. Jayda G
+100
+499. King Midas Sound
+100
+500. Nas
+100
+501. Sugababes
+100
+502. The Breeders
+100
+503. Bibio
+50
+504. Domenique Dumont
+50
+505. Moloko
+50
+506. Pixies
+50
+507. Unloved
+50
+508. Alan Braxe & Fred Falke
+50
+509. Dragonette
+50
+510. Ducktails
+50
+511. Eminem
+50
+512. Mungolian Jetset
+50
+513. Neneh Cherry
+50
+514. Scott Walker
+50
+515. The Japanese House
+50
+516. Tornado Wallace
+50
+517. µ-Ziq
+50
+518. Diddy - Dirty Money
+50
+519. Fabiana Palladino
+50
+520. MGMT
+50
+521. Superpitcher
+50
+522. Better Person
+50
+523. Casino Versus Japan
+50
+524. Deerhoof
+50
+525. Lemon Jelly
+50
+526. Parliament
+50
+527. SMERZ
+50
+528. The Smiths
+50
+529. 4hero
+50
+530. Armand van Helden
+50
+531. Barker
+50
+532. Corinne Bailey Rae
+50
+533. Eleventeen Eston
+50
+534. Severed Heads
+50
+535. Sun-El Musician
+50
+536. Wolf Alice
+50
+537. Battles
+50
+538. Dirty Art Club
+50
+539. Gang Starr
+50
+540. Jessica Pratt
+50
+541. Maxwell
+50
+542. Ulrich Schnauss
+50
+543. V V Brown
+50
+544. Aaliyah
+50
+545. Dirty Projectors
+50
+546. Egyptrixx
+50
+547. The Soft Pink Truth
+50
+548. Tinashe
+50
+549. Virna Lindt
+50
+550. Fall Out Boy
+50
+551. Michael Kiwanuka
+50
+552. Stealing Sheep
+50
+553. Warpaint
+50
+554. Wax Stag
+50
+555. Interpol
+50
+556. Laura Mvula
+50
+557. Moodymann
+50
+558. Poliça
+50
+559. Shuggie Otis
+50
+560. Usher
+50
+561. Aeroplane
+50
+562. Change
+50
+563. Madvillain
+50
+564. Mylo
+50
+565. Tune-Yards
+50
+566. Yaeji
+50
+567. Akufen
+50
+568. Davido
+50
+569. José Padilla
+50
+570. Photek
+50
+571. Renegade Soundwave
+50
+572. Soulwax
+50
+573. Tirzah
+50
+574. Tyler, The Creator
+50
+575. a-ha
+50
+576. Barbara Morgenstern
+50
+577. Raymond Scott
+50
+578. Sega Bodega
+50
+579. Bark Psychosis
+50
+580. Cabaret Voltaire
+50
+581. Dusty Springfield
+50
+582. Julio Bashmore
+50
+583. Kano
+50
+584. William Orbit
+50
+585. Arctic Monkeys
+50
+586. Ariel Pink's Haunted Graffiti
+50
+587. Cleo Sol
+50
+588. Galcher Lustwerk
+50
+589. Kamasi Washington
+50
+590. Larry Heard
+50
+591. N*E*R*D
+50
+592. NEU!
+50
+593. The Black Dog
+50
+594. Ultravox
+50
+595. Dire Straits
+50
+596. Dry Cleaning
+50
+597. Infiniti
+50
+598. The War on Drugs
+50
+599. Diplo
+50
+600. FKA twigs
+50
+601. John Barry
+50
+602. Kadhja Bonet
+50
+603. Overmono
+50
+604. Snoop Dogg
+50
+605. St. Germain
+50
+606. The Rapture
+50
+607. Vangelis
+50
+608. Andrew Weatherall
+50
+609. Colourbox
+50
+610. Lapalux
+50
+611. Lily Allen
+50
+612. Roots Manuva
+50
+613. The Hundred in the Hands
+50
+614. The Velvet Underground
+50
+615. Working Men's Club
+50
+616. !!!
+50
+617. En Vogue
+50
+618. ESG
+50
+619. Phil Collins
+50
+620. PinkPantheress
+50
+621. The Stranglers
+50
+622. ANOHNI
+50
+623. Black Devil Disco Club
+50
+624. Chad Valley
+50
+625. Choir of Young Believers
+50
+626. David Axelrod
+50
+627. Dexys Midnight Runners
+50
+628. Electric Light Orchestra
+50
+629. Michael Mayer
+50
+630. Nosaj Thing
+50
+631. Pye Corner Audio
+50
+632. Squarepusher
+50
+633. Sufjan Stevens
+50
+634. The Clientele
+50
+635. Big Thief
+50
+636. Class Actress
+50
+637. Jack J
+50
+638. Lusine
+50
+639. Alan Braxe
+50
+640. Curtis Mayfield
+50
+641. Ghostface Killah
+50
+642. Rudimental
+50
+643. The Beatles
+50
+644. Bullion
+50
+645. Cluster
+50
+646. John Cale
+50
+647. Katie Gately
+50
+648. Kingdom
+50
+649. Klô Pelgag
+50
+650. Owen Pallett
+50
+651. Redshape
+50
+652. The Field
+50
+653. Victoria Monét
+50
+654. 坂本龍一
+50
+655. Christian Rich
+50
+656. Crookers
+50
+657. Cypress Hill
+50
+658. Hall & Oates
+50
+659. I:Cube
+50
+660. Seefeel
+50
+661. The Horrors
+50
+662. 10cc
+50
+663. Dani Siciliano
+50
+664. Dollar
+50
+665. Emeralds
+50
+666. Kali Uchis
+50
+667. Laurent Garnier
+50
+668. Les Rythmes Digitales
+50
+669. Oriol
+50
+670. Sebastian
+50
+671. Two Lone Swordsmen
+50
+672. ⣎⡇ꉺლ༽இ•̛)ྀ◞ ༎ຶ ༽ৣৢ؞ৢ؞ؖ ꉺლ
+50
+673. Archive
+50
+674. Emily King
+50
+675. Julianna Barwick
+50
+676. Slowdive
+50
+677. The Kills
+50
+678. Vampire Weekend
+50
+679. Camera Obscura
+50
+680. Chaz Jankel
+50
+681. Father John Misty
+50
+682. Frankie Goes to Hollywood
+50
+683. Heaven 17
+50
+684. James Brown
+50
+685. Subeena
+50
+686. Tom Waits
+50
+687. Underground Resistance
+50
+688. Barry Can't Swim
+50
+689. Echo & the Bunnymen
+50
+690. Genesis
+50
+691. Iggy Pop
+50
+692. Nick Hakim
+50
+693. Philco Fiction
+50
+694. Pixx
+50
+695. Terror Danjah
+50
+696. The Sundays
+50
+697. The Tough Alliance
+50
+698. Tindersticks
+50
+699. Cristina
+50
+700. David Byrne
+50
+701. Electrik Red
+50
+702. IanPlug
+50
+703. L-Vis 1990
+50
+704. Lou Hayter
+50
+705. Nicolette
+50
+706. Thomas Bangalter
+50
+707. TOKiMONSTA
+50
+708. Xeno & Oaklander
+50
+709. Act
+50
+710. Bea
+50
+711. Bee Gees
+50
+712. Digitalism
+50
+713. Strategy
+50
+714. The Slits
+50
+715. The The
+50
+716. Thomas Dolby
+50
+717. Cooly G
+50
+718. Dave Angel
+50
+719. Kelsey Lu
+50
+720. Lizzy Mercier Descloux
+50
+721. Patrick Holland
+50
+722. Paul Simon
+50
+723. S'Express
+50
+724. Chelonis R. Jones
+50
+725. Datassette
+50
+726. Late of the Pier
+50
+727. Lindstrøm & Christabelle
+50
+728. Mark Ronson
+50
+729. Part Time
+50
+730. Sasha
+50
+731. Selah Sue
+50
+732. Sophie
+50
+733. Sylvan Esso
+50
+734. Yes
+50
+735. A.R. Kane
+50
+736. Black Sabbath
+50
+737. Future
+50
+738. Girl Unit
+50
+739. Isolée
+50
+740. Kornél Kovács
+50
+741. Lemonade
+50
+742. Mariah Carey
+50
+743. Medicine8
+50
+744. Moses Sumney
+50
+745. Neil Young
+50
+746. Nelly Furtado
+50
+747. Nick Drake
+50
+748. Quadron
+50
+749. The Dream Academy
+50
+750. Arooj Aftab
+50
+751. Beth Orton
+50
+752. BT
+50
+753. Frank Zappa
+50
+754. Gnarls Barkley
+50
+755. Hannah Peel
+50
+756. Jeff Mills
+50
+757. Maya Jane Coles
+50
+758. Poppy
+50
+759. Shamir
+50
+760. Sky Ferreira
+50
+761. Water From Your Eyes
+50
+762. Young Thug
+50
+763. Arca
+50
+764. Bob James
+50
+765. Cyndi Lauper
+50
+766. Imagination
+50
+767. Nivea
+50
+768. Plone
+50
+769. Rose Elinor Dougall
+50
+770. The Buggles
+50
+771. The Clash
+50
+772. The Ruby Suns
+50
+773. Uffie
+50
+774. Beth Gibbons
+50
+775. Buffalo Daughter
+50
+776. China Crisis
+50
+777. Danity Kane
+50
+778. Dead Can Dance
+50
+779. Elvis Presley
+50
+780. Gold Panda
+50
+781. J*DaVeY
+50
+782. Jack White
+50
+783. John Carroll Kirby
+50
+784. Peshay
+50
+785. Planningtorock
+50
+786. RJD2
+50
+787. Sonic Youth
+50
+788. Vegyn
+50
+789. Bruce Springsteen
+50
+790. Fela Kuti
+50
+791. James Holden
+50
+792. Justin Velor
+50
+793. Laid Back
+50
+794. Oasis
+50
+795. Pearly Drops
+50
+796. RAYE
+50
+797. Teengirl Fantasy
+50
+798. The Internet
+50
+799. Adam and the Ants
+50
+800. Ashra
+50
+801. Connan Mockasin
+50
+802. Daphni
+50
+803. Duplex
+50
+804. Jean Michel Jarre
+50
+805. Margaret Berger
+50
+806. Mariah
+50
+807. Mr. Scruff
+50
+808. Neko Case
+50
+809. Nils Frahm
+50
+810. Nina Simone
+50
+811. Paul Weller
+50
+812. Samthing Soweto
+50
+813. Sir Was
+50
+814. The Notorious B.I.G.
+50
+815. Towa Tei
+50
+816. XTC
+50
+817. Dave Clarke
+50
+818. Elvis Costello & The Attractions
+50
+819. Fluke
+50
+820. Frankie Knuckles
+50
+821. Glass Animals
+50
+822. Little Simz
+50
+823. LL Cool J
+50
+824. Meanderthals
+50
+825. Melanie De Biasio
+50
+826. Salute
+50
+827. Session Victim
+50
+828. Still Going
+50
+829. Sway
+50
+830. The New Pornographers
+50
+831. Vieux Farka Touré
+50
+832. Bicep
+50
+833. Bronski Beat
+50
+834. Carly Simon
+50
+835. DJ Hell
+50
+836. Ekkah
+50
+837. Fuck Buttons
+50
+838. Future Islands
+50
+839. Level 42
+50
+840. Marianne Faithfull
+50
+841. Pollyn
+50
+842. Sia
+50
+843. Squeeze
+50
+844. The Ting Tings
+50
+845. A Guy Called Gerald
+50
+846. Astrid Sonne
+50
+847. Beak>
+50
+848. Cybotron
+50
+849. Field Music
+50
+850. Freeform Five
+50
+851. Guns N' Roses
+50
+852. Jill Scott
+50
+853. LA Priest
+50
+854. Led Zeppelin
+50
+855. New Musik
+50
+856. Nuyorican Soul
+50
+857. Selena Gomez
+50
+858. Was (Not Was)
+50
+859. Against All Logic
+50
+860. Alice Cohen
+50
+861. Blanck Mass
+50
+862. Blondes
+50
+863. Chris & Cosey
+50
+864. Jon Hassell
+50
+865. Letherette
+50
+866. Pyrolator
+50
+867. Susumu Yokota
+50
+868. Years & Years
+50
+869. Arlo Parks
+50
+870. Arvo Pärt
+50
+871. Blank & Jones
+50
+872. Chaka Khan
+50
+873. Fennesz
+50
+874. Holly Herndon
+50
+875. Men I Trust
+50
+876. Shabazz Palaces
+50
+877. Wilco
+50
+878. alt-J
+50
+879. Black Box Recorder
+50
+880. Boat Club
+50
+881. Felt
+50
+882. Holy Fuck
+50
+883. Lindstrøm & Prins Thomas
+50
+884. Lorde
+50
+885. Madlib
+50
+886. Mr. Oizo
+50
+887. Sub Sub
+50
+888. T. Rex
+50
+889. The Grid
+50
+890. The Invisible
+50
+891. The Jam
+50
+892. Cassie
+50
+893. CFCF
+50
+894. Crazy P
+50
+895. death's dynamic shroud
+50
+896. Deee-Lite
+50
+897. eden ahbez
+50
+898. iamamiwhoami
+50
+899. Lou Reed
+50
+900. Luke Vibert
+50
+901. Minnie Riperton
+50
+902. Rufige Kru
+50
+903. Simon & Garfunkel
+50
+904. Taylor Swift
+50
+905. The Mountain Goats
+50
+906. Todd Edwards
+50
+907. Van Halen
+50
+908. Visage
+50
+909. A$AP Rocky
+50
+910. Acopia
+50
+911. Airbird & Napolian
+50
+912. Bananarama
+50
+913. Caroline Rose
+50
+914. Dumblonde
+50
+915. East India Youth
+50
+916. INXS
+50
+917. Jessica 6
+50
+918. Kris Menace
+50
+919. Lykke Li
+50
+920. Milan W.
+50
+921. Mosca
+50
+922. Nao
+50
+923. Plastikman
+50
+924. Roy Ayers
+50
+925. Secret Circuit
+50
+926. Sofia Kourtesis
+50
+927. Steve Mason
+50
+928. Thakzin
+50
+929. The Pastels
+50
+930. WE LOVE
+50
+931. A Certain Ratio
+50
+932. Alexis Taylor
+50
+933. Bloc Party
+50
+934. Bobby Whirlwind
+50
+935. DJ Sprinkles
+50
+936. Family Fodder
+50
+937. Fatima Al Qadiri
+50
+938. Linda Perhacs
+50
+939. Loose Ends
+50
+940. O'Flynn
+50
+941. Patti Smith
+50
+942. Peggy Gou
+50
+943. The Charlatans
+50
+944. Timbaland
+50
+945. TV on the Radio
+50
+946. Womack & Womack
+50
+947. 18 Carat Affair
+50
+948. Antipop Consortium
+50
+949. Aretha Franklin
+50
+950. Bent
+50
+951. Electric Wire Hustle
+50
+952. Fantasia
+50
+953. Flume
+50
+954. Franz Ferdinand
+50
+955. Laura Marling
+50
+956. Lucy Rose
+50
+957. Nine Inch Nails
+50
+958. NZCA/LINES
+50
+959. Roy Ayers Ubiquity
+50
+960. Scuba
+50
+961. Seahawks
+50
+962. Steve Lacy
+50
+963. Belbury Poly
+50
+964. Charlotte Hatherley
+50
+965. Cornelius
+50
+966. Destiny's Child
+50
+967. Dubstar
+50
+968. Jon Hopkins
+50
+969. Material
+50
+970. MØ
+50
+971. Quiet Village
+50
+972. Skepta
+50
+973. Storm Queen
+50
+974. Talaboman
+50
+975. Zeigeist
+50
+976. BADBADNOTGOOD
+50
+977. Best Coast
+50
+978. I Break Horses
+50
+979. John Martyn
+50
+980. Kode9
+50
+981. Manic Street Preachers
+50
+982. Maria Minerva
+50
+983. Ross From Friends
+50
+984. Rubies
+50
+985. Spiritualized
+50
+986. Stara Rzeka
+50
+987. Stormzy
+50
+988. The Blow Monkeys
+50
+989. The Flaming Lips
+50
+990. The Smashing Pumpkins
+50
+991. UB40
+50

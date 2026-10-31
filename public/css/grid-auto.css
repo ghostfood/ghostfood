@@ -165,7 +165,6 @@
   --auto-grid-min-size: 15rem;
 }
 
-
 .carousel .auto-grid-4 {
   --auto-grid-min-size: 20rem;
 }
@@ -184,7 +183,7 @@
   grid-gap: 1rem 2rem;
 }
 .auto-grid-3 {
-  --auto-grid-min-size: 20rem;
+  --auto-grid-min-size: 22rem;
 }
 .auto-grid-3.auto-grid-gap1 {
   --auto-grid-min-size: 30rem; 

@@ -424,9 +424,6 @@ background-image: linear-gradient(135deg, rgba(0,0,0,.7) 7%, rgba(100,50,150,.5)
   font-weight: 700;
 }
 
-
-
-
 a > .item-image-disc + h3 {
   font-size: 200%;
     letter-spacing: -0.015em;
@@ -1593,7 +1590,7 @@ ul li span.playlist-fail::before {
   left:6px;
 }
 .boxed li .text-muted {
-  color:rgba(255,255,255,.5) !important;
+  color:rgba(255,255,255,.65) !important;
 }
 .badge.badge-xs {
   margin:0 2px 4px 0;
@@ -1638,7 +1635,6 @@ h5.card-title {
 @media screen and (min-width: 640px) {
 
 .box-pictorial span.content-caption {
-  margin: 0;
   left:0;
   right:0;
 }

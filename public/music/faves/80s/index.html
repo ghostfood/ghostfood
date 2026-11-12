@@ -24,6 +24,15 @@ table tr td:nth-of-type(5) {
 text-align:center !important;
 }
 
+.combined-rank-up {
+    color: #b7e4c7;
+    font-weight: 700;
+}
+
+#tab0 .btn-max {
+    display: block;
+}
+
 .check {
     display: inline-block;
     transform: rotate(35deg);
@@ -82,8 +91,11 @@ ol > li.rank-down > .visually-hidden {
     background: rgba(0, 0, 0, 0.45);
     border: 1px solid currentColor;
     font-size: 0.75em;
-    line-height: 1.5;
+    line-height: 11px;
     vertical-align: middle;
+    height: 13px;
+    position: relative;
+    top: -1px;
 }
 
 .cpos-instrumentals { color: #17E5BD; }
@@ -131,8 +143,9 @@ ol > li.rank-down > .visually-hidden {
 
 #track-year-summary .badge,
 #track-artist-summary .badge {
-    border: 1px solid #999;
+    border: 1px solid #444;
     color: #ccc;
+    border-radius: 1rem;
 }
 
 #track-artist-summary .badge {
@@ -192,8 +205,9 @@ ol > li.rank-down > .visually-hidden {
 <li class="d-none"><a href="#tab5" data-toggle="tab">A Big Dig</a><div class="tri-down mar-auto"></div>
 </li>
 </ul>
-
-  <p class="p-4 m-auto text-center text-faint"><span class="asterisk-note">* Tracks with asterisks appeared on EP (Extended Play) single releases. </span>Only tracks released between January 1980 and December 1989 are eligible. Playlists are in descending order (100-1) but not all tracks listed may be playable in the playlists.</p>
+<div class="col-12 pb-4">
+<p class="px-4 width-100-then-75 mx-4 m-auto text-center text-faint">Only tracks released between January 1980 and December 1989 are eligible. Playlists are in descending order (100-1) but not all tracks listed may be playable in the playlists.</p>
+</div>
 <div class="tab-content clearfix">
 <div class="tab-pane active" id="top-tracks">
 <div class="row phm">
@@ -305,36 +319,30 @@ ol > li.rank-down > .visually-hidden {
     <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-tanzlite">NON-SINGLE</div></div>
   </div>
 </li>
-<li class="d-flex flex-row-reverse">
+<li class="rank-up d-flex flex-row-reverse">
   <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="https://i.discogs.com/cBCYY10aMjjE7vqiFnftaOwUFwYDCRDBq6c1bzWBBYY/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgwMTEz/LTE0MDg4MjUzMDAt/OTMyMi5qcGVn.jpeg" alt=""></div></div>
   <div class="flex-grow-1"><div><span>Theme For Great Cities</span><p class="text-muted m-0 p-0 py-1">Simple Minds</p>
       <div class="mt-1 text-muted">1981</div></div>
     <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-emerlite">INSTRUMENTAL</div></div>
-  </div></li>
-<li class="d-flex flex-row-reverse">
+  </div><span class="visually-hidden">Moved up in the combined ranking.</span></li>
+<li class="rank-up d-flex flex-row-reverse">
   <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="https://i.discogs.com/2qzaJ87TrcWV-CmaaxhI3N9WvOg7-Tc5X2njIfc9Mj8/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwMTE2/NC0xNDEyMDQyMzg1/LTIxNTcuanBlZw.jpeg" alt=""></div></div>
   <div class="flex-grow-1"><div><span>Stop</span><p class="text-muted m-0 p-0 py-1">Casco presents B.W.H.</p>
       <div class="mt-1 text-muted">1983</div></div>
     <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-tanglite">NON-HIT SINGLE</div><div class="badge badge-xs ml-1 hue-outline-emerlite">INSTRUMENTAL</div></div>
-  </div></li>
+  </div><span class="visually-hidden">Moved up in the combined ranking.</span></li>
 <li class="d-flex flex-row-reverse">
   <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="https://i.discogs.com/_z3uaCA94SF4_bJ2yLXigoaLVRGKo_j0Q2mQNClqoFc/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc5NDk4/MTMtMTQ1MjI3MDU0/OC01MjQ0LmpwZWc.jpeg" alt=""></div></div>
   <div class="flex-grow-1"><div><span class="list-winner">Pump Up The Volume</span><p class="text-muted m-0 p-0 py-1">M|A|R|R|S</p>
       <div class="mt-1 text-muted">1987</div></div>
     <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-spinlite">HIT SINGLE</div></div>
   </div></li>
-<li class="d-flex flex-row-reverse">
+<li class="rank-up d-flex flex-row-reverse">
   <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="https://i.discogs.com/RrLsQhGWg4_03jIbvLb4YwtVUxpHTDGXFx-bfJhOmIM/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3ODU5/LTE1NTA1MzkyNzgt/NTg0NS5qcGVn.jpeg" alt=""></div></div>
   <div class="flex-grow-1"><div><span>Clear - Jose 'Animal' Diaz Remix</span><p class="text-muted m-0 p-0 py-1">Cybotron</p>
       <div class="mt-1 text-muted">1983</div></div>
     <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-tanglite">NON-HIT SINGLE</div></div>
-  </div></li>
-<li class="d-flex flex-row-reverse">
-  <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="https://i.discogs.com/hTGBX03PcuoVLFaXiDJpNiF3Iw2xm8o3pzveTQYmdO0/rs:fit/g:sm/q:90/h:600/w:590/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc0OTg4/My0xNjAwMTQ0MTYy/LTc3MTcuanBlZw.jpeg" alt=""></div></div>
-  <div class="flex-grow-1"><div><span>Ashes To Ashes</span><p class="text-muted m-0 p-0 py-1">David Bowie</p>
-      <div class="mt-1 text-muted">1980</div></div>
-    <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-spinlite">HIT SINGLE</div></div>
-  </div></li>
+  </div><span class="visually-hidden">Moved up in the combined ranking.</span></li>
 <li class="d-flex flex-row-reverse">
   <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="https://i.discogs.com/u-KfuNNZI25VA8JIgJ9bkwW5lh436TF4nd5ZyDNr6-Q/rs:fit/g:sm/q:90/h:600/w:588/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc1MjY2/NS0xNjg3ODg5NTgz/LTIyODUuanBlZw.jpeg" alt=""></div></div>
   <div class="flex-grow-1"><div><span>I Travel</span><p class="text-muted m-0 p-0 py-1">Simple Minds</p>
@@ -342,17 +350,29 @@ ol > li.rank-down > .visually-hidden {
     <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-tanglite">NON-HIT SINGLE</div></div>
   </div></li>
 <li class="d-flex flex-row-reverse">
+  <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="https://i.discogs.com/wcmFT1YxBXDr7LiPqhClBKWpSqgZDLqz3yh2cg6zFic/rs:fit/g:sm/q:90/h:600/w:572/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY0OTYx/LTE0NzkwMDMxMjYt/ODg3Ny5wbmc.jpeg" alt=""></div></div>
+  <div class="flex-grow-1"><div><span>Voodoo Ray</span><p class="text-muted m-0 p-0 py-1">A Guy Called Gerald</p>
+      <div class="mt-1 text-muted">1989</div></div>
+    <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-spinlite">HIT SINGLE</div><div class="badge badge-xs ml-1 hue-outline-emerlite">INSTRUMENTAL</div></div>
+  </div></li>
+<li class="rank-up d-flex flex-row-reverse">
   <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="https://i.discogs.com/WrRZQ0diGj77lj_Vd2l3U6wN29omTm_xRNcEn-jEUPA/rs:fit/g:sm/q:90/h:299/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwOTU2/Ni0xMDc2NjA1NDQ0/LmpwZw.jpeg" alt=""></div></div>
   <div class="flex-grow-1"><div><span>Duel</span><p class="text-muted m-0 p-0 py-1">Propaganda</p>
       <div class="mt-1 text-muted">1985</div></div>
     <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-spinlite">HIT SINGLE</div></div>
-  </div></li>
-<li class="d-flex flex-row-reverse">
+  </div><span class="visually-hidden">Moved up in the combined ranking.</span></li>
+<li class="rank-up d-flex flex-row-reverse">
   <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="https://i.discogs.com/aFglyS3HJUW2Bq_L0zKfEmEx-B0srR5MdCv6YklZCgM/rs:fit/g:sm/q:90/h:600/w:593/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNTcx/Ny0xNjAxMjA4MjM5/LTQ1MDQuanBlZw.jpeg" alt=""></div></div>
   <div class="flex-grow-1"><div><span>Dr. Mabuse</span><p class="text-muted m-0 p-0 py-1">Propaganda</p>
       <div class="mt-1 text-muted">1984</div></div>
     <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-spinlite">HIT SINGLE</div></div>
-  </div></li>
+  </div><span class="visually-hidden">Moved up in the combined ranking.</span></li>
+<li class="rank-up d-flex flex-row-reverse">
+  <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="https://i.discogs.com/hTGBX03PcuoVLFaXiDJpNiF3Iw2xm8o3pzveTQYmdO0/rs:fit/g:sm/q:90/h:600/w:590/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc0OTg4/My0xNjAwMTQ0MTYy/LTc3MTcuanBlZw.jpeg" alt=""></div></div>
+  <div class="flex-grow-1"><div><span>Ashes To Ashes</span><p class="text-muted m-0 p-0 py-1">David Bowie</p>
+      <div class="mt-1 text-muted">1980</div></div>
+    <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-spinlite">HIT SINGLE</div></div>
+  </div><span class="visually-hidden">Moved up in the combined ranking.</span></li>
 <li class="d-flex flex-row-reverse">
   <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="https://i.discogs.com/oNhp84zFyX9MYMhTeCbI4uOSh5vhy-B-oUQCgwVxbbI/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ2MTM4/NC0xNjYxNjc2MjIw/LTE4OTguanBlZw.jpeg" alt=""></div></div>
   <div class="flex-grow-1"><div><span>Get Out Of My House</span><p class="text-muted m-0 p-0 py-1">Kate Bush</p>
@@ -364,12 +384,6 @@ ol > li.rank-down > .visually-hidden {
   <div class="flex-grow-1"><div><span>Born Under Punches (The Heat Goes On)</span><p class="text-muted m-0 p-0 py-1">Talking Heads</p>
       <div class="mt-1 text-muted">1980</div></div>
     <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-tanzlite">NON-SINGLE</div></div>
-  </div></li>
-<li class="d-flex flex-row-reverse">
-  <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="https://i.discogs.com/wcmFT1YxBXDr7LiPqhClBKWpSqgZDLqz3yh2cg6zFic/rs:fit/g:sm/q:90/h:600/w:572/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY0OTYx/LTE0NzkwMDMxMjYt/ODg3Ny5wbmc.jpeg" alt=""></div></div>
-  <div class="flex-grow-1"><div><span>Voodoo Ray</span><p class="text-muted m-0 p-0 py-1">A Guy Called Gerald</p>
-      <div class="mt-1 text-muted">1989</div></div>
-    <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-spinlite">HIT SINGLE</div><div class="badge badge-xs ml-1 hue-outline-emerlite">INSTRUMENTAL</div></div>
   </div></li>
 <li class="d-flex flex-row-reverse">
   <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
@@ -426,12 +440,7 @@ ol > li.rank-down > .visually-hidden {
       <div class="mt-1 text-muted">1985</div></div>
     <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-tanglite">NON-HIT SINGLE</div></div>
   </div></li>
-<li class="d-flex flex-row-reverse">
-  <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
-  <div class="flex-grow-1"><div><span>Your Love</span><p class="text-muted m-0 p-0 py-1">Jamie Principle, Frankie Knuckles</p>
-      <div class="mt-1 text-muted">1987</div></div>
-    <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-tanglite">NON-HIT SINGLE</div></div>
-  </div></li>
+
 <li class="rank-up d-flex flex-row-reverse">
   <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
   <div class="flex-grow-1"><div><span>Fade To Grey</span><p class="text-muted m-0 p-0 py-1">Visage</p>
@@ -450,6 +459,12 @@ ol > li.rank-down > .visually-hidden {
   <div class="flex-grow-1"><div><span>Let's Dance</span><p class="text-muted m-0 p-0 py-1">David Bowie</p>
       <div class="mt-1 text-muted">1983</div></div>
     <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-spinlite">HIT SINGLE</div></div>
+  </div></li>
+  <li class="d-flex flex-row-reverse">
+  <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
+  <div class="flex-grow-1"><div><span>Your Love</span><p class="text-muted m-0 p-0 py-1">Jamie Principle, Frankie Knuckles</p>
+      <div class="mt-1 text-muted">1987</div></div>
+    <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-tanglite">NON-HIT SINGLE</div></div>
   </div></li>
 <li class="d-flex flex-row-reverse">
   <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
@@ -531,12 +546,12 @@ ol > li.rank-down > .visually-hidden {
     <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-spinlite">HIT SINGLE</div><div class="badge badge-xs ml-1 hue-outline-emerlite">INSTRUMENTAL</div></div>
   </div>
 <span class="visually-hidden">Moved down from position 48 to 49.</span></li>
-<li class="d-flex flex-row-reverse">
+<li class="rank-up d-flex flex-row-reverse">
   <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
   <div class="flex-grow-1"><div><span>Just Be Good To Me</span><p class="text-muted m-0 p-0 py-1">The S.O.S Band</p>
       <div class="mt-1 text-muted">1984</div></div>
     <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-spinlite">HIT SINGLE</div></div>
-  </div></li>
+  </div><span class="visually-hidden">Moved up in the combined ranking.</span></li>
 <li class="d-flex flex-row-reverse">
   <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
   <div class="flex-grow-1"><div><span>Hangin' On A String (Contemplating)</span><p class="text-muted m-0 p-0 py-1">Loose Ends</p>
@@ -549,13 +564,13 @@ ol > li.rank-down > .visually-hidden {
       <div class="mt-1 text-muted">1986</div></div>
     <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-spinlite">HIT SINGLE</div></div>
   </div></li>
-<li class="rank-down d-flex flex-row-reverse">
+<li class="rank-up d-flex flex-row-reverse">
   <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
   <div class="flex-grow-1"><div><span>Can&#x27;t Be Sure</span><p class="text-muted m-0 p-0 py-1">The Sundays</p>
       <div class="mt-1 text-muted">1989</div></div>
     <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-tanglite">NON-HIT SINGLE</div></div>
   </div>
-<span class="visually-hidden">Moved down from position 43 to 53.</span></li>
+<span class="visually-hidden">Moved up in the combined ranking.</span></li>
 <li class="rank-up d-flex flex-row-reverse">
   <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
   <div class="flex-grow-1"><div><span>Pili Pili</span><p class="text-muted m-0 p-0 py-1">Jasper van't Hofs Pili Pili</p>
@@ -598,34 +613,42 @@ ol > li.rank-down > .visually-hidden {
     <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-spinlite">HIT SINGLE</div></div>
   </div>
 <span class="visually-hidden">Moved up from position 63 to 59.</span></li>
-<li class="rank-down d-flex flex-row-reverse">
+<li class="rank-up d-flex flex-row-reverse">
   <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
   <div class="flex-grow-1"><div><span>What Have I Done To Deserve This?</span><p class="text-muted m-0 p-0 py-1">Pet Shop Boys, Dusty Springfield</p>
       <div class="mt-1 text-muted">1987</div></div>
     <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-spinlite">HIT SINGLE</div></div>
   </div>
-<span class="visually-hidden">Moved down from position 49 to 60.</span></li>
-<li class="rank-down d-flex flex-row-reverse">
+<span class="visually-hidden">Moved up in the combined ranking.</span></li>
+<li class="rank-up d-flex flex-row-reverse">
   <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
   <div class="flex-grow-1"><div><span>Point Of No Return</span><p class="text-muted m-0 p-0 py-1">Nu Shooz</p>
       <div class="mt-1 text-muted">1986</div></div>
     <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-tanglite">NON-HIT SINGLE</div></div>
   </div>
-<span class="visually-hidden">Moved down from position 53 to 61.</span></li>
-<li class="rank-down d-flex flex-row-reverse">
+<span class="visually-hidden">Moved up in the combined ranking.</span></li>
+<li class="rank-up d-flex flex-row-reverse">
+  <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
+  <div class="flex-grow-1"><div><span>Raspberry Beret</span><p class="text-muted m-0 p-0 py-1">Prince &amp; The Revolution</p>
+      <div class="mt-1 text-muted">1985</div></div>
+    <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-spinlite">HIT SINGLE</div></div>
+  </div>
+<span class="visually-hidden">Newly added.</span></li>
+<li class="rank-up d-flex flex-row-reverse">
   <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
   <div class="flex-grow-1"><div><span>The Art Of Parties</span><p class="text-muted m-0 p-0 py-1">Japan</p>
       <div class="mt-1 text-muted">1981</div></div>
     <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-tanglite">NON-HIT SINGLE</div></div>
   </div>
-<span class="visually-hidden">Moved down from position 59 to 62.</span></li>
-<li class="rank-down d-flex flex-row-reverse">
+<span class="visually-hidden">Moved up in the combined ranking.</span></li>
+
+<li class="rank-up d-flex flex-row-reverse">
   <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
   <div class="flex-grow-1"><div><span>Just Fascination</span><p class="text-muted m-0 p-0 py-1">Cabaret Voltaire</p>
       <div class="mt-1 text-muted">1983</div></div>
     <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-tanglite">NON-HIT SINGLE</div></div>
   </div>
-<span class="visually-hidden">Moved down from position 62 to 63.</span></li>
+<span class="visually-hidden">Moved up in the combined ranking.</span></li>
 <li class="rank-up d-flex flex-row-reverse">
   <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="https://i.discogs.com/P7pngZ_I6mqIHse4nUuCbWXbXVeQuQXf6Lg-34W_gH0/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3MDEz/MS0xNTc5NjU4MDMy/LTE5NDAuanBlZw.jpeg" alt=""></div></div>
   <div class="flex-grow-1"><div><span>Snobbery And Decay</span><p class="text-muted m-0 p-0 py-1">Act</p>
@@ -647,41 +670,6 @@ ol > li.rank-down > .visually-hidden {
     <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-tanglite">NON-HIT SINGLE</div></div>
   </div>
 <span class="visually-hidden">Moved up from position 68 to 66.</span></li>
-<li class="rank-down d-flex flex-row-reverse">
-  <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
-  <div class="flex-grow-1"><div><span>Rapture</span><p class="text-muted m-0 p-0 py-1">Blondie</p>
-      <div class="mt-1 text-muted">1980</div></div>
-    <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-spinlite">HIT SINGLE</div></div>
-  </div>
-<span class="visually-hidden">Moved down from position 46 to 67.</span></li>
-<li class="rank-up d-flex flex-row-reverse">
-  <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
-  <div class="flex-grow-1"><div><span>Johnny And Mary</span><p class="text-muted m-0 p-0 py-1">Robert Palmer</p>
-      <div class="mt-1 text-muted">1980</div></div>
-    <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-tanglite">NON-HIT SINGLE</div></div>
-  </div>
-<span class="visually-hidden">Moved up from position 71 to 68.</span></li>
-<li class="rank-up d-flex flex-row-reverse">
-  <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
-  <div class="flex-grow-1"><div><span>Elstree</span><p class="text-muted m-0 p-0 py-1">Buggles</p>
-      <div class="mt-1 text-muted">1980</div></div>
-    <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-tanglite">NON-HIT SINGLE</div></div>
-  </div>
-<span class="visually-hidden">Moved up from position 70 to 69.</span></li>
-<li class="rank-up d-flex flex-row-reverse">
-  <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
-  <div class="flex-grow-1"><div><span>Raspberry Beret</span><p class="text-muted m-0 p-0 py-1">Prince &amp; The Revolution</p>
-      <div class="mt-1 text-muted">1985</div></div>
-    <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-spinlite">HIT SINGLE</div></div>
-  </div>
-<span class="visually-hidden">Newly added.</span></li>
-<li class="rank-up d-flex flex-row-reverse">
-  <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
-  <div class="flex-grow-1"><div><span>Buffalo Stance</span><p class="text-muted m-0 p-0 py-1">Neneh Cherry</p>
-      <div class="mt-1 text-muted">1988</div></div>
-    <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-spinlite">HIT SINGLE</div></div>
-  </div>
-<span class="visually-hidden">Newly added.</span></li>
 <li class="rank-up d-flex flex-row-reverse">
   <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
   <div class="flex-grow-1"><div><span>Relax</span><p class="text-muted m-0 p-0 py-1">Frankie Goes To Hollywood</p>
@@ -696,6 +684,20 @@ ol > li.rank-down > .visually-hidden {
     <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-spinlite">HIT SINGLE</div></div>
   </div>
 <span class="visually-hidden">Newly added.</span></li>
+<li class="rank-up d-flex flex-row-reverse">
+  <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
+  <div class="flex-grow-1"><div><span>Johnny And Mary</span><p class="text-muted m-0 p-0 py-1">Robert Palmer</p>
+      <div class="mt-1 text-muted">1980</div></div>
+    <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-tanglite">NON-HIT SINGLE</div></div>
+  </div>
+<span class="visually-hidden">Moved up from position 71 to 68.</span></li>
+<li class="rank-up d-flex flex-row-reverse">
+  <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
+  <div class="flex-grow-1"><div><span>Elstree</span><p class="text-muted m-0 p-0 py-1">Buggles</p>
+      <div class="mt-1 text-muted">1980</div></div>
+    <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-tanglite">NON-HIT SINGLE</div></div>
+  </div>
+<span class="visually-hidden">Moved up from position 70 to 69.</span></li>
 <li class="rank-up d-flex flex-row-reverse">
   <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
   <div class="flex-grow-1"><div><span>Another Day</span><p class="text-muted m-0 p-0 py-1">This Mortal Coil</p>
@@ -719,13 +721,6 @@ ol > li.rank-down > .visually-hidden {
 <span class="visually-hidden">Moved up from position 84 to 76.</span></li>
 <li class="rank-up d-flex flex-row-reverse">
   <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
-  <div class="flex-grow-1"><div><span>Waterfall</span><p class="text-muted m-0 p-0 py-1">The Stone Roses</p>
-      <div class="mt-1 text-muted">1989 (1992 single)</div></div>
-    <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-tanzlite">NON-SINGLE</div></div>
-  </div>
-<span class="visually-hidden">Moved up from position 85 to 77.</span></li>
-<li class="rank-up d-flex flex-row-reverse">
-  <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
   <div class="flex-grow-1"><div><span>Hit The North (Part 1)</span><p class="text-muted m-0 p-0 py-1">The Fall</p>
       <div class="mt-1 text-muted">1987</div></div>
     <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-tanglite">NON-HIT SINGLE</div></div>
@@ -738,6 +733,27 @@ ol > li.rank-down > .visually-hidden {
     <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-tanglite">NON-HIT SINGLE</div></div>
   </div>
 <span class="visually-hidden">Moved down from position 74 to 79.</span></li>
+<li class="rank-up d-flex flex-row-reverse">
+  <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
+  <div class="flex-grow-1"><div><span>Waterfall</span><p class="text-muted m-0 p-0 py-1">The Stone Roses</p>
+      <div class="mt-1 text-muted">1989 (1992 single)</div></div>
+    <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-tanzlite">NON-SINGLE</div></div>
+  </div>
+<span class="visually-hidden">Moved up from position 85 to 77.</span></li>
+<li class="rank-up d-flex flex-row-reverse">
+  <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
+  <div class="flex-grow-1"><div><span>Buffalo Stance</span><p class="text-muted m-0 p-0 py-1">Neneh Cherry</p>
+      <div class="mt-1 text-muted">1988</div></div>
+    <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-spinlite">HIT SINGLE</div></div>
+  </div>
+<span class="visually-hidden">Newly added.</span></li>
+<li class="rank-down d-flex flex-row-reverse">
+  <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
+  <div class="flex-grow-1"><div><span>The Official Colourbox World Cup Theme</span><p class="text-muted m-0 p-0 py-1">Colourbox</p>
+      <div class="mt-1 text-muted">1986</div></div>
+    <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-emerlite">INSTRUMENTAL</div></div>
+  </div>
+<span class="visually-hidden">Moved down from position 79 to 81.</span></li>
 <li class="rank-down d-flex flex-row-reverse">
   <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
   <div class="flex-grow-1"><div><span>Can't Be Serious</span><p class="text-muted m-0 p-0 py-1">Ginny</p>
@@ -747,11 +763,11 @@ ol > li.rank-down > .visually-hidden {
 <span class="visually-hidden">Moved down from position 75 to 80.</span></li>
 <li class="rank-down d-flex flex-row-reverse">
   <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
-  <div class="flex-grow-1"><div><span>The Official Colourbox World Cup Theme</span><p class="text-muted m-0 p-0 py-1">Colourbox</p>
-      <div class="mt-1 text-muted">1986</div></div>
-    <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-emerlite">INSTRUMENTAL</div></div>
+  <div class="flex-grow-1"><div><span>I Feel For You</span><p class="text-muted m-0 p-0 py-1">Chaka Khan</p>
+      <div class="mt-1 text-muted">1984</div></div>
+    <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-spinlite">HIT SINGLE</div></div>
   </div>
-<span class="visually-hidden">Moved down from position 79 to 81.</span></li>
+<span class="visually-hidden">Moved down from position 54 to 83.</span></li>
 <li class="rank-up d-flex flex-row-reverse">
   <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
   <div class="flex-grow-1"><div><span>Desert Song</span><p class="text-muted m-0 p-0 py-1">Kissing The Pink</p>
@@ -759,27 +775,20 @@ ol > li.rank-down > .visually-hidden {
     <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-tanzlite">NON-SINGLE</div></div>
   </div>
 <span class="visually-hidden">Moved up from position 86 to 82.</span></li>
-<li class="rank-down d-flex flex-row-reverse">
-  <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
-  <div class="flex-grow-1"><div><span>I Feel For You</span><p class="text-muted m-0 p-0 py-1">Chaka Khan</p>
-      <div class="mt-1 text-muted">1984</div></div>
-    <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-spinlite">HIT SINGLE</div></div>
-  </div>
-<span class="visually-hidden">Moved down from position 54 to 83.</span></li>
-<li class="rank-down d-flex flex-row-reverse">
+<li class="rank-up d-flex flex-row-reverse">
   <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
   <div class="flex-grow-1"><div><span>Forget Me Nots</span><p class="text-muted m-0 p-0 py-1">Patrice Rushen</p>
       <div class="mt-1 text-muted">1982</div></div>
     <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-spinlite">HIT SINGLE</div></div>
   </div>
-<span class="visually-hidden">Moved down from position 64 to 84.</span></li>
-<li class="rank-down d-flex flex-row-reverse">
+<span class="visually-hidden">Moved up in the combined ranking.</span></li>
+<li class="rank-up d-flex flex-row-reverse">
   <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
   <div class="flex-grow-1"><div><span>A Night To Remember</span><p class="text-muted m-0 p-0 py-1">Shalamar</p>
       <div class="mt-1 text-muted">1982</div></div>
     <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-spinlite">HIT SINGLE</div></div>
   </div>
-<span class="visually-hidden">Moved down from position 65 to 85.</span></li>
+<span class="visually-hidden">Moved up in the combined ranking.</span></li>
 <li class="rank-up d-flex flex-row-reverse">
   <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
   <div class="flex-grow-1"><div><span>Somebody To Love Tonight</span><p class="text-muted m-0 p-0 py-1">Patrick Cowley</p>
@@ -787,20 +796,20 @@ ol > li.rank-down > .visually-hidden {
     <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-emerlite">INSTRUMENTAL</div></div>
   </div>
 <span class="visually-hidden">Moved up from position 92 to 86.</span></li>
-<li class="rank-down d-flex flex-row-reverse">
+<li class="d-flex flex-row-reverse">
+  <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
+  <div class="flex-grow-1"><div><span>Rapture</span><p class="text-muted m-0 p-0 py-1">Blondie</p>
+      <div class="mt-1 text-muted">1980</div></div>
+    <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-spinlite">HIT SINGLE</div></div>
+  </div>
+<span class="visually-hidden">Moved up in the combined ranking.</span></li>
+<li class="rank-up d-flex flex-row-reverse">
   <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
   <div class="flex-grow-1"><div><span>Starchild</span><p class="text-muted m-0 p-0 py-1">Level 42</p>
       <div class="mt-1 text-muted">1981</div></div>
     <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-tanglite">NON-HIT SINGLE</div></div>
   </div>
-<span class="visually-hidden">Moved down from position 57 to 87.</span></li>
-<li class="rank-down d-flex flex-row-reverse">
-  <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
-  <div class="flex-grow-1"><div><span>Genius Of Love</span><p class="text-muted m-0 p-0 py-1">Tom Tom Club</p>
-      <div class="mt-1 text-muted">1981</div></div>
-    <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-tanglite">NON-HIT SINGLE</div></div>
-  </div>
-<span class="visually-hidden">Moved down from position 58 to 88.</span></li>
+<span class="visually-hidden">Moved up in the combined ranking.</span></li>
 <li class="rank-up d-flex flex-row-reverse">
   <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
   <div class="flex-grow-1"><div><span>Sowing The Seeds Of Love</span><p class="text-muted m-0 p-0 py-1">Tears For Fears</p>
@@ -808,20 +817,27 @@ ol > li.rank-down > .visually-hidden {
     <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-spinlite">HIT SINGLE</div></div>
   </div>
 <span class="visually-hidden">Newly added.</span></li>
-<li class="rank-down d-flex flex-row-reverse">
+<li class="rank-up d-flex flex-row-reverse">
+  <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
+  <div class="flex-grow-1"><div><span>Genius Of Love</span><p class="text-muted m-0 p-0 py-1">Tom Tom Club</p>
+      <div class="mt-1 text-muted">1981</div></div>
+    <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-tanglite">NON-HIT SINGLE</div></div>
+  </div>
+<span class="visually-hidden">Moved up in the combined ranking.</span></li>
+<li class="rank-up d-flex flex-row-reverse">
   <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
   <div class="flex-grow-1"><div><span>The Chauffeur</span><p class="text-muted m-0 p-0 py-1">Duran Duran</p>
       <div class="mt-1 text-muted">1982</div></div>
     <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-tanzlite">NON-SINGLE</div></div>
   </div>
-<span class="visually-hidden">Moved down from position 89 to 90.</span></li>
-<li class="rank-down d-flex flex-row-reverse">
+<span class="visually-hidden">Moved up in the combined ranking.</span></li>
+<li class="rank-up d-flex flex-row-reverse">
   <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
   <div class="flex-grow-1"><div><span>Sacred Heart</span><p class="text-muted m-0 p-0 py-1">Orchestral Manoeuvres In The Dark</p>
       <div class="mt-1 text-muted">1981</div></div>
     <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-tanzlite">NON-SINGLE</div></div>
   </div>
-<span class="visually-hidden">Moved down from position 90 to 91.</span></li>
+<span class="visually-hidden">Moved up in the combined ranking.</span></li>
 <li class="rank-up d-flex flex-row-reverse">
   <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
   <div class="flex-grow-1"><div><span>R-Theme</span><p class="text-muted m-0 p-0 py-1">R Tyme</p>
@@ -850,20 +866,20 @@ ol > li.rank-down > .visually-hidden {
     <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-spinlite">HIT SINGLE</div></div>
   </div>
 <span class="visually-hidden">Newly added.</span></li>
-<li class="rank-down d-flex flex-row-reverse">
+<li class="rank-up d-flex flex-row-reverse">
   <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
   <div class="flex-grow-1"><div><span>Like A Prayer</span><p class="text-muted m-0 p-0 py-1">Madonna</p>
       <div class="mt-1 text-muted">1989</div></div>
     <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-spinlite">HIT SINGLE</div></div>
   </div>
-<span class="visually-hidden">Moved down from position 55 to 96.</span></li>
-<li class="rank-down d-flex flex-row-reverse">
+<span class="visually-hidden">Moved up in the combined ranking.</span></li>
+<li class="rank-up d-flex flex-row-reverse">
   <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
   <div class="flex-grow-1"><div><span>Fight The Power</span><p class="text-muted m-0 p-0 py-1">Public Enemy</p>
       <div class="mt-1 text-muted">1989</div></div>
     <div class="mt-1"><div class="badge badge-xs ml-1 hue-outline-spinlite">HIT SINGLE</div></div>
   </div>
-<span class="visually-hidden">Moved down from position 73 to 97.</span></li>
+<span class="visually-hidden">Moved up in the combined ranking.</span></li>
 <li class="rank-down d-flex flex-row-reverse">
   <div class="d-inline-flex justify-content-end"><div class="img-track"><img src="../../../img/img-placeholder-indigo.svg" alt=""></div></div>
   <div class="flex-grow-1"><div><span>Bam Bam</span><p class="text-muted m-0 p-0 py-1">Sister Nancy</p>
@@ -891,18 +907,17 @@ ol > li.rank-down > .visually-hidden {
 </div>
 
 <div class="tab-pane " id="tab0">
-
 <div class="row">
-
-      <div class="col-12">
+<div class="col-12 col-xl-9 m-auto w-100">
 <p class="align-center m-auto text-center p-2 pb-4">These lists were compiled between 2017 and 2021 with some small alterations since then. <span class="winner-key">Stars mark tracks ranked first in a year or category list.</span></p>
-</div>
+
 <div class="width-100 view-sm">
  <div class="my-4 px-4 align-center">
 <a href="#instrumentals" class="hyperblock text-sm hide-sm">Instrumentals</a>
 <a href="#nonsingles" class="hyperblock text-sm mx-2">Non-Singles</a>
 <a href="#nonhits" class="hyperblock text-sm mx-2">Non-Hits</a>
 <a href="#hits" class="hyperblock text-sm mx-2">Hits</a>
+</div>
 </div>
 </div>
 <div id="instrumentals" class="col-xs-6 col-sm-6 col-lg-3 col-xl-3"><div class="box box-dark rounded-sm">
@@ -917,7 +932,7 @@ ol > li.rank-down > .visually-hidden {
 </a>
 <ol>
 <li><span class="list-winner">E2-E4<span class="cpos"><span class="cpos-b">(</span>5<span class="cpos-b">)</span></span></span>Manuel Göttsching</li>
-<li><span>Theme For Great Cities<span class="cpos"><span class="cpos-b">(</span>14<span class="cpos-b">)</span></span></span>Simple Minds</li>
+<li class="rank-up"><span>Theme For Great Cities<span class="cpos"><span class="cpos-b">(</span>14<span class="cpos-b">)</span></span></span>Simple Minds<span class="visually-hidden">Moved up in the combined ranking.</span></li>
 <li><span>Can You Feel It?<span class="cpos"><span class="cpos-b">(</span>44<span class="cpos-b">)</span></span></span>Mr. Fingers</li>
 <li><span>Hip Hop Be Bop (Don't Stop)<span class="cpos"><span class="cpos-b">(</span>48<span class="cpos-b">)</span></span></span>Man Parrish</li>
 <li><span>Pili Pili<span class="cpos"><span class="cpos-b">(</span>54<span class="cpos-b">)</span></span></span>Jasper van't Hofs Pili Pili</li>
@@ -1036,8 +1051,8 @@ ol > li.rank-down > .visually-hidden {
 <li><span class="list-winner">Hello Earth<span class="cpos"><span class="cpos-b">(</span>9<span class="cpos-b">)</span></span></span>Kate Bush</li>
 <li><span>King's Cross<span class="cpos"><span class="cpos-b">(</span>10<span class="cpos-b">)</span></span></span>Pet Shop Boys</li>
 <li><span>Two Divided by Zero<span class="cpos"><span class="cpos-b">(</span>13<span class="cpos-b">)</span></span></span>Pet Shop Boys</li>
-<li><span>Get Out Of My House<span class="cpos"><span class="cpos-b">(</span>22<span class="cpos-b">)</span></span></span>Kate Bush</li>
-<li><span>Born Under Punches (The Heat Goes On)<span class="cpos"><span class="cpos-b">(</span>23<span class="cpos-b">)</span></span></span>Talking Heads</li>
+<li><span>Get Out Of My House<span class="cpos"><span class="cpos-b">(</span>23<span class="cpos-b">)</span></span></span>Kate Bush</li>
+<li><span>Born Under Punches (The Heat Goes On)<span class="cpos"><span class="cpos-b">(</span>24<span class="cpos-b">)</span></span></span>Talking Heads</li>
 <li><span>A Love From Outer Space<span class="cpos"><span class="cpos-b">(</span>39<span class="cpos-b">)</span></span></span>A.R. Kane</li>
 <li><span>That's Us/Wild Combination<span class="cpos"><span class="cpos-b">(</span>42<span class="cpos-b">)</span></span></span>Arthur Russell</li>
 <li><span>The Chase<span class="cpos"><span class="cpos-b">(</span>65<span class="cpos-b">)</span></span></span>Propaganda</li>
@@ -1046,8 +1061,8 @@ ol > li.rank-down > .visually-hidden {
 <li><span>The Spangle Maker<span class="cpos"><span class="cpos-b">(</span>76<span class="cpos-b">)</span></span></span>Cocteau Twins</li>
 <li><span>Waterfall<span class="cpos"><span class="cpos-b">(</span>77<span class="cpos-b">)</span></span></span>The Stone Roses</li>
 <li><span>Desert Song<span class="cpos"><span class="cpos-b">(</span>82<span class="cpos-b">)</span></span></span>Kissing The Pink</li>
-<li><span>The Chauffeur<span class="cpos"><span class="cpos-b">(</span>90<span class="cpos-b">)</span></span></span>Duran Duran</li>
-<li><span>Sacred Heart<span class="cpos"><span class="cpos-b">(</span>91<span class="cpos-b">)</span></span></span>Orchestral Manoeuvres In The Dark</li>
+<li class="rank-up"><span>The Chauffeur<span class="cpos"><span class="cpos-b">(</span>90<span class="cpos-b">)</span></span></span>Duran Duran<span class="visually-hidden">Moved up in the combined ranking.</span></li>
+<li class="rank-up"><span>Sacred Heart<span class="cpos"><span class="cpos-b">(</span>91<span class="cpos-b">)</span></span></span>Orchestral Manoeuvres In The Dark<span class="visually-hidden">Moved up in the combined ranking.</span></li>
 <li class="rank-up"><span>Bam Bam<span class="cpos"><span class="cpos-b">(</span>98<span class="cpos-b">)</span></span></span>Sister Nancy<span class="visually-hidden">Moved up from position 17 to 16.</span></li>
 <li class="rank-up"><span>Budapest By Blimp<span class="cpos"><span class="cpos-b">(</span>99<span class="cpos-b">)</span></span></span>Thomas Dolby<span class="visually-hidden">Moved up from position 19 to 17.</span></li>
 <li class="rank-down"><span>Straight Outta Compton</span>N.W.A.<span class="visually-hidden">Moved down from position 16 to 18.</span></li>
@@ -1149,20 +1164,20 @@ ol > li.rank-down > .visually-hidden {
 </a>
 
 <ol><li><span class="list-winner">Tears<span class="cpos"><span class="cpos-b">(</span>12<span class="cpos-b">)</span></span></span>Frankie Knuckles, Satoshi Tomiie, Robert Owens</li>
-<li><span>Stop<span class="cpos"><span class="cpos-b">(</span>15<span class="cpos-b">)</span></span></span>Casco Presents BWH</li>
-<li><span>Clear - Jose 'Animal' Diaz Remix<span class="cpos"><span class="cpos-b">(</span>17<span class="cpos-b">)</span></span></span>Cybotron</li>
-<li><span>I Travel<span class="cpos"><span class="cpos-b">(</span>19<span class="cpos-b">)</span></span></span>Simple Minds</li>
+<li class="rank-up"><span>Stop<span class="cpos"><span class="cpos-b">(</span>15<span class="cpos-b">)</span></span></span>Casco Presents BWH<span class="visually-hidden">Moved up in the combined ranking.</span></li>
+<li class="rank-up"><span>Clear - Jose 'Animal' Diaz Remix<span class="cpos"><span class="cpos-b">(</span>17<span class="cpos-b">)</span></span></span>Cybotron<span class="visually-hidden">Moved up in the combined ranking.</span></li>
+<li class="rank-up"><span>I Travel<span class="cpos"><span class="cpos-b">(</span>18<span class="cpos-b">)</span></span></span>Simple Minds</li>
 <li><span>Let The Music Use You<span class="cpos"><span class="cpos-b">(</span>27<span class="cpos-b">)</span></span></span>The Nightwriters</li>
 <li><span>Bizarre Love Triangle<span class="cpos"><span class="cpos-b">(</span>28<span class="cpos-b">)</span></span></span>New Order</li>
-<li><span>Let Me Go<span class="cpos"><span class="cpos-b">(</span>30<span class="cpos-b">)</span></span></span>Heaven 17</li>
+<li class="rank-up"><span>Let Me Go<span class="cpos"><span class="cpos-b">(</span>30<span class="cpos-b">)</span></span></span>Heaven 17</li>
 <li><span>Take A Chance<span class="cpos"><span class="cpos-b">(</span>32<span class="cpos-b">)</span></span></span>Mr. Flagio</li>
 <li><span>Faces<span class="cpos"><span class="cpos-b">(</span>33<span class="cpos-b">)</span></span></span>Clio</li>
 <li><span>Your Love<span class="cpos"><span class="cpos-b">(</span>34<span class="cpos-b">)</span></span></span>Frankie Knuckles, Jamie Principle</li>
-<li><span>Can't Be Sure<span class="cpos"><span class="cpos-b">(</span>53<span class="cpos-b">)</span></span></span>The Sundays</li>
+<li class="rank-up"><span>Can't Be Sure<span class="cpos"><span class="cpos-b">(</span>53<span class="cpos-b">)</span></span></span>The Sundays<span class="visually-hidden">Moved up in the combined ranking.</span></li>
 <li class="rank-up"><span>Mutual Attraction<span class="cpos"><span class="cpos-b">(</span>57<span class="cpos-b">)</span></span></span>Change<span class="visually-hidden">Moved up from position 21 to 12.</span></li>
-<li class="rank-down"><span>Point Of No Return<span class="cpos"><span class="cpos-b">(</span>61<span class="cpos-b">)</span></span></span>Nu Shooz<span class="visually-hidden">Moved down from position 12 to 13.</span></li>
-<li class="rank-up"><span>The Art Of Parties<span class="cpos"><span class="cpos-b">(</span>62<span class="cpos-b">)</span></span></span>Japan<span class="visually-hidden">Moved up from position 15 to 14.</span></li>
-<li class="rank-up"><span>Just Fascination<span class="cpos"><span class="cpos-b">(</span>63<span class="cpos-b">)</span></span></span>Cabaret Voltaire<span class="visually-hidden">Moved up from position 16 to 15.</span></li>
+<li class="rank-up"><span>Point Of No Return<span class="cpos"><span class="cpos-b">(</span>61<span class="cpos-b">)</span></span></span>Nu Shooz<span class="visually-hidden">Moved up in the combined ranking.</span></li>
+<li class="rank-up"><span>The Art Of Parties<span class="cpos"><span class="cpos-b">(</span>62<span class="cpos-b">)</span></span></span>Japan<span class="visually-hidden">Moved up in the combined ranking.</span></li>
+<li class="rank-up"><span>Just Fascination<span class="cpos"><span class="cpos-b">(</span>63<span class="cpos-b">)</span></span></span>Cabaret Voltaire<span class="visually-hidden">Moved up in the combined ranking.</span></li>
 <li class="rank-up"><span>Snobbery And Decay<span class="cpos"><span class="cpos-b">(</span>64<span class="cpos-b">)</span></span></span>Act<span class="visually-hidden">Moved up from position 17 to 16.</span></li>
 <li class="rank-up"><span>P:Machinery<span class="cpos"><span class="cpos-b">(</span>66<span class="cpos-b">)</span></span></span>Propaganda<span class="visually-hidden">Moved up from position 18 to 17.</span></li>
 <li class="rank-up"><span>Johnny And Mary<span class="cpos"><span class="cpos-b">(</span>68<span class="cpos-b">)</span></span></span>Robert Palmer<span class="visually-hidden">Moved up from position 20 to 18.</span></li>
@@ -1170,15 +1185,15 @@ ol > li.rank-down > .visually-hidden {
 <li class="rank-up"><span>Hit the North (Part 1)<span class="cpos"><span class="cpos-b">(</span>78<span class="cpos-b">)</span></span></span>The Fall<span class="visually-hidden">Moved up from position 29 to 20.</span></li>
 <li><span>W.F.L. (Wrote For Luck)<span class="cpos"><span class="cpos-b">(</span>79<span class="cpos-b">)</span></span></span>Happy Mondays</li>
 <li><span>Can't Be Serious<span class="cpos"><span class="cpos-b">(</span>80<span class="cpos-b">)</span></span></span>Ginny</li>
-<li class="rank-down"><span>Starchild<span class="cpos"><span class="cpos-b">(</span>87<span class="cpos-b">)</span></span></span>Level 42<span class="visually-hidden">Moved down from position 13 to 23.</span></li>
-<li class="rank-down"><span>Genius Of Love<span class="cpos"><span class="cpos-b">(</span>88<span class="cpos-b">)</span></span></span>Tom Tom Club<span class="visually-hidden">Moved down from position 14 to 24.</span></li>
+<li class="rank-up"><span>Starchild<span class="cpos"><span class="cpos-b">(</span>87<span class="cpos-b">)</span></span></span>Level 42<span class="visually-hidden">Moved up in the combined ranking.</span></li>
+<li class="rank-up"><span>Genius Of Love<span class="cpos"><span class="cpos-b">(</span>88<span class="cpos-b">)</span></span></span>Tom Tom Club<span class="visually-hidden">Moved up in the combined ranking.</span></li>
 <li class="rank-up"><span>Passion<span class="cpos"><span class="cpos-b">(</span>93<span class="cpos-b">)</span></span></span>The Flirts<span class="visually-hidden">Moved up from position 28 to 25.</span></li>
 <li><span>Things Fall Apart<span class="cpos"><span class="cpos-b">(</span>94<span class="cpos-b">)</span></span></span>Cristina</li>
 <li class="rank-up"><span>Glad To Know You<span class="cpos"><span class="cpos-b">(</span>100<span class="cpos-b">)</span></span></span>Kitty Grant<span class="visually-hidden">Moved up from position 30 to 27.</span></li>
 <li class="rank-down"><span>Pop Life</span>Prince<span class="visually-hidden">Moved down from position 24 to 28.</span></li>
 <li class="rank-down"><span>Ti Sento (Extended Version)</span>Matia Bazar<span class="visually-hidden">Moved down from position 25 to 29.</span></li>
 <li class="rank-down"><span>Is That All There Is?</span>Cristina<span class="visually-hidden">Moved down from position 26 to 30.</span></li>
-<li><span>I Would Die 4 U*</span>Prince &amp; The Revolution</li>
+<li><span>I Would Die 4 U</span>Prince &amp; The Revolution</li>
 <li><span>Wheel Me Out (Long Version)</span>Was (Not Was)</li>
 <li><span>Heat You Up, Melt You Down</span>Shirley Lites</li>
 <li><span>Other Side Of Life</span>Visions</li>
@@ -1273,10 +1288,10 @@ ol > li.rank-down > .visually-hidden {
 <li><span class="list-winner">Once In A Lifetime<span class="cpos"><span class="cpos-b">(</span>8<span class="cpos-b">)</span></span></span>Talking Heads</li>
 <li><span>Cloudbusting<span class="cpos"><span class="cpos-b">(</span>11<span class="cpos-b">)</span></span></span>Kate Bush</li>
 <li><span class="list-winner">Pump Up The Volume<span class="cpos"><span class="cpos-b">(</span>16<span class="cpos-b">)</span></span></span>M|A|R|R|S</li>
-<li><span>Ashes to Ashes<span class="cpos"><span class="cpos-b">(</span>18<span class="cpos-b">)</span></span></span>David Bowie</li>
-<li><span>Duel<span class="cpos"><span class="cpos-b">(</span>20<span class="cpos-b">)</span></span></span>Propaganda</li>
-<li><span>Dr. Mabuse<span class="cpos"><span class="cpos-b">(</span>21<span class="cpos-b">)</span></span></span>Propaganda</li>
-<li><span>Voodoo Ray<span class="cpos"><span class="cpos-b">(</span>24<span class="cpos-b">)</span></span></span>A Guy Called Gerald</li>
+<li><span>Voodoo Ray<span class="cpos"><span class="cpos-b">(</span>19<span class="cpos-b">)</span></span></span>A Guy Called Gerald</li>
+<li class="rank-up"><span>Duel<span class="cpos"><span class="cpos-b">(</span>20<span class="cpos-b">)</span></span></span>Propaganda<span class="visually-hidden">Moved up in the combined ranking.</span></li>
+<li class="rank-up"><span>Dr. Mabuse<span class="cpos"><span class="cpos-b">(</span>21<span class="cpos-b">)</span></span></span>Propaganda<span class="visually-hidden">Moved up in the combined ranking.</span></li>
+<li class="rank-up"><span>Ashes to Ashes<span class="cpos"><span class="cpos-b">(</span>22<span class="cpos-b">)</span></span></span>David Bowie<span class="visually-hidden">Moved up in the combined ranking.</span></li>
 <li><span class="list-winner">Kiss<span class="cpos"><span class="cpos-b">(</span>25<span class="cpos-b">)</span></span></span>Prince</li>
 <li><span class="list-winner">Push It<span class="cpos"><span class="cpos-b">(</span>26<span class="cpos-b">)</span></span></span>Salt-N-Pepa</li>
 <li><span>Never Let Me Down Again<span class="cpos"><span class="cpos-b">(</span>29<span class="cpos-b">)</span></span></span>Depeche Mode</li>
@@ -1292,24 +1307,24 @@ ol > li.rank-down > .visually-hidden {
 <li class="rank-down"><span>Left To My Own Devices<span class="cpos"><span class="cpos-b">(</span>46<span class="cpos-b">)</span></span></span>Pet Shop Boys<span class="visually-hidden">Moved down from position 21 to 26.</span></li>
 <li class="rank-down"><span>Southern Freeez<span class="cpos"><span class="cpos-b">(</span>47<span class="cpos-b">)</span></span></span>Freeez<span class="visually-hidden">Moved down from position 25 to 27.</span></li>
 <li><span>Close (To The Edit)<span class="cpos"><span class="cpos-b">(</span>49<span class="cpos-b">)</span></span></span>The Art Of Noise</li>
-<li class="rank-up"><span>Just Be Good To Me<span class="cpos"><span class="cpos-b">(</span>50<span class="cpos-b">)</span></span></span>The S.O.S Band<span class="visually-hidden">Moved up from position 30 to 29.</span></li>
+<li class="rank-up"><span>Just Be Good To Me<span class="cpos"><span class="cpos-b">(</span>50<span class="cpos-b">)</span></span></span>The S.O.S Band<span class="visually-hidden">Moved up in the combined ranking.</span></li>
 <li class="rank-up"><span>Hangin' On A String (Contemplating)<span class="cpos"><span class="cpos-b">(</span>51<span class="cpos-b">)</span></span></span>Loose Ends<span class="visually-hidden">Moved up from position 31 to 30.</span></li>
 <li class="rank-up"><span>Hounds Of Love<span class="cpos"><span class="cpos-b">(</span>52<span class="cpos-b">)</span></span></span>Kate Bush<span class="visually-hidden">Moved up from position 34 to 31.</span></li>
 <li class="rank-up"><span>Slave To The Rhythm<span class="cpos"><span class="cpos-b">(</span>56<span class="cpos-b">)</span></span></span>Grace Jones<span class="visually-hidden">Moved up from position 57 to 32.</span></li>
 <li class="rank-up"><span>Everything Counts<span class="cpos"><span class="cpos-b">(</span>58<span class="cpos-b">)</span></span></span>Depeche Mode<span class="visually-hidden">Moved up from position 45 to 33.</span></li>
 <li class="rank-up"><span>Torch<span class="cpos"><span class="cpos-b">(</span>59<span class="cpos-b">)</span></span></span>Soft Cell<span class="visually-hidden">Moved up from position 38 to 34.</span></li>
-<li class="rank-down"><span>What Have I Done to Deserve This?<span class="cpos"><span class="cpos-b">(</span>60<span class="cpos-b">)</span></span></span>Pet Shop Boys, Dusty Springfield<span class="visually-hidden">Moved down from position 29 to 35.</span></li>
-<li class="rank-down"><span>Rapture<span class="cpos"><span class="cpos-b">(</span>67<span class="cpos-b">)</span></span></span>Blondie<span class="visually-hidden">Moved down from position 26 to 36.</span></li>
+<li class="rank-up"><span>What Have I Done to Deserve This?<span class="cpos"><span class="cpos-b">(</span>60<span class="cpos-b">)</span></span></span>Pet Shop Boys, Dusty Springfield<span class="visually-hidden">Moved up in the combined ranking.</span></li>
+<li class="rank-up"><span>Rapture<span class="cpos"><span class="cpos-b">(</span>67<span class="cpos-b">)</span></span></span>Blondie<span class="visually-hidden">Moved up in the combined ranking.</span></li>
 <li class="rank-up"><span>Raspberry Beret<span class="cpos"><span class="cpos-b">(</span>70<span class="cpos-b">)</span></span></span>Prince<span class="visually-hidden">Moved up from position 43 to 37.</span></li>
 <li class="rank-up"><span>Buffalo Stance<span class="cpos"><span class="cpos-b">(</span>71<span class="cpos-b">)</span></span></span>Neneh Cherry<span class="visually-hidden">Moved up from position 52 to 38.</span></li>
 <li class="rank-up"><span>Relax<span class="cpos"><span class="cpos-b">(</span>72<span class="cpos-b">)</span></span></span>Frankie Goes To Hollywood<span class="visually-hidden">Moved up from position 48 to 39.</span></li>
 <li class="rank-down"><span>I Feel For You<span class="cpos"><span class="cpos-b">(</span>83<span class="cpos-b">)</span></span></span>Chaka Khan<span class="visually-hidden">Moved down from position 35 to 40.</span></li>
-<li class="rank-down"><span>Forget Me Nots<span class="cpos"><span class="cpos-b">(</span>84<span class="cpos-b">)</span></span></span>Patrice Rushen<span class="visually-hidden">Moved down from position 39 to 41.</span></li>
-<li class="rank-down"><span>A Night To Remember<span class="cpos"><span class="cpos-b">(</span>85<span class="cpos-b">)</span></span></span>Shalamar<span class="visually-hidden">Moved down from position 40 to 42.</span></li>
+<li class="rank-up"><span>Forget Me Nots<span class="cpos"><span class="cpos-b">(</span>84<span class="cpos-b">)</span></span></span>Patrice Rushen<span class="visually-hidden">Moved up in the combined ranking.</span></li>
+<li class="rank-up"><span>A Night To Remember<span class="cpos"><span class="cpos-b">(</span>85<span class="cpos-b">)</span></span></span>Shalamar<span class="visually-hidden">Moved up in the combined ranking.</span></li>
 <li class="rank-down"><span>Sowing The Seeds Of Love<span class="cpos"><span class="cpos-b">(</span>89<span class="cpos-b">)</span></span></span>Tears For Fears<span class="visually-hidden">Moved down from position 32 to 43.</span></li>
-<li class="rank-down"><span>Personal Jesus<span class="cpos"><span class="cpos-b">(</span>95<span class="cpos-b">)</span></span></span>Depeche Mode<span class="visually-hidden">Moved down from position 33 to 44.</span></li>
-<li class="rank-down"><span>Like A Prayer<span class="cpos"><span class="cpos-b">(</span>96<span class="cpos-b">)</span></span></span>Madonna<span class="visually-hidden">Moved down from position 36 to 45.</span></li>
-<li class="rank-down"><span>Fight The Power<span class="cpos"><span class="cpos-b">(</span>97<span class="cpos-b">)</span></span></span>Public Enemy<span class="visually-hidden">Moved down from position 42 to 46.</span></li>
+<li class="rank-up"><span>Personal Jesus<span class="cpos"><span class="cpos-b">(</span>95<span class="cpos-b">)</span></span></span>Depeche Mode<span class="visually-hidden">Moved up in the combined ranking.</span></li>
+<li class="rank-up"><span>Like A Prayer<span class="cpos"><span class="cpos-b">(</span>96<span class="cpos-b">)</span></span></span>Madonna<span class="visually-hidden">Moved up in the combined ranking.</span></li>
+<li class="rank-up"><span>Fight The Power<span class="cpos"><span class="cpos-b">(</span>97<span class="cpos-b">)</span></span></span>Public Enemy<span class="visually-hidden">Moved up in the combined ranking.</span></li>
 <li class="rank-up"><span>Say Hello Wave Goodbye</span>Soft Cell<span class="visually-hidden">Moved up from position 49 to 47.</span></li>
 <li class="rank-down"><span>I Can't Go For That (No Can Do)</span>Daryl Hall & John Oates<span class="visually-hidden">Moved down from position 41 to 48.</span></li>
 <li class="rank-down"><span>Always On My Mind</span>Pet Shop Boys<span class="visually-hidden">Moved down from position 44 to 49.</span></li>
@@ -1372,10 +1387,8 @@ ol > li.rank-down > .visually-hidden {
 
 <div class="tab-pane " id="tab1">
 <div class="row">
-    <div class="col-12">
-<p class="align-center m-auto text-center mb-4 p-2">These lists were compiled in 2017, featuring only tracks that peaked between #1 and #75 in the UK singles chart, with some AA sides and EP tracks included as well as some extended mixes in the playlists.</p>
-
-
+<div class="col-12 col-xl-9 m-auto w-100">
+<p class="align-center m-auto text-center mx-4 width-100-then-75 p-2 px-4">These lists were compiled in 2017, featuring only tracks that peaked between #1 and #75 in the UK singles chart,<br> with some AA sides and EP tracks included as well as some extended mixes in the playlists.</p>
 </div>
 
 <div class="width-100 align-center pvm">
@@ -1399,15 +1412,15 @@ ol > li.rank-down > .visually-hidden {
  <a class="btn btn-sm align-center m-1 width-50-then-100" href="https://youtube.com/playlist?list=PLHvKxcWzqg0djyMDodtt6ctdyyP87Fi7E">Open in YouTube</a>
 </div>
 <ol><li><span>Pacific</span> 808 State</li>
-<li><span class="position-upwards" title="Track has improved on its original position">Tears<span class="cpos cpos-nonhits"><span class="cpos-b">(</span>1<span class="cpos-b">)</span></span></span> Frankie Knuckles, Satoshi Tomiie, Robert Owens</li>
+<li class="rank-up"><span class="position-upwards" title="Track has improved on its original position">Tears<span class="cpos cpos-nonhits"><span class="cpos-b">(</span>1<span class="cpos-b">)</span></span></span> Frankie Knuckles, Satoshi Tomiie, Robert Owens</li>
 <li><span>Voodoo Ray</span> A Guy Called Gerald</li>
-<li><span class="position-upwards" title="Track has improved on its original position">Your Love {1987}</span> Jamie Principle, Frankie Knuckles</li>
+<li class="rank-up"><span class="position-upwards" title="Track has improved on its original position">Your Love {1987}</span> Jamie Principle, Frankie Knuckles</li>
 <li><span>Back to Life (However Do You Want Me?)</span> Soul II Soul, Caron Wheeler</li>
-<li><span class="position-upwards" title="Track has improved on its original position">Can't Be Sure<span class="cpos cpos-nonhits"><span class="cpos-b">(</span>11<span class="cpos-b">)</span></span></span>The Sundays</li>
+<li class="rank-up"><span class="position-upwards" title="Track has improved on its original position">Can't Be Sure<span class="cpos cpos-nonhits"><span class="cpos-b">(</span>11<span class="cpos-b">)</span></span></span>The Sundays<span class="visually-hidden">Moved up in the combined ranking.</span></li>
 <li class="rank-up"><span class="position-upwards" title="Track has improved on its original position">Sowing The Seeds Of Love</span> Tears For Fears<span class="visually-hidden">Moved up from position 10 to 7.</span></li>
-<li class="rank-up"><span class="position-upwards" title="Track has improved on its original position">Personal Jesus </span> Depeche Mode<span class="visually-hidden">Moved up from position 11 to 8.</span></li>
-<li class="rank-down"><span>Like A Prayer</span> Madonna<span class="visually-hidden">Moved down from position 7 to 9.</span></li>
-<li class="rank-down"><span>Fight The Power</span> Public Enemy<span class="visually-hidden">Moved down from position 8 to 10.</span></li>
+<li class="rank-up"><span class="position-upwards" title="Track has improved on its original position">Personal Jesus </span> Depeche Mode<span class="visually-hidden">Moved up in the combined ranking.</span></li>
+<li class="rank-up"><span>Like A Prayer</span> Madonna<span class="visually-hidden">Moved up in the combined ranking.</span></li>
+<li class="rank-up"><span>Fight The Power</span> Public Enemy<span class="visually-hidden">Moved up in the combined ranking.</span></li>
 <li class="rank-down"><span>Strings Of Life {1987}<span class="cpos cpos-instrumentals"><span class="cpos-b">(</span>10<span class="cpos-b">)</span></span></span> Rhythim Is Rhythim<span class="visually-hidden">Moved down from position 9 to 11.</span></li>
 <li><span>Say No Go</span> De La Soul</li>
 <li><span>Numero Uno</span> Starlight</li>
@@ -1421,7 +1434,7 @@ ol > li.rank-down > .visually-hidden {
 <li><span>Hey DJ (I Can't Dance To That Music You're Playing)</span> The Beatmasters, Betty Boo</li>
 <li><span>Pump Up The Jam</span> Technotronic, Ya Kid K</li>
 <li><span>Keep On Movin'</span> Soul II Soul, Caron Wheeler</li>
-<li><span>Getting Away With It</span> Electronic</li>
+<li class="rank-up"><span>Getting Away With It</span> Electronic</li>
 <li><span>Promised Land<span class="cpos cpos-nonhits"><span class="cpos-b">(</span>52<span class="cpos-b">)</span></span></span> Joe Smooth</li>
 <li><span>Rich In Paradise</span> F.P.I. Project</li>
 <li><span>The Sun Rising</span> The Beloved</li>
@@ -1449,7 +1462,7 @@ ol > li.rank-down > .visually-hidden {
 <li><span>Don't Be Cruel {1988}</span> Bobby Brown</li>
 <li><span>Straight Up</span> Paula Abdul</li>
 <li><span>Cherish</span> Madonna</li>
-<li><span class="position-upwards" title="Track has improved on its original position">The Downtown Lights*</span> The Blue Nile</li>
+<li class="rank-up"><span class="position-upwards" title="Track has improved on its original position">The Downtown Lights*</span> The Blue Nile</li>
 <li><span>Lullaby</span> The Cure</li>
 <li><span>Run</span> New Order</li>
 <li><span>Monkey Gone To Heaven</span> Pixies</li>
@@ -1478,7 +1491,7 @@ ol > li.rank-down > .visually-hidden {
 <li><span class="playlist-fail" title="Track may not be playable in the playlists">Right Before My Eyes {1988}</span> Patti Day</li>
 <li><span>Whatcha Gonna Do With My Lovin'?</span> Inner City</li>
 <li><span>Ain't Nobody Better</span> Inner City</li>
-<li><span class="position-upwards" title="Track has improved on its original position">Helyom Halib</span> Cappella</li>
+<li class="rank-up"><span class="position-upwards" title="Track has improved on its original position">Helyom Halib</span> Cappella</li>
 <li><span>Oh Well</span> Oh Well</li>
 <li><span>Round And Round</span> New Order</li>
 <li><span>Drama!</span> Erasure</li>
@@ -1499,8 +1512,8 @@ ol > li.rank-down > .visually-hidden {
 <li><span>There She Goes</span> The La's</li>
 <li><span>Something's Gotten Hold Of My Heart</span> Marc Almond, Gene Pitney</li>
 <li><span>Grand Piano</span> Mixmaster</li></ol>
-</div></div>
-
+</div>
+</div>
 
 <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
 <div id="1988" class="box box-dark rounded-sm">
@@ -1513,11 +1526,10 @@ ol > li.rank-down > .visually-hidden {
 </div>
 <ol>
 <li><span>Push It {1987}</span> Salt-N-Pepa</li>
-<li class="rank-up"><span>Blue Monday '88</span> New Order<span class="visually-hidden">Moved up from position 13 to 2.</span></li>
 <li><span>Everywhere</span> Fleetwood Mac</li>
-<li class="rank-down"><span>Left To My Own Devices</span> Pet Shop Boys<span class="visually-hidden">Moved down from position 2 to 4.</span></li>
+<li><span>Left To My Own Devices</span> Pet Shop Boys<span class="visually-hidden">Moved down from position 2 to 4.</span></li>
 <li class="rank-down"><span>Buffalo Stance</span> Neneh Cherry<span class="visually-hidden">Moved down from position 4 to 5.</span></li>
-<li class="rank-down"><span>Teardrops</span> Womack & Womack<span class="visually-hidden">Moved down from position 5 to 6.</span></li>
+<li class="rank-up"><span>Teardrops</span> Womack & Womack<span class="visually-hidden">Moved down from position 5 to 6.</span></li>
 <li class="rank-down"><span>I'm Not Scared</span> Eighth Wonder<span class="visually-hidden">Moved down from position 6 to 7.</span></li>
 <li class="rank-down"><span>Heart</span> Pet Shop Boys<span class="visually-hidden">Moved down from position 7 to 8.</span></li>
 <li class="rank-down"><span>Peek-A-Boo</span> Siouxsie & The Banshees<span class="visually-hidden">Moved down from position 8 to 9.</span></li>
@@ -1525,6 +1537,7 @@ ol > li.rank-down > .visually-hidden {
 <li class="rank-down"><span>Big Fun</span> Inner City<span class="visually-hidden">Moved down from position 10 to 11.</span></li>
 <li class="rank-down"><span>Good Life</span> Inner City<span class="visually-hidden">Moved down from position 11 to 12.</span></li>
 <li class="rank-down"><span>Fine Time</span> New Order<span class="visually-hidden">Moved down from position 12 to 13.</span></li>
+<li><span>Blue Monday '88</span> New Order</li>
 <li><span>Theme from S'Express</span> S'Express</li>
 <li><span>Superfly Guy</span> S'Express</li>
 <li><span>Doctorin' The House</span> Coldcut, Yazz & The Plastic Population</li>
@@ -1532,7 +1545,7 @@ ol > li.rank-down > .visually-hidden {
 <li><span>Requiem</span> London Boys</li>
 <li><span>Roses Are Red</span> The Mac Band</li>
 <li><span>Alphabet Street</span> Prince</li>
-<li><span class="position-upwards" title="Track has improved on its original position">Oh Patti (Don't Feel Sorry For Loverboy)</span> Scritti Politti</li>
+<li class="rank-up"><span class="position-upwards" title="Track has improved on its original position">Oh Patti (Don't Feel Sorry For Loverboy)</span> Scritti Politti</li>
 <li><span>Come Into My Life</span> Joyce Sims</li>
 <li><span>Love Is Contagious</span> Taja Sevelle</li>
 <li><span>Love Is Stronger Than Pride </span> Sade</li>
@@ -1574,7 +1587,7 @@ ol > li.rank-down > .visually-hidden {
 <li><span>Who's Leaving Who?</span> Hazell Dean</li>
 <li><span>The Harder I Try</span> Brother Beyond</li>
 <li><span>That's The Way It Is</span> Mel & Kim</li>
-<li><span class="position-upwards" title="Track has improved on its original position">Waiting For A Star to Fall</span> Boy Meets Girl</li>
+<li class="rank-up"><span class="position-upwards" title="Track has improved on its original position">Waiting For A Star to Fall</span> Boy Meets Girl</li>
 <li><span>Cars And Girls</span> Prefab Sprout</li>
 <li><span>Never Tear Us Apart</span> INXS</li>
 <li><span>One More Try</span> George Michael</li>
@@ -1627,7 +1640,7 @@ ol > li.rank-down > .visually-hidden {
 <li><span>Pump Up The Volume</span> M|A|R|R|S</li>
 <li><span>Never Let Me Down Again</span> Depeche Mode</li>
 <li><span>True Faith</span> New Order</li>
-<li><span>What Have I Done to Deserve This?</span> Pet Shop Boys, Dusty Springfield</li>
+<li class="rank-up"><span>What Have I Done to Deserve This?</span> Pet Shop Boys, Dusty Springfield<span class="visually-hidden">Moved up in the combined ranking.</span></li>
 <li><span>Snobbery And Decay<span class="cpos cpos-nonhits"><span class="cpos-b">(</span>16<span class="cpos-b">)</span></span></span> Act</li>
 <li><span>Hit The North Part 1<span class="cpos cpos-nonhits"><span class="cpos-b">(</span>20<span class="cpos-b">)</span></span></span> The Fall</li>
 <li class="rank-up"><span>Sign 'O' The Times</span> Prince<span class="visually-hidden">Moved up from position 9 to 7.</span></li>
@@ -1741,7 +1754,7 @@ ol > li.rank-down > .visually-hidden {
 <li><span>Kiss</span>Prince & The Revolution</li>
 <li><span>Bizarre Love Triangle<span class="cpos cpos-nonhits"><span class="cpos-b">(</span>6<span class="cpos-b">)</span></span></span>New Order</li>
 <li><span>Hounds Of Love</span>Kate Bush</li>
-<li><span>Point Of No Return<span class="cpos cpos-nonhits"><span class="cpos-b">(</span>13<span class="cpos-b">)</span></span></span>Nu Shooz</li>
+<li class="rank-up"><span>Point Of No Return<span class="cpos cpos-nonhits"><span class="cpos-b">(</span>13<span class="cpos-b">)</span></span></span>Nu Shooz<span class="visually-hidden">Moved up in the combined ranking.</span></li>
 <li class="rank-up"><span>Live To Tell</span>Madonna<span class="visually-hidden">Moved up from position 6 to 5.</span></li>
 <li class="rank-down"><span>Girls and Boys</span>Prince & The Revolution<span class="visually-hidden">Moved down from position 5 to 6.</span></li>
 <li><span>Sweet Freedom</span>Michael McDonald</li>
@@ -1853,7 +1866,7 @@ ol > li.rank-down > .visually-hidden {
 </div>
 <ol><li><span>West End Girls</span>Pet Shop Boys</li>
 <li><span>Cloudbusting</span>Kate Bush</li>
-<li><span>Duel</span>Propaganda</li>
+<li class="rank-up"><span>Duel</span>Propaganda<span class="visually-hidden">Moved up in the combined ranking.</span></li>
 <li><span>Hangin' On A String (Contemplating)</span>Loose Ends</li>
 <li class="rank-up"><span>Slave To The Rhythm</span>Grace Jones<span class="visually-hidden">Moved up from position 9 to 5.</span></li>
 <li class="rank-up"><span>Mutual Attraction<span class="cpos cpos-nonhits"><span class="cpos-b">(</span>12<span class="cpos-b">)</span></span></span>Change<span class="visually-hidden">Moved up from position 11 to 6.</span></li>
@@ -1879,25 +1892,25 @@ ol > li.rank-down > .visually-hidden {
 <li class="rank-up"><span>I Wonder If I Take You Home</span>Lisa Lisa & Cult Jam, Full Force<span class="visually-hidden">Moved up from position 27 to 26.</span></li>
 <li class="rank-up"><span>Boogie Down Bronx</span>Man Parrish<span class="visually-hidden">Moved up from position 28 to 27.</span></li>
 <li class="rank-down"><span>The Perfect Kiss<span class="cpos cpos-nonhits"><span class="cpos-b">(</span>35<span class="cpos-b">)</span></span></span>New Order<span class="visually-hidden">Moved down from position 24 to 28.</span></li>
-<li><span>Money For Nothing</span>Dire Straits</li>
+<li class="rank-up"><span>Money For Nothing</span>Dire Straits</li>
 <li><span>How Soon Is Now?</span>The Smiths</li>
 <li><span>The Whole Of The Moon</span>The Waterboys</li>
-<li><span>When Love Breaks Down</span>Prefab Sprout</li>
-<li><span>Faron Young<span class="cpos cpos-nonhits"><span class="cpos-b">(</span>41<span class="cpos-b">)</span></span></span>Prefab Sprout</li>
+<li class="rank-up"><span>When Love Breaks Down</span>Prefab Sprout</li>
+<li class="rank-up"><span>Faron Young<span class="cpos cpos-nonhits"><span class="cpos-b">(</span>41<span class="cpos-b">)</span></span></span>Prefab Sprout</li>
 <li><span>Walking In The Air</span>Aled Jones</li>
 <li><span>Life In A Northern Town</span>The Dream Academy</li>
 <li><span>Close To Me</span>The Cure</li>
 <li><span>The Sweetest Taboo</span>Sade</li>
-<li><span>Josephine<span class="cpos cpos-nonhits"><span class="cpos-b">(</span>46<span class="cpos-b">)</span></span></span>Chris Rea</li>
+<li class="rank-up"><span>Josephine<span class="cpos cpos-nonhits"><span class="cpos-b">(</span>46<span class="cpos-b">)</span></span></span>Chris Rea</li>
 <li><span>Clouds Across The Moon</span>The Rah Band</li>
 <li><span>Jolene</span>Strawberry Switchblade</li>
-<li><span>Road To Nowhere</span>Talking Heads</li>
-<li><span>Welcome To The Pleasuredome</span>Frankie Goes To Hollywood</li>
+<li class="rank-up"><span>Road To Nowhere</span>Talking Heads</li>
+<li class="rank-up"><span>Welcome To The Pleasuredome</span>Frankie Goes To Hollywood</li>
 <li><span>The Boy With The Thorn In His Side</span>The Smiths</li>
-<li><span>Pink, Orange, Red*<span class="cpos cpos-nonhits"><span class="cpos-b">(</span>65<span class="cpos-b">)</span></span></span>Cocteau Twins</li>
+<li class="rank-up"><span>Pink, Orange, Red*<span class="cpos cpos-nonhits"><span class="cpos-b">(</span>65<span class="cpos-b">)</span></span></span>Cocteau Twins</li>
 <li><span>Cities In Dust</span>Siouxsie & The Banshees</li>
 <li><span>Obsession</span>Animotion</li>
-<li><span>Say I'm Your Number One</span>Princess</li>
+<li class="rank-up"><span>Say I'm Your Number One</span>Princess</li>
 <li><span>You're The One For Me - Remix</span>D-Train</li>
 <li><span>History</span>Mai Tai</li>
 <li><span>Solid</span>Ashford & Simpson</li>
@@ -1960,12 +1973,16 @@ ol > li.rank-down > .visually-hidden {
 <div class="tab-pane" id="tab2">
 
 <div class="row">
-  <div class="col-12 pb-5">
-<p class="align-center m-auto text-center mb-2 p-2">These lists were compiled in 2017, featuring only tracks that peaked between #1 and #75 in the UK singles chart, with some AA sides and EP tracks included as well as some extended mixes in the playlists.</p>
-<p class="align-center m-auto text-center mb-2 p-2 position-relative"><span class="youtube-video me-4"></span> <span class="ms-1">indicates that an Official video for the track is in the <a href="https://www.youtube.com/watch?v=d5XJ2GiR6Bo&list=PLHvKxcWzqg0dv-aglRjm3xutTuyEiD6uh&pp=gAQB">Favourite Hits 1980-1984</a> YouTube playlist.</span></p>
-<p class="align-center"><span class="youtube-video yt-unofficial me-4"></span> <span class="ms-1">indicates that an unofficial video for the track is in the Favourite Hits 1980-1984 YouTube playlist.</p>
-
-
+  <div class="col-12 pb-4">
+    <div class="auto-grid auto-grid-2 box box-dark rounded-sm">
+      <div>
+<p class="ps-2 pe-4">These lists were compiled in 2017, featuring only tracks that peaked between #1 and #75 in the UK singles chart, with some AA sides and EP tracks included as well as some extended mixes in the playlists.</p>
+      </div>
+      <div class="d-flex text-start">
+        <p class="px-2"><span class="border-start youtube-video me-4"></span> <span class="ms-1">indicates that an Official video for the track is in the <a href="https://www.youtube.com/watch?v=d5XJ2GiR6Bo&list=PLHvKxcWzqg0dv-aglRjm3xutTuyEiD6uh&pp=gAQB">Favourite Hits 1980-1984</a> YouTube playlist.</span></p>
+<p class="px-2"><span class="border-start youtube-video yt-unofficial me-4"></span> <span class="ms-1">indicates that an unofficial video for the track is in the Favourite Hits 1980-1984 YouTube playlist.</p>
+</div>
+</div>
 </div>
 <div class="d-flex justify-content-center pb-5 view-sm">
 <a href="#1983" class="hyperblock mx-2">1983</a>
@@ -1984,13 +2001,13 @@ ol > li.rank-down > .visually-hidden {
 <ol>
 <li><span>Purple Rain <span class="youtube-video"></span></span>Prince & The Revolution</li>
 <li><span>When Doves Cry <span class="youtube-video"></span></span>Prince</li>
-<li><span>Dr. Mabuse <span class="youtube-video"></span></span>Propaganda</li>
+<li class="rank-up"><span>Dr. Mabuse <span class="youtube-video"></span></span>Propaganda<span class="visually-hidden">Moved up in the combined ranking.</span></li>
 <li><span>Close (to The Edit) <span class="youtube-video"></span></span>Art Of Noise</li>
-<li><span>Just Be Good To Me <span class="youtube-video yt-unofficial"></span></span>The S.O.S Band</li>
-<li><span>I Feel For You <span class="youtube-video"></span></span>Chaka Khan</li>
-<li><span>Ain't Nobody <span class="youtube-video"></span></span>Rufus, Chaka Khan</li>
-<li><span>Change Of Heart <span class="youtube-video yt-unofficial"></span></span>Change</li>
-<li><span>Absolute <span class="youtube-video yt-unofficial"></span></span>Scritti Politti</li>
+<li class="rank-up"><span>Just Be Good To Me <span class="youtube-video yt-unofficial"></span></span>The S.O.S Band<span class="visually-hidden">Moved up in the combined ranking.</span></li>
+<li class="rank-up"><span>I Feel For You <span class="youtube-video"></span></span>Chaka Khan</li>
+<li class="rank-up"><span>Ain't Nobody <span class="youtube-video"></span></span>Rufus, Chaka Khan</li>
+<li class="rank-up"><span>Change Of Heart <span class="youtube-video yt-unofficial"></span></span>Change</li>
+<li class="rank-up"><span>Absolute <span class="youtube-video yt-unofficial"></span></span>Scritti Politti</li>
 <li><span>Two Tribes <span class="youtube-video"></span></span>Frankie Goes To Hollywood</li>
 <li><span>You Spin Me Round (Like A Record) <span class="youtube-video"></span></span>Dead Or Alive</li>
 <li><span>It's My Life <span class="youtube-video"></span></span>Talk Talk</li>
@@ -2097,21 +2114,21 @@ ol > li.rank-down > .visually-hidden {
 <li><span>Billie Jean <span class="youtube-video"></span></span>Michael Jackson </li>
 <li><span>Let's Dance <span class="youtube-video"></span></span>David Bowie</li>
 <li><span>Blue Monday <span class="youtube-video yt-unofficial"></span></span>New Order</li>
-<li><span>Hip Hop Be Bop - Don't Stop <span class="youtube-video"></span><span class="cpos cpos-instrumentals"><span class="cpos-b">(</span>4<span class="cpos-b">)</span></span></span>Man Parrish</li>
+<li class="rank-up"><span>Hip Hop Be Bop - Don't Stop <span class="youtube-video"></span><span class="cpos cpos-instrumentals"><span class="cpos-b">(</span>4<span class="cpos-b">)</span></span></span>Man Parrish</li>
 <li><span>Everything Counts <span class="youtube-video"></span></span>Depeche Mode</li>
-<li><span>Relax <span class="youtube-video"></span></span>Frankie Goes To Hollywood</li>
+<li class="rank-up"><span>Relax <span class="youtube-video"></span></span>Frankie Goes To Hollywood</li>
 <li><span>Sweet Dreams (Are Made Of This) <span class="youtube-video"></span></span>Eurythmics</li>
-<li><span>Stepping Out <span class="youtube-video"></span></span>Joe Jackson</li>
+<li class="rank-up"><span>Stepping Out <span class="youtube-video"></span></span>Joe Jackson</li>
 <li><span>Thriller <span class="youtube-video"></span></span>Michael Jackson</li>
 <li><span>The Crown <span class="youtube-video yt-unofficial"></span></span>Gary Byrd & The G.B. Experience</li>
 <li><span>Rip It Up <span class="youtube-video"></span></span>Orange Juice</li>
-<li><span>Let The Music Play <span class="youtube-video"></span></span>Shannon</li>
-<li><span>The Sun Goes Down (Living It Up) <span class="youtube-video"></span></span>Level 42</li>
+<li class="rank-up"><span>Let The Music Play <span class="youtube-video"></span></span>Shannon</li>
+<li class="rank-up"><span>The Sun Goes Down (Living It Up) <span class="youtube-video"></span></span>Level 42</li>
 <li><span>Little Red Corvette <span class="youtube-video"></span></span>Prince</li>
-<li><span>Never Too Much <span class="youtube-video"></span></span>Luther Vandross</li>
+<li class="rank-up"><span>Never Too Much <span class="youtube-video"></span></span>Luther Vandross</li>
 <li><span>Modern Love <span class="youtube-video"></span></span>David Bowie</li>
 <li><span>This Charming Man <span class="youtube-video"></span></span>The Smiths</li>
-<li><span>Walk Out To Winter <span class="youtube-video yt-unofficial"></span><span class="cpos cpos-nonhits"><span class="cpos-b">(</span>39<span class="cpos-b">)</span></span></span>Aztec Camera</li>
+<li class="rank-up"><span>Walk Out To Winter <span class="youtube-video yt-unofficial"></span><span class="cpos cpos-nonhits"><span class="cpos-b">(</span>39<span class="cpos-b">)</span></span></span>Aztec Camera</li>
 <li><span>Oblivious <span class="youtube-video yt-unofficial"></span></span>Aztec Camera</li>
 <li><span>Song To The Siren <span class="youtube-video"></span><span class="cpos cpos-nonhits"><span class="cpos-b">(</span>43<span class="cpos-b">)</span></span></span>This Mortal Coil</li>
 <li><span>Shipbuilding <span class="youtube-video yt-unofficial"></span></span>Robert Wyatt</li>
@@ -2208,8 +2225,8 @@ ol > li.rank-down > .visually-hidden {
 <li><span>Let Me Go <span class="youtube-video"></span><span class="cpos cpos-nonhits"><span class="cpos-b">(</span>7<span class="cpos-b">)</span></span></span>Heaven 17</li>
 <li><span>Why? <span class="youtube-video"></span></span>Carly Simon </li>
 <li><span>Torch <span class="youtube-video"></span></span>Soft Cell</li>
-<li><span>Forget Me Nots <span class="youtube-video"></span></span>Patrice Rushen</li>
-<li><span>A Night To Remember <span class="youtube-video"></span></span>Shalamar</li>
+<li class="rank-up"><span>Forget Me Nots <span class="youtube-video"></span></span>Patrice Rushen<span class="visually-hidden">Moved up in the combined ranking.</span></li>
+<li class="rank-up"><span>A Night To Remember <span class="youtube-video"></span></span>Shalamar<span class="visually-hidden">Moved up in the combined ranking.</span></li>
 <li><span>Say Hello Wave<br> Goodbye <span class="youtube-video"></span></span>Soft Cell</li>
 <li><span>I Can't Go For That (No Can Do) <span class="youtube-video"></span></span>Daryl Hall & John Oates</li>
 <li><span>Promised You A Miracle <span class="youtube-video"></span></span>Simple Minds</li>
@@ -2319,10 +2336,10 @@ ol > li.rank-down > .visually-hidden {
 <li><span>Once In A Lifetime <span class="youtube-video"></span></span>Talking Heads </li>
 <li><span>Spellbound <span class="youtube-video"></span></span>Siouxsie & The Banshees</li>
 <li><span>Southern Freeez <span class="youtube-video"></span></span>Freeez</li>
-<li class="rank-up"><span>The Art Of Parties <span class="youtube-video yt-unofficial"></span><span class="cpos cpos-nonhits"><span class="cpos-b">(</span>14<span class="cpos-b">)</span></span></span>Japan<span class="visually-hidden">Moved up from position 7 to 4.</span></li>
-<li class="rank-down"><span>Rapture <span class="youtube-video"></span></span>Blondie<span class="visually-hidden">Moved down from position 4 to 5.</span></li>
-<li class="rank-down"><span>Starchild <span class="youtube-video"></span><span class="cpos cpos-nonhits"><span class="cpos-b">(</span>23<span class="cpos-b">)</span></span></span>Level 42<span class="visually-hidden">Moved down from position 5 to 6.</span></li>
-<li class="rank-down"><span>Genius Of Love <span class="youtube-video"></span><span class="cpos cpos-nonhits"><span class="cpos-b">(</span>24<span class="cpos-b">)</span></span></span>Tom Tom Club<span class="visually-hidden">Moved down from position 6 to 7.</span></li>
+<li class="rank-up"><span>The Art Of Parties <span class="youtube-video yt-unofficial"></span><span class="cpos cpos-nonhits"><span class="cpos-b">(</span>14<span class="cpos-b">)</span></span></span>Japan<span class="visually-hidden">Moved up in the combined ranking.</span></li>
+<li class="rank-up"><span>Rapture <span class="youtube-video"></span></span>Blondie<span class="visually-hidden">Moved up in the combined ranking.</span></li>
+<li class="rank-up"><span>Starchild <span class="youtube-video"></span><span class="cpos cpos-nonhits"><span class="cpos-b">(</span>23<span class="cpos-b">)</span></span></span>Level 42<span class="visually-hidden">Moved up in the combined ranking.</span></li>
+<li class="rank-up"><span>Genius Of Love <span class="youtube-video"></span><span class="cpos cpos-nonhits"><span class="cpos-b">(</span>24<span class="cpos-b">)</span></span></span>Tom Tom Club<span class="visually-hidden">Moved up in the combined ranking.</span></li>
 <li><span>Ghost Town <span class="youtube-video"></span></span>The Specials</li>
 <li><span>Vienna <span class="youtube-video"></span></span>Ultravox</li>
 <li><span>Tainted Love / Where Did Our Love Go? <span class="youtube-video"></span></span>Soft Cell</li>
@@ -2429,7 +2446,7 @@ ol > li.rank-down > .visually-hidden {
 </div>
 <ol>
 <li><span>Upside Down <span class="youtube-video"></span></span>Diana Ross </li>
-<li><span>Ashes To Ashes <span class="youtube-video"></span></span>David Bowie</li>
+<li class="rank-up"><span>Ashes To Ashes <span class="youtube-video"></span></span>David Bowie<span class="visually-hidden">Moved up in the combined ranking.</span></li>
 <li><span>Fade To Grey <span class="youtube-video"></span></span>Visage</li>
 <li class="rank-up"><span>Johnny And Mary <span class="youtube-video"></span><span class="cpos cpos-nonhits"><span class="cpos-b">(</span>18<span class="cpos-b">)</span></span></span>Robert Palmer<span class="visually-hidden">Moved up from position 9 to 4.</span></li>
 <li class="rank-down"><span>Elstree <span class="youtube-video"></span><span class="cpos cpos-nonhits"><span class="cpos-b">(</span>19<span class="cpos-b">)</span></span></span>The Buggles<span class="visually-hidden">Moved down from position 4 to 5.</span></li>
@@ -2558,7 +2575,7 @@ ol > li.rank-down > .visually-hidden {
 <tr><td>AC Marias</td><td> Just Talk</td><td> 1986</td><td> 56</td><td></td><td> Non-hit singles: 56</td></tr>
 <tr><td>A Flock Of Seagulls</td><td> Wishing (If I Had A Photograph Of You)</td><td> 1982</td><td> 44</td><td> <span class="phm pos10"> 10</td><td></td></tr>
 <tr><td>A Flock Of Seagulls</td><td> I Ran</td><td> 1982</td><td> 85</td><td>43</td><td></td></tr>
-<tr><td>A Guy Called Gerald</td><td> Voodoo Ray</td><td> 1989</td><td> 3</td><td>12</td><td> Hits: 13; Combined: 24; Instrumental, listed in Hits instead of Instrumentals</td></tr>
+<tr><td>A Guy Called Gerald</td><td> Voodoo Ray</td><td> 1989</td><td> 3</td><td>12</td><td> Hits: 10; Combined: 19; Instrumental, listed in Hits instead of Instrumentals</td></tr>
 <tr><td>a-ha</td><td> The Sun Always Shines On TV</td><td> 1985</td><td> 15</td><td> <span class="phm pos1">1</td><td> Hits: 81</td></tr>
 <tr><td>a-ha</td><td> Take On Me</td><td> 1985</td><td> 16</td><td> <span class="phm pos10"> 2</td><td></td></tr>
 <tr><td>a-ha</td><td> Hunting High And Low</td><td> 1986</td><td> 63</td><td> <span class="phm pos10"> 5</td><td></td></tr>
@@ -2667,7 +2684,7 @@ ol > li.rank-down > .visually-hidden {
 <tr><td>Blondie</td><td> Atomic</td><td> 1980</td><td> 9</td><td> <span class="phm pos1">1</td><td> Hits: 54</td></tr>
 <tr><td>Blondie</td><td> Call Me</td><td> 1980</td><td> 67</td><td> <span class="phm pos1">1</td><td></td></tr>
 <tr><td>Blondie</td><td> The Tide Is High</td><td> 1980</td><td> 93</td><td> <span class="phm pos1">1</td><td></td></tr>
-<tr><td>Blondie</td><td> Rapture</td><td> 1981</td><td> 5</td><td> <span class="phm pos10"> 5</td><td> Hits: 36; Combined: 67</td></tr>
+<tr><td>Blondie</td><td> Rapture</td><td> 1981</td><td> 5</td><td> <span class="phm pos10"> 5</td><td> Hits: 36; Combined: 67 <span class="combined-rank-up" aria-label="Moved up in the combined ranking" title="Moved up in the combined ranking">↑</span></td></tr>
 <tr><td>Blondie</td><td> Europa</td><td> 1980</td><td> 71</td><td></td><td> Non-singles: 71</td></tr>
 <tr><td>Blow Monkeys (The)</td><td> Digging Your Scene</td><td> 1986</td><td> 32</td><td>12</td><td></td></tr>
 <tr><td>Blue Gas</td><td> Shadows from Nowhere</td><td> 1983</td><td> 75</td><td></td><td> Non-singles: 75</td></tr>
@@ -2704,7 +2721,7 @@ ol > li.rank-down > .visually-hidden {
 <tr><td>Bryan Adams</td><td> Summer Of '69</td><td> 1985</td><td> 75</td><td>42</td><td></td></tr>
 <tr><td>Bryan Ferry</td><td> Kiss And Tell</td><td> 1988</td><td> 87</td><td>41</td><td></td></tr>
 <tr><td>Buggles (The)</td><td> Elstree</td><td> 1980</td><td> 5</td><td>55</td><td> Non-hit singles: 19; Combined: 69</td></tr>
-<tr><td>Cabaret Voltaire</td><td> Just Fascination</td><td> 1983</td><td> 15</td><td>94</td><td> Non-hit singles: 15; Combined: 63</td></tr>
+<tr><td>Cabaret Voltaire</td><td> Just Fascination</td><td> 1983</td><td> 15</td><td>94</td><td> Non-hit singles: 15; Combined: 63 <span class="combined-rank-up" aria-label="Moved up in the combined ranking" title="Moved up in the combined ranking">↑</span></td></tr>
 <tr><td>Cabaret Voltaire</td><td> Sensoria</td><td> 1984</td><td> 67</td><td>96</td><td> Non-hit singles: 67</td></tr>
 <tr><td>Cameo</td><td> Single Life</td><td> 1985</td><td> 86</td><td>15</td><td></td></tr>
 <tr><td>Cameo</td><td> Word Up</td><td> 1986</td><td> 40</td><td> <span class="phm pos10"> 3</td><td></td></tr>
@@ -2714,7 +2731,7 @@ ol > li.rank-down > .visually-hidden {
 <tr><td>Carly Simon</td><td> Why</td><td> 1982</td><td> 3</td><td> <span class="phm pos10"> 10</td><td> Hits: 17; Combined: 31</td></tr>
 <tr><td>Carly Simon</td><td> Coming Around Again</td><td> 1987</td><td> 46</td><td> <span class="phm pos10"> 10</td><td></td></tr>
 <tr><td>Caroline Loeb</td><td> Narcissique</td><td></td><td> 63</td><td></td><td> Non-singles: 63; Year unverified</td></tr>
-<tr><td>Casco presents B.W.H.</td><td> Stop</td><td> 1983</td><td> 2</td><td></td><td> Non-hit singles: 2; Combined: 15</td></tr>
+<tr><td>Casco presents B.W.H.</td><td> Stop</td><td> 1983</td><td> 2</td><td></td><td> Non-hit singles: 2; Combined: 15 <span class="combined-rank-up" aria-label="Moved up in the combined ranking" title="Moved up in the combined ranking">↑</span></td></tr>
 <tr><td>Central Line</td><td> Walking Into Sunshine</td><td> 1981</td><td> 66</td><td>42</td><td></td></tr>
 <tr><td>Chaka Khan</td><td> I Feel For You</td><td> 1984</td><td> 6</td><td> <span class="phm pos1">1</td><td> Hits: 40; Combined: 83</td></tr>
 <tr><td>Change</td><td> Searching</td><td> 1980</td><td> 32</td><td>11</td><td></td></tr>
@@ -2775,7 +2792,7 @@ ol > li.rank-down > .visually-hidden {
 <tr><td>The Cure</td><td> The Same Deep Water As You</td><td> 1989</td><td> 42</td><td></td><td> Non-singles: 42</td></tr>
 <tr><td>Curiosity Killed The Cat</td><td> Down To Earth</td><td> 1986</td><td> 57</td><td> <span class="phm pos10"> 3</td><td></td></tr>
 <tr><td>Curiosity Killed The Cat</td><td> Misfit</td><td> 1987</td><td> 90</td><td> <span class="phm pos10"> 7</td><td></td></tr>
-<tr><td>Cybotron</td><td> Clear - Jose 'Animal' Diaz Remix</td><td> 1983</td><td> 3</td><td></td><td> Non-hit singles: 3; Combined: 17</td></tr>
+<tr><td>Cybotron</td><td> Clear - Jose 'Animal' Diaz Remix</td><td> 1983</td><td> 3</td><td></td><td> Non-hit singles: 3; Combined: 17 <span class="combined-rank-up" aria-label="Moved up in the combined ranking" title="Moved up in the combined ranking">↑</span></td></tr>
 <tr><td>Cyndi Lauper</td><td> Time After Time</td><td> 1984</td><td> 17</td><td> <span class="phm pos10"> 3</td><td></td></tr>
 <tr><td>Cyndi Lauper</td><td> Girls Just Want to Have Fun</td><td> 1984</td><td> 71</td><td> <span class="phm pos10"> 2</td><td></td></tr>
 <tr><td>D-Mob, Gary Haisman</td><td> We Call It Acieed</td><td> 1988</td><td> 45</td><td> <span class="phm pos10"> 3</td><td></td></tr>
@@ -2786,7 +2803,7 @@ ol > li.rank-down > .visually-hidden {
 <tr><td>Daryl Hall & John Oates</td><td> I Can't Go For That (No Can Do)</td><td> 1982</td><td> 8</td><td> <span class="phm pos10"> 8</td><td> Hits: 48</td></tr>
 <tr><td>Daryl Hall & John Oates</td><td> Family Man</td><td> 1983</td><td> 95</td><td>15</td><td></td></tr>
 <tr><td>Daryl Hall & John Oates</td><td> Out Of Touch</td><td> 1984</td><td> 66</td><td>48</td><td></td></tr>
-<tr><td>David Bowie</td><td> Ashes To Ashes</td><td> 1980</td><td> 2</td><td> <span class="phm pos1">1</td><td> Hits: 10; Combined: 18</td></tr>
+<tr><td>David Bowie</td><td> Ashes To Ashes</td><td> 1980</td><td> 2</td><td> <span class="phm pos1">1</td><td> Hits: 13; Combined: 22 <span class="combined-rank-up" aria-label="Moved up in the combined ranking" title="Moved up in the combined ranking">↑</span></td></tr>
 <tr><td>David Bowie</td><td> Fashion</td><td> 1980</td><td> 29</td><td> <span class="phm pos10"> 5</td><td></td></tr>
 <tr><td>David Bowie</td><td> Let's Dance</td><td> 1983</td><td> 2</td><td> <span class="phm pos1">1</td><td> Hits: 20; Combined: 37</td></tr>
 <tr><td>David Bowie</td><td> Modern Love</td><td> 1983</td><td> 16</td><td> <span class="phm pos10"> 2</td><td></td></tr>
@@ -2817,7 +2834,7 @@ ol > li.rank-down > .visually-hidden {
 <tr><td>Depeche Mode</td><td> Never Let Me Down Again</td><td> 1987</td><td> 2</td><td>22</td><td> Hits: 16; Combined: 29</td></tr>
 <tr><td>Depeche Mode</td><td> Strangelove</td><td> 1987</td><td> 62</td><td>16</td><td></td></tr>
 <tr><td>Depeche Mode</td><td> Behind The Wheel</td><td> 1988</td><td> 82</td><td>21</td><td></td></tr>
-<tr><td>Depeche Mode</td><td> Personal Jesus</td><td> 1989</td><td> 8</td><td>13</td><td> Hits: 44; Combined: 95</td></tr>
+<tr><td>Depeche Mode</td><td> Personal Jesus</td><td> 1989</td><td> 8</td><td>13</td><td> Hits: 44; Combined: 95 <span class="combined-rank-up" aria-label="Moved up in the combined ranking" title="Moved up in the combined ranking">↑</span></td></tr>
 <tr><td>Depeche Mode</td><td> Pimpf</td><td> 1987</td><td> 23</td><td></td><td> Instrumentals: 23</td></tr>
 <tr><td>Depeche Mode</td><td> The Landscape Is Changing</td><td> 1983</td><td> 98</td><td></td><td> Non-singles: 98</td></tr>
 <tr><td>Derrick May / Rhythim Is Rhythim</td><td> Strings Of Life</td><td> 1989</td><td> 11</td><td>74</td><td> Instrumentals: 10</td></tr>
@@ -2860,7 +2877,7 @@ ol > li.rank-down > .visually-hidden {
 <tr><td>Duran Duran</td><td> The Reflex</td><td> 1984</td><td> 43</td><td> <span class="phm pos1">1</td><td></td></tr>
 <tr><td>Duran Duran</td><td> The Wild Boys</td><td> 1984</td><td> 75</td><td> <span class="phm pos10"> 2</td><td></td></tr>
 <tr><td>Duran Duran</td><td> A View To A Kill</td><td> 1985</td><td> 93</td><td> <span class="phm pos10"> 2</td><td></td></tr>
-<tr><td>Duran Duran</td><td> The Chauffeur</td><td> 1982</td><td> 14</td><td></td><td> Non-singles: 14; Combined: 90</td></tr>
+<tr><td>Duran Duran</td><td> The Chauffeur</td><td> 1982</td><td> 14</td><td></td><td> Non-singles: 14; Combined: 90 <span class="combined-rank-up" aria-label="Moved up in the combined ranking" title="Moved up in the combined ranking">↑</span></td></tr>
 <tr><td>The Durutti Column</td><td> Finding The Sea</td><td> 1989</td><td> 72</td><td></td><td> Non-singles: 72</td></tr>
 <tr><td>The Durutti Column</td><td> Madeleine</td><td></td><td> 43</td><td></td><td> Instrumentals: 43; Year unverified</td></tr>
 <tr><td>The Durutti Column</td><td> The Missing Boy</td><td></td><td> 73</td><td></td><td> Non-singles: 73; Year unverified</td></tr>
@@ -3073,7 +3090,7 @@ ol > li.rank-down > .visually-hidden {
 <tr><td>Janet Jackson</td><td> Rhythm Nation</td><td> 1989</td><td> 38</td><td>23</td><td></td></tr>
 <tr><td>Japan</td><td> Gentlemen Take Polaroids</td><td> 1980</td><td> 69</td><td>60</td><td></td></tr>
 <tr><td>Japan</td><td> Quiet Life</td><td> 1981</td><td> 31</td><td>19</td><td></td></tr>
-<tr><td>Japan</td><td> The Art Of Parties</td><td> 1981</td><td> 4</td><td>48</td><td> Non-hit singles: 14; Combined: 62</td></tr>
+<tr><td>Japan</td><td> The Art Of Parties</td><td> 1981</td><td> 4</td><td>48</td><td> Non-hit singles: 14; Combined: 62 <span class="combined-rank-up" aria-label="Moved up in the combined ranking" title="Moved up in the combined ranking">↑</span></td></tr>
 <tr><td>Japan</td><td> Ghosts</td><td> 1982</td><td> 15</td><td> <span class="phm pos10"> 5</td><td></td></tr>
 <tr><td>Jasper van't Hofs Pili Pili</td><td> Pili Pili</td><td> 1984</td><td> 5</td><td></td><td> Instrumentals: 5; Combined: 54</td></tr>
 <tr><td>Jean-Michel Jarre</td><td> Zoolook</td><td> 1984</td><td> 53</td><td></td><td> Instrumentals: 53</td></tr>
@@ -3120,7 +3137,7 @@ ol > li.rank-down > .visually-hidden {
 <tr><td>Kate Bush</td><td> Experiment IV</td><td> 1986</td><td> 68</td><td>23</td><td></td></tr>
 <tr><td>Kate Bush</td><td> This Woman's Work</td><td> 1989</td><td> 58</td><td>25</td><td></td></tr>
 <tr><td>Kate Bush</td><td> Delius</td><td> 1980</td><td> 55</td><td></td><td> Non-singles: 55</td></tr>
-<tr><td>Kate Bush</td><td> Get Out Of My House</td><td> 1982</td><td> 4</td><td></td><td> Non-singles: 4; Combined: 22</td></tr>
+<tr><td>Kate Bush</td><td> Get Out Of My House</td><td> 1982</td><td> 4</td><td></td><td> Non-singles: 4; Combined: 23</td></tr>
 <tr><td>Kate Bush</td><td> Hello Earth</td><td> 1985</td><td> 1</td><td></td><td> Non-singles: 1; Combined: 9</td></tr>
 <tr><td>KC & The Sunshine Band</td><td> Give It Up</td><td> 1983</td><td> 90</td><td> <span class="phm pos1">1</td><td></td></tr>
 <tr><td>Kid Creole & The Coconuts</td><td> Stool Pigeon</td><td> 1982</td><td> 24</td><td> <span class="phm pos10">7</td><td></td></tr>
@@ -3160,7 +3177,7 @@ ol > li.rank-down > .visually-hidden {
 <tr><td>Laura Branigan</td><td> Self Control</td><td> 1984</td><td> 38</td><td> <span class="phm pos10"> 5</td><td></td></tr>
 <tr><td>Laurie Anderson</td><td> O Superman</td><td> 1981</td><td> 70</td><td> <span class="phm pos10"> 2</td><td></td></tr>
 <tr><td>Le Club</td><td> Un Fait Divers Et Rien De Plus</td><td></td><td> 66</td><td></td><td> Non-hit singles: 66; Year unverified</td></tr>
-<tr><td>Level 42</td><td> Starchild</td><td> 1981</td><td> 6</td><td>47</td><td> Non-hit singles: 23; Combined: 87</td></tr>
+<tr><td>Level 42</td><td> Starchild</td><td> 1981</td><td> 6</td><td>47</td><td> Non-hit singles: 23; Combined: 87 <span class="combined-rank-up" aria-label="Moved up in the combined ranking" title="Moved up in the combined ranking">↑</span></td></tr>
 <tr><td>Level 42</td><td> The Sun Goes Down (Living It Up)</td><td> 1983</td><td> 13</td><td> <span class="phm pos10"> 10</td><td></td></tr>
 <tr><td>Level 42</td><td> Hot Water</td><td> 1984</td><td> 81</td><td>18</td><td></td></tr>
 <tr><td>Level 42</td><td> The Chant Has Begun</td><td> 1984</td><td> 82</td><td>41</td><td></td></tr>
@@ -3217,7 +3234,7 @@ ol > li.rank-down > .visually-hidden {
 <tr><td>Madonna</td><td> Who's That Girl</td><td> 1987</td><td> 26</td><td> <span class="phm pos1">1</td><td></td></tr>
 <tr><td>Madonna</td><td> La Isla Bonita</td><td> 1987</td><td> 27</td><td> <span class="phm pos1">1</td><td></td></tr>
 <tr><td>Madonna</td><td> Causing A Commotion</td><td> 1987</td><td> 78</td><td> <span class="phm pos10"> 4</td><td></td></tr>
-<tr><td>Madonna</td><td> Like A Prayer</td><td> 1989</td><td> 9</td><td> <span class="phm pos1">1</td><td> Hits: 45; Combined: 96</td></tr>
+<tr><td>Madonna</td><td> Like A Prayer</td><td> 1989</td><td> 9</td><td> <span class="phm pos1">1</td><td> Hits: 45; Combined: 96 <span class="combined-rank-up" aria-label="Moved up in the combined ranking" title="Moved up in the combined ranking">↑</span></td></tr>
 <tr><td>Madonna</td><td> Dear Jessie</td><td> 1989</td><td> 33</td><td> <span class="phm pos10"> 5</td><td></td></tr>
 <tr><td>Madonna</td><td> Express Yourself</td><td> 1989</td><td> 35</td><td> <span class="phm pos10"> 5</td><td></td></tr>
 <tr><td>Madonna</td><td> Cherish</td><td> 1989</td><td> 51</td><td> <span class="phm pos10"> 3</td><td></td></tr>
@@ -3316,7 +3333,7 @@ ol > li.rank-down > .visually-hidden {
 <tr><td>New Order</td><td> True Faith</td><td> 1987</td><td> 3</td><td> <span class="phm pos10"> 4</td><td> Hits: 22; Combined: 40</td></tr>
 <tr><td>New Order</td><td> Touched By The Hand Of God</td><td> 1987</td><td> 18</td><td>20</td><td></td></tr>
 <tr><td>New Order</td><td> Fine Time</td><td> 1988</td><td> 13</td><td>11</td><td></td></tr>
-<tr><td>New Order</td><td> Blue Monday '88</td><td> 1988</td><td> 2</td><td> <span class="phm pos10"> 3</td><td></td></tr>
+<tr><td>New Order</td><td> Blue Monday '88</td><td> 1988</td><td> 13</td><td> <span class="phm pos10"> 3</td><td></td></tr>
 <tr><td>New Order</td><td> Run</td><td> 1989</td><td> 54</td><td>49</td><td></td></tr>
 <tr><td>New Order</td><td> Round & Round</td><td> 1989</td><td> 84</td><td>21</td><td></td></tr>
 <tr><td>New Order</td><td> 1963</td><td> 1987</td><td> 60</td><td></td><td> Non-singles: 60</td></tr>
@@ -3328,7 +3345,7 @@ ol > li.rank-down > .visually-hidden {
 <tr><td>Nik Kershaw</td><td> Radio Musicola</td><td> 1986</td><td> 80</td><td>43</td><td></td></tr>
 <tr><td>Nitro Deluxe</td><td> This Brutal House / Let's Get Brutal</td><td> 1987</td><td> 22</td><td>24</td><td> Instrumental</td></tr>
 <tr><td>Nu Shooz</td><td> I Can't Wait</td><td> 1986</td><td> 11</td><td> <span class="phm pos10"> 2</td><td> Hits: 96</td></tr>
-<tr><td>Nu Shooz</td><td> Point Of No Return</td><td> 1986</td><td> 4</td><td>48</td><td> Non-hit singles: 13; Combined: 61</td></tr>
+<tr><td>Nu Shooz</td><td> Point Of No Return</td><td> 1986</td><td> 4</td><td>48</td><td> Non-hit singles: 13; Combined: 61 <span class="combined-rank-up" aria-label="Moved up in the combined ranking" title="Moved up in the combined ranking">↑</span></td></tr>
 <tr><td>Odyssey</td><td> Use It Up and Wear It Out</td><td> 1980</td><td> 58</td><td> <span class="phm pos1">1</td><td></td></tr>
 <tr><td>Odyssey</td><td> Going Back to My Roots</td><td> 1981</td><td> 58</td><td> <span class="phm pos10"> 4</td><td></td></tr>
 <tr><td>Odyssey</td><td> Inside Out</td><td> 1982</td><td> 29</td><td> <span class="phm pos10"> 3</td><td></td></tr>
@@ -3349,12 +3366,12 @@ ol > li.rank-down > .visually-hidden {
 <tr><td>Orchestral Manoeuvres In The Dark</td><td> 66 And Fading</td><td></td><td> 50</td><td></td><td> Instrumentals: 50; Year unverified</td></tr>
 <tr><td>Orchestral Manoeuvres In The Dark</td><td> Architecture And Morality</td><td></td><td> 49</td><td></td><td> Instrumentals: 49; Year unverified</td></tr>
 <tr><td>Orchestral Manoeuvres In The Dark</td><td> Crush</td><td></td><td> 100</td><td></td><td> Non-singles: 100; Year unverified</td></tr>
-<tr><td>Orchestral Manoeuvres In The Dark</td><td> Sacred Heart</td><td> 1981</td><td> 15</td><td></td><td> Non-singles: 15; Combined: 91</td></tr>
+<tr><td>Orchestral Manoeuvres In The Dark</td><td> Sacred Heart</td><td> 1981</td><td> 15</td><td></td><td> Non-singles: 15; Combined: 91 <span class="combined-rank-up" aria-label="Moved up in the combined ranking" title="Moved up in the combined ranking">↑</span></td></tr>
 <tr><td>The Passage</td><td> XOYO</td><td> 1982</td><td> 49</td><td></td><td> Non-hit singles: 49</td></tr>
 <tr><td>Passions (The)</td><td> I'm In Love With A German Film Star</td><td> 1981</td><td> 14</td><td>25</td><td></td></tr>
 <tr><td>Pat Metheny</td><td> As Falls Wichita, So Falls Wichita Falls</td><td> 1981</td><td> 22</td><td></td><td> Instrumentals: 22</td></tr>
 <tr><td>Patrice Rushen</td><td> Haven't You Heard</td><td> 1980</td><td> 39</td><td>62</td><td> Non-hit singles: 52</td></tr>
-<tr><td>Patrice Rushen</td><td> Forget Me Nots</td><td> 1982</td><td> 5</td><td> <span class="phm pos10"> 8</td><td> Hits: 41; Combined: 84</td></tr>
+<tr><td>Patrice Rushen</td><td> Forget Me Nots</td><td> 1982</td><td> 5</td><td> <span class="phm pos10"> 8</td><td> Hits: 41; Combined: 84 <span class="combined-rank-up" aria-label="Moved up in the combined ranking" title="Moved up in the combined ranking">↑</span></td></tr>
 <tr><td>Patrice Rushen</td><td> Feels So Real (Won't Let Go)</td><td> 1984</td><td> 65</td><td>51</td><td></td></tr>
 <tr><td>Patrick Cowley</td><td> Sea Hunt</td><td> 1981</td><td> 16</td><td></td><td> Instrumentals: 16</td></tr>
 <tr><td>Patrick Cowley</td><td> Somebody To Love Tonight</td><td> 1980</td><td> 8</td><td></td><td> Instrumentals: 8; Combined: 86</td></tr>
@@ -3386,7 +3403,7 @@ ol > li.rank-down > .visually-hidden {
 <tr><td>Pet Shop Boys</td><td> In The Night</td><td> 1985</td><td> 33</td><td></td><td> Non-singles: 33</td></tr>
 <tr><td>Pet Shop Boys</td><td> King's Cross</td><td> 1987</td><td> 2</td><td></td><td> Non-singles: 2; Combined: 10</td></tr>
 <tr><td>Pet Shop Boys</td><td> Two Divided By Zero</td><td> 1986</td><td> 3</td><td></td><td> Non-singles: 3; Combined: 13</td></tr>
-<tr><td>Pet Shop Boys, Dusty Springfield</td><td> What Have I Done to Deserve This?</td><td> 1987</td><td> 4</td><td> <span class="phm pos10"> 2</td><td> Hits: 35; Combined: 60</td></tr>
+<tr><td>Pet Shop Boys, Dusty Springfield</td><td> What Have I Done to Deserve This?</td><td> 1987</td><td> 4</td><td> <span class="phm pos10"> 2</td><td> Hits: 35; Combined: 60 <span class="combined-rank-up" aria-label="Moved up in the combined ranking" title="Moved up in the combined ranking">↑</span></td></tr>
 <tr><td>Pete Shelley</td><td> Telephone Operator</td><td> 1983</td><td> 43</td><td>66</td><td></td></tr>
 <tr><td>Pete Shelley</td><td> Homosapien</td><td> 1981</td><td> 48</td><td></td><td> Non-hit singles: 48</td></tr>
 <tr><td>Peter Gabriel</td><td> Games Without Frontiers</td><td> 1980</td><td> 47</td><td> <span class="phm pos10"> 4</td><td></td></tr>
@@ -3451,8 +3468,8 @@ ol > li.rank-down > .visually-hidden {
 <tr><td>Prince & The Revolution</td><td> Mountains</td><td> 1986</td><td> 49</td><td>45</td><td></td></tr>
 <tr><td>Prince, Sheena Easton</td><td> U Got The Look</td><td> 1987</td><td> 12</td><td>11</td><td></td></tr>
 <tr><td>Princess</td><td> Say I'm Your Number One</td><td> 1985</td><td> 47</td><td> <span class="phm pos10"> 7</td><td></td></tr>
-<tr><td>Propaganda</td><td> Dr. Mabuse</td><td> 1984</td><td> 3</td><td>27</td><td> Hits: 12; Combined: 21</td></tr>
-<tr><td>Propaganda</td><td> Duel</td><td> 1985</td><td> 3</td><td>21</td><td> Hits: 11; Combined: 20</td></tr>
+<tr><td>Propaganda</td><td> Dr. Mabuse</td><td> 1984</td><td> 3</td><td>27</td><td> Hits: 12; Combined: 21 <span class="combined-rank-up" aria-label="Moved up in the combined ranking" title="Moved up in the combined ranking">↑</span></td></tr>
+<tr><td>Propaganda</td><td> Duel</td><td> 1985</td><td> 3</td><td>21</td><td> Hits: 11; Combined: 20 <span class="combined-rank-up" aria-label="Moved up in the combined ranking" title="Moved up in the combined ranking">↑</span></td></tr>
 <tr><td>Propaganda</td><td> P.Machinery</td><td> 1985</td><td> 7</td><td>50</td><td> Non-hit singles: 17; Combined: 66</td></tr>
 <tr><td>Propaganda</td><td> Loving</td><td> 1985</td><td> 94</td><td></td><td> Instrumentals: 94</td></tr>
 <tr><td>Propaganda</td><td> The Chase</td><td> 1985</td><td> 8</td><td></td><td> Non-singles: 8; Combined: 65</td></tr>
@@ -3461,7 +3478,7 @@ ol > li.rank-down > .visually-hidden {
 <tr><td>Public Enemy</td><td> Rebel Without A Pause</td><td> 1987</td><td> 15</td><td>37</td><td></td></tr>
 <tr><td>Public Enemy</td><td> Bring The Noise</td><td> 1988</td><td> 38</td><td>32</td><td></td></tr>
 <tr><td>Public Enemy</td><td> Night Of The Living Baseheads</td><td> 1988</td><td> 39</td><td>63</td><td></td></tr>
-<tr><td>Public Enemy</td><td> Fight The Power</td><td> 1989</td><td> 10</td><td>29</td><td> Hits: 46; Combined: 97</td></tr>
+<tr><td>Public Enemy</td><td> Fight The Power</td><td> 1989</td><td> 10</td><td>29</td><td> Hits: 46; Combined: 97 <span class="combined-rank-up" aria-label="Moved up in the combined ranking" title="Moved up in the combined ranking">↑</span></td></tr>
 <tr><td>Public Enemy</td><td> Black Steel In The Hour Of Chaos</td><td> 1988</td><td> 93</td><td></td><td> Non-singles: 93</td></tr>
 <tr><td>Public Enemy</td><td> Public Enemy No.1</td><td></td><td> 92</td><td></td><td> Non-hit singles: 92; Year unverified</td></tr>
 <tr><td>Public Image Ltd.</td><td> Flowers Of Romance</td><td> 1981</td><td> 92</td><td>24</td><td></td></tr>
@@ -3550,7 +3567,7 @@ ol > li.rank-down > .visually-hidden {
 <tr><td>Scritti Politti</td><td> Oh Patti (Don't Feel Sorry For Loverboy)</td><td> 1988</td><td> 21</td><td>13</td><td></td></tr>
 <tr><td>Shakatak</td><td> Easier Said Than Done</td><td> 1981</td><td> 42</td><td>12</td><td></td></tr>
 <tr><td>Shakatak</td><td> Down On The Street</td><td> 1984</td><td> 63</td><td> <span class="phm pos10"> 9</td><td></td></tr>
-<tr><td>Shalamar</td><td> A Night To Remember</td><td> 1982</td><td> 6</td><td> <span class="phm pos10"> 5</td><td> Hits: 42; Combined: 85</td></tr>
+<tr><td>Shalamar</td><td> A Night To Remember</td><td> 1982</td><td> 6</td><td> <span class="phm pos10"> 5</td><td> Hits: 42; Combined: 85 <span class="combined-rank-up" aria-label="Moved up in the combined ranking" title="Moved up in the combined ranking">↑</span></td></tr>
 <tr><td>Shannon</td><td> Let The Music Play</td><td> 1983</td><td> 12</td><td>14</td><td> Hits: 78</td></tr>
 <tr><td>Shannon</td><td> Give Me Tonight</td><td> 1984</td><td> 20</td><td>24</td><td></td></tr>
 <tr><td>Sheila E</td><td> The Belle Of St. Mark</td><td> 1985</td><td> 57</td><td>18</td><td></td></tr>
@@ -3564,8 +3581,8 @@ ol > li.rank-down > .visually-hidden {
 <tr><td>Simple Minds</td><td> Don't You Forget About Me</td><td> 1985</td><td> 21</td><td> <span class="phm pos10"> 7</td><td></td></tr>
 <tr><td>Simple Minds</td><td> Alive and Kicking</td><td> 1985</td><td> 89</td><td> <span class="phm pos10"> 7</td><td></td></tr>
 <tr><td>Simple Minds</td><td> All The Things She Said</td><td> 1986</td><td> 60</td><td> <span class="phm pos10"> 9</td><td></td></tr>
-<tr><td>Simple Minds</td><td> I Travel</td><td> 1980</td><td> 4</td><td></td><td> Non-hit singles: 4; Combined: 19</td></tr>
-<tr><td>Simple Minds</td><td> Theme For Great Cities</td><td> 1981</td><td> 2</td><td></td><td> Instrumentals: 2; Combined: 14</td></tr>
+<tr><td>Simple Minds</td><td> I Travel</td><td> 1980</td><td> 4</td><td></td><td> Non-hit singles: 4; Combined: 18</td></tr>
+<tr><td>Simple Minds</td><td> Theme For Great Cities</td><td> 1981</td><td> 2</td><td></td><td> Instrumentals: 2; Combined: 14 <span class="combined-rank-up" aria-label="Moved up in the combined ranking" title="Moved up in the combined ranking">↑</span></td></tr>
 <tr><td>Simply Red</td><td> Money's Too Tight (To Mention) - The Cutback Mix</td><td> 1985</td><td> 66</td><td>13</td><td></td></tr>
 <tr><td>Simply Red</td><td> Holding Back The Years</td><td> 1985</td><td> 67</td><td> <span class="phm pos10"> 2</td><td></td></tr>
 <tr><td>Sinéad O'Connor</td><td> Mandinka</td><td> 1988</td><td> 86</td><td>17</td><td></td></tr>
@@ -3602,7 +3619,7 @@ ol > li.rank-down > .visually-hidden {
 <tr><td>Soft Cell</td><td> Where Was Your Heart (When You Needed It Most)</td><td></td><td> 69</td><td></td><td> Non-singles: 69; Year unverified</td></tr>
 <tr><td>Software</td><td> Island Sunrise</td><td> 1988</td><td> 87</td><td></td><td> Instrumentals: 87</td></tr>
 <tr><td>SOS Band (The)</td><td> Take Your Time (Do It Right)</td><td> 1980</td><td> 90</td><td>51</td><td></td></tr>
-<tr><td>SOS Band (The)</td><td> Just Be Good to Me</td><td> 1984</td><td> 5</td><td>13</td><td> Hits: 29; Combined: 50</td></tr>
+<tr><td>SOS Band (The)</td><td> Just Be Good to Me</td><td> 1984</td><td> 5</td><td>13</td><td> Hits: 29; Combined: 50 <span class="combined-rank-up" aria-label="Moved up in the combined ranking" title="Moved up in the combined ranking">↑</span></td></tr>
 <tr><td>SOS Band (The)</td><td> The Finest</td><td> 1986</td><td> 38</td><td>17</td><td></td></tr>
 <tr><td>Soul II Soul</td><td> Get A Life</td><td> 1989</td><td> 42</td><td> <span class="phm pos10"> 3</td><td></td></tr>
 <tr><td>Soul II Soul, Caron Wheeler</td><td> Back to Life (However Do You Want Me)</td><td> 1989</td><td> 5</td><td> <span class="phm pos1">1</td><td> Hits: 21; Combined: 38</td></tr>
@@ -3649,7 +3666,7 @@ ol > li.rank-down > .visually-hidden {
 <tr><td>Sugar Minott</td><td> Never My Love</td><td> 1981</td><td> 85</td><td>52</td><td></td></tr>
 <tr><td>Sugarcubes (The)</td><td> Birthday</td><td> 1987</td><td> 30</td><td>65</td><td> Non-hit singles: 44</td></tr>
 <tr><td>Suicide</td><td> Diamonds, Fur Coat, Champagne</td><td> 1980</td><td> 46</td><td></td><td> Non-singles: 46</td></tr>
-<tr><td>Sundays (The)</td><td> Can't Be Sure</td><td> 1989</td><td> 6</td><td>45</td><td> Non-hit singles: 11; Combined: 53</td></tr>
+<tr><td>Sundays (The)</td><td> Can't Be Sure</td><td> 1989</td><td> 6</td><td>45</td><td> Non-hit singles: 11; Combined: 53 <span class="combined-rank-up" aria-label="Moved up in the combined ranking" title="Moved up in the combined ranking">↑</span></td></tr>
 <tr><td>Survivor</td><td> Eye Of The Tiger</td><td> 1982</td><td> 81</td><td> <span class="phm pos1">1</td><td></td></tr>
 <tr><td>Susan Fassbender</td><td> Twilight Cafe</td><td> 1981</td><td> 29</td><td>21</td><td></td></tr>
 <tr><td>Suzanne Vega</td><td> Tom's Diner</td><td> 1987</td><td> 60</td><td>58</td><td></td></tr>
@@ -3677,7 +3694,7 @@ ol > li.rank-down > .visually-hidden {
 <tr><td>Talking Heads</td><td> This Must Be The Place (Naïve Melody)</td><td> 1984</td><td> 42</td><td>51</td><td> Non-hit singles: 54</td></tr>
 <tr><td>Talking Heads</td><td> Road To Nowhere</td><td> 1985</td><td> 41</td><td> <span class="phm pos10"> 6</td><td></td></tr>
 <tr><td>Talking Heads</td><td> Radio Head</td><td> 1987</td><td> 87</td><td>52</td><td></td></tr>
-<tr><td>Talking Heads</td><td> Born Under Punches (The Heat Goes On)</td><td> 1980</td><td> 5</td><td></td><td> Non-singles: 5; Combined: 23</td></tr>
+<tr><td>Talking Heads</td><td> Born Under Punches (The Heat Goes On)</td><td> 1980</td><td> 5</td><td></td><td> Non-singles: 5; Combined: 24</td></tr>
 <tr><td>Taylor Dayne</td><td> Tell It to My Heart</td><td> 1988</td><td> 56</td><td> <span class="phm pos10"> 3</td><td></td></tr>
 <tr><td>Teardrop Explodes</td><td> Reward</td><td> 1981</td><td> 52</td><td> <span class="phm pos10"> 6</td><td></td></tr>
 <tr><td>Tears For Fears</td><td> Mad World</td><td> 1982</td><td> 77</td><td> <span class="phm pos10"> 3</td><td></td></tr>
@@ -3712,7 +3729,7 @@ ol > li.rank-down > .visually-hidden {
 <tr><td>Tina Turner</td><td> Private Dancer</td><td> 1984</td><td> 91</td><td>26</td><td></td></tr>
 <tr><td>Tom Browne</td><td> Funkin' For Jamaica</td><td> 1980</td><td> 77</td><td> <span class="phm pos10"> 10</td><td></td></tr>
 <tr><td>Tom Browne</td><td> Fungi Mama (Bebopafunkadiscolypso)</td><td> 1982</td><td> 92</td><td>58</td><td></td></tr>
-<tr><td>Tom Tom Club</td><td> Genius Of Love</td><td> 1981</td><td> 7</td><td>65</td><td> Non-hit singles: 24; Combined: 88</td></tr>
+<tr><td>Tom Tom Club</td><td> Genius Of Love</td><td> 1981</td><td> 7</td><td>65</td><td> Non-hit singles: 24; Combined: 88 <span class="combined-rank-up" aria-label="Moved up in the combined ranking" title="Moved up in the combined ranking">↑</span></td></tr>
 <tr><td>Tom Tom Club</td><td> Wordy Rappinghood</td><td> 1981</td><td> 13</td><td> <span class="phm pos10"> 7</td><td></td></tr>
 <tr><td>Toney Lee</td><td> Reach Up</td><td> 1983</td><td> 91</td><td>64</td><td></td></tr>
 <tr><td>Toto</td><td> Rosanna</td><td> 1983</td><td> 49</td><td>12</td><td></td></tr>

@@ -840,7 +840,7 @@ table, .table {
     text-align: left !important;
 }
 .table-striped>tbody>tr:nth-of-type(odd) {
-    background-color: rgba(100,200,200,.15);
+    background-color: rgba(100,150,200,.1);
     color: rgba(255,255,255,.75);
 }
 .table>thead>tr>th {

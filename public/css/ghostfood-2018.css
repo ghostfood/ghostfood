@@ -73,11 +73,9 @@ p > a:hover {
 }
 
 p.lead {
-  font-size:1.1rem;
+  font-size:1rem;
 }
-/*p.text-center {
-  max-width:900px;
-}*/
+
 h2, h3, p, ul, ol, pre, dl {
   margin-bottom: 1em;
   

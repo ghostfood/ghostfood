@@ -18,17 +18,6 @@
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900" rel="stylesheet">
 
-  <style type="text/css">
-    table tr td:nth-of-type(3),
-    table tr td:nth-of-type(4),
-    table tr td:nth-of-type(5) {
-      text-align: center;
-    }
-
-    td del {
-      display: none;
-    }
-  </style>
 </head>
 
 <body id="background0009" class="music">
@@ -49,30 +38,30 @@
       <div class="col-xs-12">
         <div id="tabs">
           <ul class="nav nav-pills nav-justified align-center pvm my-4">
-            <li><a href="#tab0" data-toggle="tab" class="active">100 Favourite Tracks</a>
+            <li><a href="#top-tracks" data-toggle="tab" class="active">100 Favourite Tracks</a>
               <div class="tri-down mar-auto"></div>
             </li>
-            <li><a href="#tab1" data-toggle="tab">FAVOURITES BY CATEGORY</a>
+            <li><a href="#categories" data-toggle="tab">FAVOURITES BY CATEGORY</a>
               <div class="tri-down mar-auto"></div>
             </li>
-            <li><a href="#tab2" data-toggle="tab">FAVOURITE HITS 2005-2009</a>
+            <li><a href="#favourites0509" data-toggle="tab">FAVOURITE HITS 2005-2009</a>
               <div class="tri-down mar-auto"></div>
             </li>
-            <li><a href="#tab3" data-toggle="tab">FAVOURITE HITS 2000-2004</a>
+            <li><a href="#favourites0004" data-toggle="tab">FAVOURITE HITS 2000-2004</a>
               <div class="tri-down mar-auto"></div>
             </li>
-            <li><a href="#tab4" data-toggle="tab">EARCATCHERS 2000-2009</a>
+            <li><a href="#earcatchers0009" data-toggle="tab">EARCATCHERS 2000-2009</a>
               <div class="tri-down mar-auto"></div>
             </li>
-            <li><a href="#tab5" data-toggle="tab">A-Z / INDEX</a>
+            <li><a href="#atoz" data-toggle="tab">A-Z / INDEX</a>
               <div class="tri-down mar-auto"></div>
             </li>
-            <li><a href="#tab6" data-toggle="tab">A Big Dig</a>
+            <li class="d-none"><a href="#abigdig" data-toggle="tab">A Big Dig</a>
               <div class="tri-down mar-auto"></div>
             </li>
           </ul>
           <div class="tab-content clearfix">
-            <div class="tab-pane active" id="tab0">
+            <div class="tab-pane active" id="top-tracks">
               <div class="row no-gutters phm">
                 <div class="col-12 box box-dark rounded-sm">
                   <div class="auto-grid auto-grid-2">
@@ -1302,7 +1291,7 @@
                 </div>
               </div>
             </div>
-            <div class="tab-pane" id="tab1">
+            <div class="tab-pane" id="categories">
               <div class="row">
                 <div class="width-100 align-center pvm mb-4 view-sm">
                   <div class="mas align-center d-flex align-items-center">
@@ -1902,7 +1891,7 @@
                 </div>
               </div>
             </div>
-            <div class="tab-pane" id="tab2">
+            <div class="tab-pane" id="favourites0509">
               <div class="row">
                 <div class="col-12">
                   <p class="align-center mb-4 text-center m-auto">These lists were compiled in 2024, featuring only
@@ -2473,7 +2462,7 @@
                 </div>
               </div>
             </div><!-- end tab -->
-            <div class="tab-pane" id="tab3">
+            <div class="tab-pane" id="favourites0004">
               <div class="row">
                 <div class="col-12">
                   <p class="align-center my-4 text-center m-auto width-100-then-50">These lists were compiled between 2022 and 2023, featuring only tracks that peaked between #1 and #75 in the UK singles chart, with some AA sides and EP tracks included as well as some extended Remixes in the playlists.</p>
@@ -3041,7 +3030,7 @@
                 </div>
               </div>
             </div><!-- end tab -->
-            <div class="tab-pane" id="tab4">
+            <div class="tab-pane" id="earcatchers0009">
               <div class="row">
                 <div class="col-xs-12">
                   <p class="align-center mb-4 text-center m-auto">These lists were compiled at the end of each
@@ -4175,7 +4164,7 @@
 
               </div>
             </div>
-            <div class="tab-pane" id="tab5">
+            <div class="tab-pane" id="atoz">
               <div class="table-responsive shade-50 pas mvd">
                 <table class="table table-hover table-striped table-center mas" id="faves0009">
                   <thead>
@@ -16959,7 +16948,7 @@
                 </table>
               </div><!-- end table-responsive -->
             </div><!-- end tab -->
-            <div class="tab-pane" id="tab6">
+            <div class="tab-pane d-none" id="abigdig">
               <div class="row no-gutters phm">
                 <div class="col-12 ">
                   <div class="row">
@@ -17213,9 +17202,11 @@
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
   <script src="../../../js/functions-general.js"></script>
+  <script src="../../../js/favourites-tabs.js"></script>
   <script src='../../../js/jquery.dataTables.min.js'></script>
   <script type="text/javascript">
     $('#faves0009').dataTable({
+      dom: 'lfrpti',
       aLengthMenu: [
         [25, 50, 100, 200, -1],
         [25, 50, 100, 200, "All"]

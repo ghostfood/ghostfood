@@ -14,115 +14,6 @@
 <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:100,400,700,900|Roboto:300,400,700|Roboto+Condensed:300,400,700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900" rel="stylesheet">
 
-<style type="text/css">
-table tr th:nth-of-type(3),
-table tr th:nth-of-type(4),
-table tr th:nth-of-type(5),
-table tr td:nth-of-type(3), 
-table tr td:nth-of-type(4), 
-table tr td:nth-of-type(5) {
-text-align:center !important;
-}
-td del {
-display:none;
-}
-
-ol > li.rank-up {
-    min-height: 40px;
-}
-
-ol > li.rank-up::after {
-    content: "";
-    position: absolute;
-    top: 27px;
-    left: 7px;
-    width: 10px;
-    height: 12px;
-    background: currentColor;
-    color: #b7e4c7;
-    clip-path: polygon(50% 0, 100% 42%, 85% 55%, 60% 33%, 60% 100%, 40% 100%, 40% 33%, 15% 55%, 0 42%);
-}
-
-ol.boxed > li.rank-up::after {
-    top: 33px;
-    left: 13px;
-}
-
-.cpos {
-    color: #b8860b;
-    display: inline-block;
-    margin-left: 0.4em;
-    padding: 0 0.45em;
-    border-radius: 0.6em;
-    background: rgba(0, 0, 0, 0.45);
-    border: 1px solid currentColor;
-    font-size: 0.75em;
-    line-height: 11px;
-    vertical-align: middle;
-    height: 13px;
-    position: relative;
-    top: -1px;
-}
-
-.cpos-b {
-    font-size: 0;
-}
-
-.list-winner::after,
-.winner-key::before {
-    content: "";
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background: #0cc;
-    clip-path: polygon(50% 0, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-}
-
-.list-winner::after {
-    margin-left: 0.3em;
-}
-
-.winner-key::before {
-    margin-right: 0.35em;
-}
-
-.track-summary {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.35rem;
-    justify-content: center;
-}
-
-.track-summary .badge {
-    padding: 0.4rem 0.55rem;
-    font-size: 0.7rem;
-}
-
-#track-year-summary .badge,
-#track-artist-summary .badge {
-    border: 1px solid #444;
-    color: #ccc;
-    border-radius: 1rem;
-}
-
-#track-artist-summary .badge {
-    white-space: normal;
-    text-transform: uppercase;
-}
-
-@media (min-width: 768px) {
-    .track-summary {
-        justify-content: flex-start;
-    }
-}
-
-@media (min-width: 992px) {
-    #top-tracks .track-intro-grid {
-        grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
-    }
-}
-
-</style>
 </head>
 <body id="background7079" class="music">
 <header>
@@ -144,11 +35,11 @@ ol.boxed > li.rank-up::after {
 <ul class="nav nav-pills nav-justified align-center pvm">
 <li><a href="#top-tracks" class="active" data-toggle="tab">100 Favourite Tracks</a><div class="tri-down mar-auto"></div>
 </li>
-<li><a href="#tab1" data-toggle="tab">Favourites by category</a><div class="tri-down mar-auto"></div>
+<li><a href="#categories" data-toggle="tab">Favourites by category</a><div class="tri-down mar-auto"></div>
 </li>
-<li><a href="#tab2" data-toggle="tab">A-Z / INDEX</a><div class="tri-down mar-auto"></div>
+<li><a href="#atoz" data-toggle="tab">A-Z / INDEX</a><div class="tri-down mar-auto"></div>
 </li>
-<li class="d-none"><a href="#tab3" data-toggle="tab">A Big Dig</a><div class="tri-down mar-auto"></div>
+<li class="d-none"><a href="#abigdig" data-toggle="tab">A Big Dig</a><div class="tri-down mar-auto"></div>
 </li>
 </ul>
 <div class="col-12 pb-4">
@@ -881,7 +772,7 @@ ol.boxed > li.rank-up::after {
 </div>
 </div>
 
-<div class="tab-pane " id="tab1">
+<div class="tab-pane " id="categories">
 <div class="row">
 <div class="col-12 col-xl-9 m-auto w-100">
 <p class="align-center m-auto text-center p-2 pb-4">* Tracks with asterisks appeared on EP (Extended Play) single releases. These lists were compiled between 2016 and 2021 with some small alterations since then. <span class="winner-key">Stars mark tracks ranked first in a category list.</span></p>
@@ -1363,7 +1254,7 @@ ol.boxed > li.rank-up::after {
 </div>
 </div>
 
-<div class="tab-pane " id="tab2">
+<div class="tab-pane " id="atoz">
 <div class="row">
 <div class="col-xs-12">
 <div class="table-responsive shade-50 pas mvd">
@@ -1788,7 +1679,7 @@ ol.boxed > li.rank-up::after {
 </div><!-- end row -->
 </div><!-- end tab -->
 
-          <div class="tab-pane" id="tab3">
+          <div class="tab-pane d-none" id="abigdig">
             <div class="row no-gutters phm">
               <div class="col-12 ">
                 <div class="row">
@@ -1984,6 +1875,7 @@ ol.boxed > li.rank-up::after {
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="../../../js/functions-general.js"></script>
+<script src="../../../js/favourites-tabs.js"></script>
 <script src='../../../js/jquery.dataTables.min.js'></script>
 <script>
 {
@@ -2056,6 +1948,7 @@ ol.boxed > li.rank-up::after {
 </script>
 <script type="text/javascript">
 $('#faves7079').dataTable({
+dom: 'lfrpti',
 aLengthMenu: [
 [25, 50, 100, 200, -1],
 [25, 50, 100, 200, "All"]

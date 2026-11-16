@@ -160,6 +160,7 @@ dd {
 
 button {
   -webkit-appearance: push-button;
+  appearance: auto;
 }
 
 header,
@@ -895,12 +896,12 @@ span a.paginate_button {
   display: block;
   position: absolute;
   top:0;
-  padding: 2px 10px 5px 10px;
+  padding: 10px 10px 5px 10px;
   line-height: 1.2;
   left:0;
   right:0;
   height: 100%;
-  margin: 8px 0 4px 0;
+  margin: 0;
   border-radius:15px 0 0 15px;
   width: fit-content;
   min-width: auto;
@@ -1633,4 +1634,4 @@ h5.card-title {
     max-width: 1440px;
 }
 
-
+}
